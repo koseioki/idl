@@ -1,9 +1,9 @@
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 1.5rem;
-    max-width: var(--page-width);
+    max-width: calc(var(--page-width) + 15rem);
     margin: 0 auto;
     padding: 1.5rem 1rem;
     background-color: var(--white);
