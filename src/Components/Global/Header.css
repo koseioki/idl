@@ -3,6 +3,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
+    width: 100%;
     max-width: calc(var(--page-width) + 15rem);
     margin: 0 auto;
     padding: 1.5rem 1rem;

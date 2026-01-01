@@ -3,9 +3,9 @@ export function About() {
   return (
     <main>
       <h1>About</h1>
+      <h2>Intersectional Design Lab</h2>
       <p>
-        Intersectional Design Lab is an initiative run by Kosei Oki. It is a
-        platform where I share Information and Communication Technologies (ICT)
+        Intersectional Design Lab is an initiative run by Kosei Oki. It is an initiative where I share Information and Communication Technologies (ICT)
         design practices for designers, developers, and anyone interested, from
         an intersectional perspective.
       </p>
@@ -19,6 +19,15 @@ export function About() {
         At Intersectional Design Lab, I write articles, deliver workshops and
         talks, and share useful resources to help you learn more about
         intersectional design.
+      </p>
+      <h2>About Kosei</h2>
+      <p>
+        I have a background in applied informatics, UX design, and intersectionality. I worked as an engineer at a Danish tech agency and was involved in a multicultural self-integration initiative and a social justice NGO.
+
+      </p>
+      <p>
+        Drawing on these experiences, I decided to build an initiative that combines all of these elements. I am also an IAAP Certified Professional in Accessibility Core Competencies (CPACC).
+
       </p>
       <img
         src={AboutImage}

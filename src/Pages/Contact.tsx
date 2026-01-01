@@ -3,7 +3,7 @@ export function Contact() {
     <main>
       <h1>Contact</h1>
       <p>
-        If you have any questions or would like to get involved, please reach
+        If you have any questions, feedback, or would like to get involved, please reach
         out!
       </p>
       <p>
