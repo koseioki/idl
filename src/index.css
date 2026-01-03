@@ -8,6 +8,7 @@
 :root {
     --white: #FCFCFC;
     --dark-white: #E9E9E9;
+    --dark-dark-white: #D9D9D9;
     --text-black: #15245F;
     --light-purple: #E6BEF7;
     --dark-purple: #9E4BC2;
@@ -28,6 +29,7 @@
     :root {
         --white: #080E29;
         --dark-white: #141D45;
+        --dark-dark-white: #212C60;
         --text-black: #FCFCFC;
 
         --light-purple: #9E4BC2;

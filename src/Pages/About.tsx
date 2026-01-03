@@ -5,7 +5,7 @@ export function About() {
       <h1>About</h1>
       <h2>Intersectional Design Lab</h2>
       <p>
-        Intersectional Design Lab is an initiative run by Kosei Oki. It is an initiative where I share Information and Communication Technologies (ICT)
+        Intersectional Design Lab is an initiative run by Kosei Oki, where I share Information and Communication Technologies (ICT)
         design practices for designers, developers, and anyone interested, from
         an intersectional perspective.
       </p>
