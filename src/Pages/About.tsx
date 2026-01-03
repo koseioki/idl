@@ -22,7 +22,7 @@ export function About() {
       </p>
       <h2>About Kosei</h2>
       <p>
-        I have a background in applied informatics, UX design, and intersectionality. I worked as an engineer at a Danish tech agency and was involved in a multicultural self-integration initiative and a social justice NGO.
+        I have a background in applied informatics, UX design, and intersectionality. I worked as an engineer at a Danish tech agency and for several NGOs focused on multicultural self-integration, social justice, disabilities, and LGBTQ+ communities.
 
       </p>
       <p>

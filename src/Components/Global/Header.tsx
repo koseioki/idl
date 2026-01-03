@@ -5,7 +5,7 @@ export function Header() {
   return (
     <header>
       <NavLink className="logo" to="/">
-        Intersectional Design Lab
+        Intersectional Design Lab (Beta)
       </NavLink>
 
       <nav className="header-nav">
