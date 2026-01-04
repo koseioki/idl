@@ -1,9 +1,9 @@
-@font-face {
+/* @font-face {
     font-family: 'HelvetiHand';
     src: url('fonts/HelvetiHand.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-}
+} */
 
 :root {
     --white: #FCFCFC;
@@ -12,14 +12,14 @@
     --text-black: #15245F;
     --light-purple: #E6BEF7;
     --dark-purple: #9E4BC2;
-    --dark-purple-transparent: rgba(158, 75, 194, 0.25);
+    --light-yellow: #FCC64A;
     --dark-yellow: #775C1E;
     --light-green: #4DCFA7;
     --dark-green: #147557;
     --dark-grey: #757575;
     --page-width: 65rem;
-    --focus-indicator: 0 0 0 0.25rem var(--white), 0 0 0 0.5rem var(--dark-purple);
-    --focus-indicator-inset: inset 0 0 0 0.25rem var(--dark-purple), inset 0 0 0 0.5rem var(--white);
+    --focus-indicator: 0 0 0 0.25rem var(--white), 0 0 0 0.5rem var(--dark-green);
+    --focus-indicator-inset: inset 0 0 0 0.25rem var(--dark-green), inset 0 0 0 0.5rem var(--white);
 
 }
 
@@ -35,6 +35,9 @@
         --light-purple: #9E4BC2;
         --dark-purple: #E6BEF7;
 
+        --light-yellow: #775C1E;
+        --dark-yellow: #FCC64A;
+
         --light-green: #147557;
         --dark-green: #4DCFA7;
     }
@@ -48,9 +51,8 @@ body {
     background-color: var(--white);
     margin: 0 auto;
     box-sizing: border-box;
-    /* notebook style */
-    background-image: linear-gradient(var(--dark-white) 0.0625rem, transparent 0);
-    background-size: 2.5rem 2.5rem;
+    background-image: linear-gradient(var(--dark-dark-white) 0.0625rem, transparent 0);
+    background-size: 2rem 2rem;
 }
 
 main {
@@ -65,7 +67,7 @@ p {
 }
 
 a {
-    color: var(--dark-green);
+    color: var(--dark-yellow);
     text-decoration: underline;
 }
 
