@@ -18,8 +18,8 @@
     --dark-green: #147557;
     --dark-grey: #757575;
     --page-width: 65rem;
-    --focus-indicator: 0 0 0 0.25rem var(--white), 0 0 0 0.5rem var(--dark-green);
-    --focus-indicator-inset: inset 0 0 0 0.25rem var(--dark-green), inset 0 0 0 0.5rem var(--white);
+    --focus-indicator: 0 0 0 0.25rem var(--white), 0 0 0 0.5rem var(--dark-yellow);
+    --focus-indicator-inset: inset 0 0 0 0.25rem var(--dark-yellow), inset 0 0 0 0.5rem var(--white);
 
 }
 
@@ -40,6 +40,7 @@
 
         --light-green: #147557;
         --dark-green: #4DCFA7;
+        
     }
 }
 
@@ -67,7 +68,7 @@ p {
 }
 
 a {
-    color: var(--dark-yellow);
+    color: var(--dark-green);
     text-decoration: underline;
 }
 

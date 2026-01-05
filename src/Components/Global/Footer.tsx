@@ -3,7 +3,16 @@ export function Footer() {
     return (
         <footer>
             <div className="footer-content">
-            <p>© 2025 Intersectional Design Lab</p>
+            <p>Intersectional Design Lab (Beta)</p>
+                 <p>
+        Email: <a href="mailto:hello@intersectionaldesignlab.org">
+          hello@intersectionaldesignlab.org
+        </a>
+      </p>
+      <p>
+        Phone: <a href="tel:+4591964325">+45 9196 4325</a>
+      </p>
+      <p>@ 2026 Intersectional Design Lab</p>
             </div>
         </footer>
     );

@@ -4,8 +4,17 @@ const illustrationPaths = {
 
 export function Illustration(){
     return (
-        <svg width="264" height="210" viewBox="0 0 264 210" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d={illustrationPaths.Placeholder} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        <svg
+        // width="264"
+        // height="210"
+        viewBox="0 0 264 210"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+            <path d={illustrationPaths.Placeholder}
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round" />
         </svg>
     );
 }
