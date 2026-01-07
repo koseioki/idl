@@ -16,9 +16,10 @@ export function Home() {
         <i>intersectional perspective</i> to make the digital space a more
         inclusive place for everyone.
       </p>
+      <p>
       <NavLink to="/what-is-intersectional-design">
         Read more about "What is Intersectional Design?"
-      </NavLink>
+      </NavLink></p>
       {/* <img src={TwoPeopleCraftingICT} alt="Two people crafting ICT" /> */}
       <Drawing name="TwoPeopleCraftingICT" />
 
