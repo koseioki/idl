@@ -78,10 +78,7 @@ a:hover {
 a:focus {
     outline: none;
     box-shadow: var(--focus-indicator);
-
 }
-
-
 
 .image-frame {
     border: 0.5rem solid var(--white);

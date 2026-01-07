@@ -2,8 +2,9 @@ import { NavLink } from "react-router-dom";
 import "./Home.css";
 
 // import { Icon } from "../Components/Global/Icon";
-// import { Illustration } from "../Components/Global/Illustration";
-import { CardWithIllustration } from "../Components/Global/CardWithIllustration";
+import { Card } from "../Components/Global/Card";
+import { Drawing } from "../Components/Global/Drawing";
+// import TwoPeopleCraftingICT from "../assets/drawings/two-people-crafting-ict.svg";
 
 export function Home() {
   return (
@@ -18,32 +19,41 @@ export function Home() {
       <NavLink to="/what-is-intersectional-design">
         Read more about "What is Intersectional Design?"
       </NavLink>
+      {/* <img src={TwoPeopleCraftingICT} alt="Two people crafting ICT" /> */}
+      <Drawing name="TwoPeopleCraftingICT" />
+
+
       <h2>What We Offer</h2>
 
-    <ul className="offer-list">
+      <ul className="card-list">
         <li>
-      <CardWithIllustration heading="Design in Practice Guide">
-        <p>
-          We share practical design guides for each design element from an
-          intersectional perspective.
-        </p>
-      </CardWithIllustration>
-      </li>
-      <li>
-      <CardWithIllustration heading="Seminars & Workshops">
-        <p>We host seminars, webinars, workshops, talks, and similar events.</p>
-      </CardWithIllustration>
-      </li>
-      <li>
-      <CardWithIllustration heading="Resource Library">
-        <p>
-          We share our curated research resources, including books, videos,
-          courses, and more.
-        </p>
-      </CardWithIllustration>
-      </li>
-    </ul>
-{/* 
+          <Card heading="Design in Practice Guide">
+            <p>
+              We share practical design guides for each design element from an
+              intersectional perspective.
+            </p>
+            <Drawing />
+          </Card>
+        </li>
+        <li>
+          <Card heading="Seminars & Workshops">
+            <p>
+              We host seminars, webinars, workshops, talks, and similar events.
+            </p>
+            <Drawing />
+          </Card>
+        </li>
+        <li>
+          <Card heading="Resource Library">
+            <p>
+              We share our curated research resources, including books, videos,
+              courses, and more.
+            </p>
+            <Drawing />
+          </Card>
+        </li>
+      </ul>
+      {/* 
       <ul className="offer-list">
         <li>
           <article>
