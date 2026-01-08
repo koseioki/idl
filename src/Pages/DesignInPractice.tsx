@@ -15,8 +15,7 @@ export function DesignInPractice() {
         </head>
         <main id="main-content">
             <h1 ref={headingRef} tabIndex="-1">Design in Practice</h1>
-            <p>Coming soon!</p>
-            <p>Here we explore how intersectional design can be applied in real-world scenarios.</p>
+            <p>Coming soon! This page is under construction.</p>
         </main>
         </>
     )

@@ -70,14 +70,14 @@ export function WhatIsIntersectionalDesign() {
           </a>
         </p>
 
-        <details>
+        {/* <details>
           <summary>Read the full transcript</summary>
           <div>
             <p>(Transcript)</p>
           </div>
-        </details>
+        </details> */}
 
-        <Drawing />
+        {/* <Drawing /> */}
 
         <h2>Intersectionality + Design = Intersectional Design</h2>
         <p>
