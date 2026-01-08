@@ -32,11 +32,21 @@ header {
 }
 
 .logo {
-    font-weight: bold;
+    /* font-weight: bold;
     font-size: 1.5rem;
     color: var(--text-black);
     text-decoration: none;
+    max-width: 15rem; */
+}
+.logo img {
+    width: 100%;
     max-width: 15rem;
+    height: auto;
+    display: block;
+}
+
+.logo img:hover {
+    cursor: pointer;
 }
 
 .header-nav {
