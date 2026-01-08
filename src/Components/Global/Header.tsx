@@ -24,7 +24,7 @@ export function Header() {
             <NavLink to="/design-in-practice">Design in Practice</NavLink>
           </li>
           <li>
-            <NavLink to="/resources-and-events">Resources & Events</NavLink>
+            <NavLink to="/events-and-resources">Events & Resources</NavLink>
           </li>
           <li>
             <NavLink to="/about">About</NavLink>

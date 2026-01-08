@@ -1,3 +1,4 @@
+import { Drawing } from "../Components/Global/Drawing"
 export function Contact() {
   return (
     <main>
@@ -14,6 +15,7 @@ export function Contact() {
       <p>
         Phone: <a href="tel:+4591964325">+45 9196 4325</a>
       </p>
+      <Drawing />
     </main>
   );
 }
