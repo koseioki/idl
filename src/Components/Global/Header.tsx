@@ -4,6 +4,7 @@ import "./Header.css";
 export function Header() {
   return (
     <header>
+      
       <NavLink className="logo" to="/">
         Intersectional Design Lab (Beta)
       </NavLink>

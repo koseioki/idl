@@ -8,7 +8,7 @@ import { Drawing } from "../Components/Global/Drawing";
 
 export function Home() {
   return (
-    <main>
+    <main id="main-content">
       <h1>How can we make the digital world inclusive?</h1>
       <p>
         At Intersectional Design Lab, we research and share design practices for
