@@ -28,7 +28,7 @@ export function Home() {
 
       <ul className="card-list">
         <li>
-          <Card heading="Design in Practice Guide">
+          <Card heading="Design in Practice Guide" linkTo="/design-in-practice">
             <p>
               We share practical design guides for each design element from an
               intersectional perspective.
@@ -37,7 +37,7 @@ export function Home() {
           </Card>
         </li>
         <li>
-          <Card heading="Seminars & Workshops">
+          <Card heading="Seminars & Workshops" disabled>
             <p>
               We host seminars, webinars, workshops, talks, and similar events.
             </p>
@@ -45,7 +45,7 @@ export function Home() {
           </Card>
         </li>
         <li>
-          <Card heading="Resource Library">
+          <Card heading="Resource Library" disabled>
             <p>
               We share our curated research resources, including books, videos,
               courses, and more.

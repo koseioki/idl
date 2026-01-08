@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { Home } from './Pages/Home';
 import { About } from './Pages/About';
 import { Header } from './Components/Global/Header';
-import { WhatIsIntersectionalDesign } from './Pages/WhatIsIntersectionalWebDesign';
+import { WhatIsIntersectionalDesign } from './Pages/WhatIsIntersectionalDesign';
 import { DesignInPractice } from './Pages/DesignInPractice';
 import { ResourcesAndEvents } from './Pages/ResourcesAndEvents';
 import { Footer } from './Components/Global/Footer';

@@ -5,7 +5,7 @@ export function WhatIsIntersectionalDesign() {
   return (
     <main id="main-content">
       <h1>What is Intersectional Design?</h1>
-      <h2>Intersectionality</h2>
+      <h2>What is Intersectionality?</h2>
 
       <iframe
         width="560"
@@ -43,7 +43,7 @@ export function WhatIsIntersectionalDesign() {
         roadblocks to an individual or group's well-being.
       </p>
 
-      <p>
+      <p className="small-text">
         By{" "}
         <a href="https://www.youtube.com/watch?v=O1islM0ytkE&t=1s">
           Peter Hopkins
@@ -52,7 +52,9 @@ export function WhatIsIntersectionalDesign() {
 
       <details>
         <summary>Read the full transcript</summary>
+        <div>
         <p>(Transcript)</p>
+        </div>
       </details>
 
       <Drawing/>
