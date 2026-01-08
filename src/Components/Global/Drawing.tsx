@@ -9,7 +9,7 @@
 import { useEffect, useRef, useState } from 'react';
 import Placeholder from '../../assets/drawings/placeholder.svg';
 import TwoPeopleCraftingICT from '../../assets/drawings/two-people-crafting-ict.svg';
-
+import './Drawing.css';
 const svgMap = {
   Placeholder,
   TwoPeopleCraftingICT,
@@ -49,5 +49,7 @@ export function Drawing({ name = "Placeholder", strokeColor = "currentColor" }) 
     }
   }, [svgContent, strokeColor]);
 
-  return <div ref={containerRef} style={{ display: 'inline-block', lineHeight: 0 }} />;
+  // return <div ref={containerRef} style={{ display: 'inline-block', lineHeight: 0 }} />;
+    return <div className="drawing" ref={containerRef}  />;
+
 }

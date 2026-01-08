@@ -146,6 +146,11 @@ details summary:hover {
     background-color: var(--light-yellow-shadow);
 }
 
+details summary:focus {
+    outline: none;
+    box-shadow: var(--focus-indicator-inset);
+}
+
 details[open] summary {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
@@ -153,4 +158,19 @@ details[open] summary {
 
 details div {
     padding: 1rem 2rem 2rem 2rem;
+}
+
+.youtube-video {
+    border-radius: 2rem;
+    width: 100%;
+    max-width: var(--content-width);
+    aspect-ratio: 16/9;
+    /* border: 1px red solid; */
+    border: none;
+}
+
+.html5-video-player button:focus,
+.html5-video-player  a:focus {
+    outline: none;
+    box-shadow: var(--focus-indicator);
 }

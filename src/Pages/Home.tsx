@@ -24,7 +24,7 @@ export function Home() {
       <Drawing name="TwoPeopleCraftingICT" />
 
 
-      <h2>What We Offer</h2>
+      <h2>Our Research</h2>
 
       <ul className="card-list">
         <li>

@@ -7,14 +7,18 @@ export function WhatIsIntersectionalDesign() {
       <h1>What is Intersectional Design?</h1>
       <h2>What is Intersectionality?</h2>
 
+{/* Inserting youtube video */}
       <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/O1islM0ytkE?si=XNP-7wdXZfmkJfNx"
+        // width="560"
+        // height="315"
+        className="youtube-video"
+        src="https://www.youtube-nocookie.com/embed/O1islM0ytkE?si=XNP-7wdXZfmkJfNx"
         title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
+        // frameborder="0"
+        // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        // referrerpolicy="strict-origin-when-cross-origin"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+
         allowfullscreen
       ></iframe>
 

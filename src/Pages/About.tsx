@@ -1,7 +1,7 @@
 import AboutImage from "../assets/img/about.jpg";
 export function About() {
   return (
-    <main>
+    <main id="main-content">
       <h1>About</h1>
       <h2>Intersectional Design Lab</h2>
       <p>
@@ -22,12 +22,10 @@ export function About() {
       </p>
       <h2>About Kosei</h2>
       <p>
-        I have a background in applied informatics, UX design, and intersectionality. I worked as an engineer at a Danish tech agency and for several NGOs focused on multicultural self-integration, social justice, disabilities, and LGBTQ+ communities.
-
+I have an educational background in Applied Informatics, UX design, and Intersectional Studies. I’ve worked as an engineer at a Danish tech agency and with several NGOs in England and Denmark, focusing on multicultural self-integration, social justice, disability rights, and Queer communities. 
       </p>
       <p>
-        Drawing on these experiences, I decided to build an initiative that combines all of these elements. I am also an IAAP Certified Professional in Accessibility Core Competencies (CPACC).
-
+Drawing on these experiences, I work on making the world a slightly better place for everyone through design. I am also an IAAP Certified Professional in Accessibility Core Competencies (CPACC).
       </p>
       <img
         src={AboutImage}

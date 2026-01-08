@@ -1,0 +1,10 @@
+.drawing {
+    width: 100%;
+    max-width: var(--content-width);
+    /* border: 1px solid red; */
+}
+
+.drawing svg {
+    width: 100%;
+    height: auto;
+}
