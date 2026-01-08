@@ -41,7 +41,7 @@ export function Home() {
           </Card>
         </li>
         <li>
-          <Card heading="Seminars & Workshops" disabled>
+          <Card heading="Seminars & Workshops" linkTo="/events-and-resources/seminars-and-workshops">
             <p>
               We host seminars, webinars, workshops, talks, and similar events.
             </p>
@@ -49,7 +49,7 @@ export function Home() {
           </Card>
         </li>
         <li>
-          <Card heading="Resource Library" disabled>
+          <Card heading="Resource Library" linkTo="/events-and-resources/resource-library">
             <p>
               We share our curated research resources, including books, videos,
               courses, and more.
