@@ -12,16 +12,18 @@
     --text-black: #15245F;
 
     --light-purple: #E6BEF7;
-    --light-purple-shadow: #CDAADB;
+    --light-purple-shadow: #D2A3E6;
     --dark-purple: #9E4BC2;
 
     --light-yellow: #FFE8B4;
-    --light-yellow-shadow: #E6D2A4;
+    --light-yellow-shadow: #F3DBA4;
     --dark-yellow: #775C1E;
 
 
-    --light-green: #4DCFA7;
+    --light-green: #7BEDCA;
+    --light-green-shadow: #5FD6B1;
     --dark-green: #147557;
+    
     --dark-grey: #757575;
 
     --focus-indicator: 0 0 0 0.25rem var(--white), 0 0 0 0.5rem var(--dark-yellow);

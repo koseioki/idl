@@ -3,6 +3,10 @@ import "./Header.css";
 
 export function Header() {
   return (
+    <>
+    <NavLink to="#main-content" className="skip-link">
+      Skip to main content
+    </NavLink>
     <header>
       
       <NavLink className="logo" to="/">
@@ -31,5 +35,6 @@ export function Header() {
         </ul>
       </nav>
     </header>
+    </>
   );
 }
