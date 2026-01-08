@@ -8,6 +8,10 @@ import { Drawing } from "../Components/Global/Drawing";
 
 export function Home() {
   return (
+    <>
+    <head>
+      <title>Home - Intersectional Design Lab</title>
+    </head>
     <main id="main-content">
       <h1>How can we make the digital world inclusive?</h1>
       <p>
@@ -103,5 +107,6 @@ export function Home() {
         </li>
       </ul> */}
     </main>
+    </>
   );
 }

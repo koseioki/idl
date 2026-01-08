@@ -25,7 +25,7 @@
     --light-green: #7BEDCA;
     --light-green-shadow: #5FD6B1;
     --dark-green: #147557;
-    
+
     --light-grey: #D5D5D5;
     --light-grey-shadow: #C5C5C5;
     --dark-grey: #757575;
@@ -96,6 +96,10 @@ h6 {
     margin-top: 2rem;
     margin-bottom: 1rem;
     max-width: var(--content-width);
+}
+
+h1:focus {
+    outline: none;
 }
 
 p {
@@ -170,7 +174,7 @@ details div {
 }
 
 .html5-video-player button:focus,
-.html5-video-player  a:focus {
+.html5-video-player a:focus {
     outline: none;
     box-shadow: var(--focus-indicator);
 }

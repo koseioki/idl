@@ -4,9 +4,9 @@ import "./Header.css";
 export function Header() {
   return (
     <>
-    <NavLink to="#main-content" className="skip-link">
+    <a href="#main-content" className="skip-link">
       Skip to main content
-    </NavLink>
+    </a>
     <header>
       
       <NavLink className="logo" to="/">

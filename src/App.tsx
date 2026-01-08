@@ -8,11 +8,15 @@ import { DesignInPractice } from './Pages/DesignInPractice';
 import { EventsAndResources } from './Pages/EventsAndResources';
 import { Footer } from './Components/Global/Footer';
 import { Contact } from './Pages/Contact';
+import { useEffect, useRef } from 'react';
 
 function App() {
   // const [count, setCount] = useState(0)
 
+
+
   return (
+    
     <>
     <Router>
       <Header />

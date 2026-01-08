@@ -1,8 +1,22 @@
 import { Drawing } from "../Components/Global/Drawing"
+import { useEffect, useRef } from "react";
 export function Contact() {
+
+    const headingRef = useRef<HTMLHeadingElement>(null);
+    useEffect(() => {
+      if (headingRef.current) {
+        headingRef.current.focus();
+      }
+    }, []);
+
+
   return (
-    <main>
-      <h1>Contact</h1>
+    <>
+    <head>
+      <title>Contact - Intersectional Design Lab</title>
+    </head>
+    <main id="main-content">
+      <h1 ref={headingRef} tabIndex="-1">Contact</h1>
       <p>
         If you have any questions, feedback, or would like to get involved, please reach
         out!
@@ -17,5 +31,6 @@ export function Contact() {
       </p>
       <Drawing />
     </main>
+    </>
   );
 }
