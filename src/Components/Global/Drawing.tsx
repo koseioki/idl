@@ -13,9 +13,11 @@ import './Drawing.css';
 const svgMap = {
   Placeholder,
   TwoPeopleCraftingICT,
-};
+} as const;
 
-export function Drawing({ name, strokeColor = "currentColor", alt }) {
+type SvgMapKey = keyof typeof svgMap;
+
+export function Drawing({ name, strokeColor = "currentColor", alt }: { name: SvgMapKey; strokeColor?: string; alt?: string }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [svgContent, setSvgContent] = useState<string>('');
 

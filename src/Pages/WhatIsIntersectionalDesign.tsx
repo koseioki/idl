@@ -1,5 +1,4 @@
 import { Card } from "../Components/Global/Card";
-import { Drawing } from "../Components/Global/Drawing";
 import { useEffect, useRef } from "react";
 
 export function WhatIsIntersectionalDesign() {
@@ -18,7 +17,7 @@ export function WhatIsIntersectionalDesign() {
         </title>
       </head>
       <main id="main-content">
-        <h1 ref={headingRef} tabIndex="-1">
+        <h1 ref={headingRef} tabIndex={-1}>
           What is Intersectional Design?
         </h1>
         <h2>What is Intersectionality?</h2>
@@ -34,7 +33,7 @@ export function WhatIsIntersectionalDesign() {
           // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           // referrerpolicy="strict-origin-when-cross-origin"
           allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-          allowfullscreen
+          // allowfullscreen
         ></iframe>
 
         <p>
@@ -164,7 +163,9 @@ export function WhatIsIntersectionalDesign() {
             <Card
             heading="Sex and Gender"
             headingLevel={3}
-            disabled>
+            disabled
+            linkTo=""
+            >
               <p>
                 A person's sex and gender can influence their experiences and
                 access to resources.
@@ -175,7 +176,9 @@ export function WhatIsIntersectionalDesign() {
             <Card
             heading="Culture, Race, and Geographic Location"
             headingLevel={3}
-            disabled>
+            disabled
+            linkTo=""
+            >
               <p></p>
             </Card>
           </li>
@@ -183,7 +186,8 @@ export function WhatIsIntersectionalDesign() {
             <Card
             heading="Disability and Ageing"
             headingLevel={3}
-            disabled>
+            disabled
+            linkTo="">
               <p></p>
             </Card>
           </li>
@@ -191,7 +195,8 @@ export function WhatIsIntersectionalDesign() {
             <Card
             heading="Economic Status"
             headingLevel={3}
-            disabled>
+            disabled
+            linkTo="">
               <p></p>
             </Card>
           </li>
