@@ -164,7 +164,7 @@ export function WhatIsIntersectionalDesign() {
           <li>
             <Card
             heading="Sex and Gender"
-            headingLevel="3"
+            headingLevel={3}
             disabled>
               <p>
                 A person's sex and gender can influence their experiences and

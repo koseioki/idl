@@ -34,8 +34,9 @@ export function Home() {
         <li>
           <Card
           heading="Design in Practice Guide"
-          headingLevel="3"
-          linkTo="/design-in-practice">
+          headingLevel={3}
+          linkTo="/design-in-practice"
+          disabled={false}>
             <p>
               We share practical design guides for each design element from an
               intersectional perspective.
@@ -46,8 +47,9 @@ export function Home() {
         <li>
           <Card
           heading="Seminars & Workshops"
-          headingLevel="3"
-          linkTo="/events-and-resources/seminars-and-workshops">
+          headingLevel={3}
+          linkTo="/events-and-resources/seminars-and-workshops"
+          disabled={false}>
             <p>
               We host seminars, webinars, workshops, talks, and similar events.
             </p>
@@ -57,8 +59,9 @@ export function Home() {
         <li>
           <Card
           heading="Resource Library"
-          headingLevel="3"
-          linkTo="/events-and-resources/resource-library">
+          headingLevel={3}
+          linkTo="/events-and-resources/resource-library"
+          disabled={false}>
             <p>
               We share our curated research resources, including books, videos,
               courses, and more.

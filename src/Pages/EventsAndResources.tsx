@@ -15,6 +15,7 @@ export function EventsAndResources() {
       <head>
         <title>Events & Resources - Intersectional Design Lab</title>
       </head>
+
       <main id="main-content">
         <h1 ref={headingRef} tabIndex="-1">Events & Resources</h1>
         {/* introduction text */}
@@ -26,7 +27,11 @@ export function EventsAndResources() {
         {/* menu */}
         <ul className="card-list">
           <li>
-            <Card heading="Seminars & Workshops" linkTo="/events-and-resources/seminars-and-workshops">
+            <Card
+            heading="Seminars & Workshops"
+            headingLevel={2}
+            linkTo="/events-and-resources/seminars-and-workshops"
+            disabled={false}>
               <p>
                 We host seminars, webinars, workshops, talks, and similar
                 events.
@@ -35,7 +40,12 @@ export function EventsAndResources() {
             </Card>
           </li>
           <li>
-            <Card heading="Resource Library" linkTo="/events-and-resources/resource-library">
+            <Card
+            heading="Resource Library"
+            headingLevel={2}
+            linkTo="/events-and-resources/resource-library"
+            disabled={false}
+            >
               <p>
                 We share our curated research resources, including books,
                 videos, courses, and more.
