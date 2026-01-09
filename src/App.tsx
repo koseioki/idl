@@ -8,7 +8,7 @@ import { DesignInPractice } from "./Pages/DesignInPractice";
 import { EventsAndResources } from "./Pages/EventsAndResources";
 import { Footer } from "./Components/Global/Footer";
 import { Contact } from "./Pages/Contact";
-import { useEffect, useRef } from "react";
+// import { useEffect, useRef } from "react";
 import { ResourceLibrary } from "./Pages/ResourceLibrary";
 import { SeminarsAndWorkshops } from "./Pages/SeminarsAndWorkshops";
 import { Breadcrumbs } from "./Components/Global/Breadcrumbs";
