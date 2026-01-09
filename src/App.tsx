@@ -18,7 +18,7 @@ function App() {
 
   return (
     <>
-      <Router basename={import.meta.env.DEV ? "/" : "/idl/"}>
+      <Router>
         <Header />
         <Breadcrumbs />
         <Routes>
