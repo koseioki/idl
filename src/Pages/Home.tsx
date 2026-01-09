@@ -32,7 +32,10 @@ export function Home() {
 
       <ul className="card-list">
         <li>
-          <Card heading="Design in Practice Guide" linkTo="/design-in-practice">
+          <Card
+          heading="Design in Practice Guide"
+          headingLevel="3"
+          linkTo="/design-in-practice">
             <p>
               We share practical design guides for each design element from an
               intersectional perspective.
@@ -41,7 +44,10 @@ export function Home() {
           </Card>
         </li>
         <li>
-          <Card heading="Seminars & Workshops" linkTo="/events-and-resources/seminars-and-workshops">
+          <Card
+          heading="Seminars & Workshops"
+          headingLevel="3"
+          linkTo="/events-and-resources/seminars-and-workshops">
             <p>
               We host seminars, webinars, workshops, talks, and similar events.
             </p>
@@ -49,7 +55,10 @@ export function Home() {
           </Card>
         </li>
         <li>
-          <Card heading="Resource Library" linkTo="/events-and-resources/resource-library">
+          <Card
+          heading="Resource Library"
+          headingLevel="3"
+          linkTo="/events-and-resources/resource-library">
             <p>
               We share our curated research resources, including books, videos,
               courses, and more.
@@ -58,54 +67,7 @@ export function Home() {
           </Card>
         </li>
       </ul>
-      {/* 
-      <ul className="offer-list">
-        <li>
-          <article>
-            <h3>
-              <NavLink to="/">
-                <span>Design in Practice Guide</span>
-                <Icon />
-              </NavLink>
-            </h3>
-            <p>
-              We share practical design guides for each design element from an
-              intersectional perspective.
-            </p>
-            <Illustration />
-          </article>
-        </li>
-        <li>
-          <article>
-            <h3>
-              <NavLink to="/">
-                Seminars & Workshops
-                <Icon />
-              </NavLink>
-            </h3>
-
-            <p>
-              We host seminars, webinars, workshops, talks, and similar events.
-            </p>
-            <Illustration />
-          </article>
-        </li>
-        <li>
-          <article>
-            <h3>
-              <NavLink to="/">
-                Resource Library
-                <Icon />
-              </NavLink>
-            </h3>
-            <p>
-              We share our curated research resources, including books, videos,
-              courses, and more.
-            </p>
-            <Illustration />
-          </article>
-        </li>
-      </ul> */}
+     
     </main>
     </>
   );

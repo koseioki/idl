@@ -3,7 +3,6 @@ import { Drawing } from "../Components/Global/Drawing";
 import { useEffect, useRef } from "react";
 
 export function WhatIsIntersectionalDesign() {
-
   const headingRef = useRef<HTMLHeadingElement>(null);
   useEffect(() => {
     if (headingRef.current) {
@@ -70,12 +69,77 @@ export function WhatIsIntersectionalDesign() {
           </a>
         </p>
 
-        {/* <details>
-          <summary>Read the full transcript</summary>
+        <details>
+          <summary>Continue Reading Transcript</summary>
           <div>
-            <p>(Transcript)</p>
+            <p>
+              But it's not as simple as just adding up oppressions and
+              addressing each one individually.
+            </p>
+
+            <p>
+              Racism, sexism, and ableism exist on their own. But when combined,
+              they compound and transform the experience of oppression.
+            </p>
+
+            <p>
+              Intersectionality acknowledges that unique oppressions exist, but
+              is also dedicated to understanding how they change in combination.
+            </p>
+
+            <p>
+              The roots of intersectionality lie within the black feminist
+              movement, with legal scholar Kimberlé Crenshaw originating the
+              term.
+            </p>
+
+            <p>
+              Crenshaw felt that anti-racist and feminist movements were both
+              overlooking the unique challenges faced by black women.
+            </p>
+
+            <p>
+              She stated that legislation about race is framed to protect black
+              men, and legislation about sexism is understood to protect white
+              women.
+            </p>
+
+            <p>
+              So simply combining racism and sexism together does not therefore
+              protect black women.
+            </p>
+
+            <p>
+              Intersectional theory is now applied across a range of social
+              divisions and also to understandings of domination such as those
+              associated with whiteness, masculinity and heterosexuality.
+            </p>
+
+            <p>
+              Intersectionality is not only about multiple identities, and it's
+              not a simple answer to solving problems around equality and
+              diversity.
+            </p>
+
+            <p>
+              It is, however, an essential framework as we truly engage with
+              issues around privilege and power, and work to bring them into the
+              open.
+            </p>
+
+            <p>
+              Intersectionality means listening to others, examining our own
+              privileges, and asking questions about who may be excluded or
+              adversely affected by our work.
+            </p>
+
+            <p>
+              As importantly, it means taking measurable actionto invite,
+              include and centre the voices and work of marginalised
+              individuals.
+            </p>
           </div>
-        </details> */}
+        </details>
 
         {/* <Drawing /> */}
 
@@ -90,7 +154,6 @@ export function WhatIsIntersectionalDesign() {
 
         <h2>How does discrimination affect design?</h2>
         <p>
-          {" "}
           Discrimination can manifest in various forms, each impacting
           individuals and communities in unique ways. Understanding these types
           of discrimination is crucial for creating inclusive designs that cater
@@ -99,25 +162,39 @@ export function WhatIsIntersectionalDesign() {
 
         <ul className="card-list">
           <li>
-            <Card heading="Sex and Gender">Text</Card>
+            <Card
+            heading="Sex and Gender"
+            headingLevel="3"
+            disabled>
+              <p>
+                A person's sex and gender can influence their experiences and
+                access to resources.
+              </p>
+            </Card>
           </li>
           <li>
-            <Card heading="Culture and Race">Text</Card>
+            <Card
+            heading="Culture, Race, and Geographic Location"
+            headingLevel="3"
+            disabled>
+              <p></p>
+            </Card>
           </li>
           <li>
-            <Card heading="Disability">Text</Card>
+            <Card
+            heading="Disability and Ageing"
+            headingLevel="3"
+            disabled>
+              <p></p>
+            </Card>
           </li>
           <li>
-            <Card heading="Social Class">Text</Card>
-          </li>
-          <li>
-            <Card heading="Age">Text</Card>
-          </li>
-          <li>
-            <Card heading="Physical Appearance">Text</Card>
-          </li>
-          <li>
-            <Card heading="Psychological State">Text</Card>
+            <Card
+            heading="Economic Status"
+            headingLevel="3"
+            disabled>
+              <p></p>
+            </Card>
           </li>
         </ul>
       </main>

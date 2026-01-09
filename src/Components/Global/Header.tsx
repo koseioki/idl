@@ -47,7 +47,7 @@ export function Header() {
       </a>
       <header>
         <NavLink className="logo" to="/">
-          <img src={logoSrc} alt="Intersectional Design Lab" />
+          <img src={logoSrc} alt="Intersectional Design Lab (Beta)" />
         </NavLink>
         <nav className="header-nav">
           <ul>

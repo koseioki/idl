@@ -18,8 +18,8 @@
 
     --light-yellow: #FFE8B4;
     --light-yellow-shadow: #F3DBA4;
-    --dark-yellow: #775C1E;
-    --dark-yellow-shadow: #564112;
+    --dark-yellow: #564112;
+    --dark-yellow-shadow: #43320A;
 
 
     --light-green: #7BEDCA;
@@ -51,9 +51,9 @@
         --light-purple-shadow: #7A319A;
         --dark-purple-shadow: #D2A3E6;
 
-        --light-yellow: #775C1E;
+        --light-yellow: #564112;
         --dark-yellow: #FFE8B4;
-        --light-yellow-shadow: #564112;
+        --light-yellow-shadow: #43320A;
         --dark-yellow-shadow: #F3DBA4;
 
         --light-green: #147557;
