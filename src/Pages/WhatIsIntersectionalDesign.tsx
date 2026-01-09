@@ -151,7 +151,7 @@ export function WhatIsIntersectionalDesign() {
 
         {/* <Drawing /> */}
 
-        <h2>How does discrimination affect design?</h2>
+        <h2>What Characteristics Should We Be Aware Of?</h2>
         <p>
           Discrimination can manifest in various forms, each impacting
           individuals and communities in unique ways. Understanding these types

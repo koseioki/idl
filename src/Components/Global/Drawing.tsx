@@ -15,7 +15,7 @@ const svgMap = {
   TwoPeopleCraftingICT,
 };
 
-export function Drawing({ name = "Placeholder", strokeColor = "currentColor" }) {
+export function Drawing({ name, strokeColor = "currentColor", alt }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [svgContent, setSvgContent] = useState<string>('');
 
@@ -50,6 +50,8 @@ export function Drawing({ name = "Placeholder", strokeColor = "currentColor" }) 
   }, [svgContent, strokeColor]);
 
   // return <div ref={containerRef} style={{ display: 'inline-block', lineHeight: 0 }} />;
-    return <div className="drawing" ref={containerRef}  />;
+    return (
+    <div className="drawing" ref={containerRef} aria-label={alt} role="img" />
+  );
 
 }
