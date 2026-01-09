@@ -11,6 +11,7 @@ import { Contact } from "./Pages/Contact";
 import { useEffect, useRef } from "react";
 import { ResourceLibrary } from "./Pages/ResourceLibrary";
 import { SeminarsAndWorkshops } from "./Pages/SeminarsAndWorkshops";
+import { Breadcrumbs } from "./Components/Global/Breadcrumbs";
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -19,6 +20,7 @@ function App() {
     <>
       <Router>
         <Header />
+        <Breadcrumbs />
         <Routes>
           <Route path="/" element={<Home />} />
 

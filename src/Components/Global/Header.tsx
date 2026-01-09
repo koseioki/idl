@@ -49,7 +49,7 @@ export function Header() {
         <NavLink className="logo" to="/">
           <img src={logoSrc} alt="Intersectional Design Lab (Beta)" />
         </NavLink>
-        <nav className="header-nav">
+        <nav aria-label="Main navigation" className="header-nav">
           <ul>
             <li>
               <NavLink to="/what-is-intersectional-design">
