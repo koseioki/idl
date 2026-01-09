@@ -13,7 +13,7 @@ export function ResourceLibrary() {
         <title>Resource Library - Intersectional Design Lab</title>
       </head>
       <main id="main-content">
-        <h1 ref={headingRef} tabIndex={-1}>
+        <h1 ref={headingRef} tabIndex="-1">
           Resource Library
         </h1>
         <p>Coming soon! This page is under construction.</p>

@@ -14,7 +14,7 @@ export function DesignInPractice() {
             <title>Design in Practice - Intersectional Design Lab</title>
         </head>
         <main id="main-content">
-            <h1 ref={headingRef} tabIndex={-1}>Design in Practice</h1>
+            <h1 ref={headingRef} tabIndex="-1">Design in Practice</h1>
             <p>Coming soon! This page is under construction.</p>
         </main>
         </>

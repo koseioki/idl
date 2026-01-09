@@ -1,3 +1,4 @@
+import { Drawing } from "../Components/Global/Drawing"
 import { useEffect, useRef } from "react";
 export function Contact() {
 

@@ -1,4 +1,5 @@
 import { Card } from "../Components/Global/Card";
+import { Drawing } from "../Components/Global/Drawing";
 import { useEffect, useRef } from "react";
 export function EventsAndResources() {
     const headingRef = useRef<HTMLHeadingElement>(null);
@@ -16,7 +17,7 @@ export function EventsAndResources() {
       </head>
 
       <main id="main-content">
-        <h1 ref={headingRef} tabIndex={-1}>Events & Resources</h1>
+        <h1 ref={headingRef} tabIndex="-1">Events & Resources</h1>
         {/* introduction text */}
         <p>
           We offer a variety of events and resources to support your learning
