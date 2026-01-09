@@ -92,7 +92,7 @@ header {
 }
 
 .header-nav a:hover {
-    background-color: var(--light-purple-shadow);
+    background-color: var(--light-purple-shade);
     /* color: var(--white); */
 }
 

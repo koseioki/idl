@@ -12,23 +12,24 @@
     --text-black: #15245F;
 
     --light-purple: #E6BEF7;
-    --light-purple-shadow: #D2A3E6;
+    --light-purple-shade: #D2A3E6;
     --dark-purple: #9E4BC2;
-    --dark-purple-shadow: #7A319A;
+    --dark-purple-shade: #7A319A;
 
     --light-yellow: #FFE8B4;
-    --light-yellow-shadow: #F3DBA4;
+    --light-yellow-shade: #F3DBA4;
     --dark-yellow: #564112;
-    --dark-yellow-shadow: #43320A;
+    --dark-yellow-shade: #43320A;
 
 
     --light-green: #7BEDCA;
-    --light-green-shadow: #5FD6B1;
+    --light-green-shade: #5FD6B1;
     --dark-green: #147557;
 
     --light-grey: #D5D5D5;
-    --light-grey-shadow: #C5C5C5;
+    --light-grey-shade: #C5C5C5;
     --dark-grey: #757575;
+    --dark-grey-shade:#5A5A5A;
 
     --focus-indicator: 0 0 0 0.25rem var(--white), 0 0 0 0.5rem var(--dark-yellow);
     --focus-indicator-inset: inset 0 0 0 0.25rem var(--dark-yellow), inset 0 0 0 0.5rem var(--white);
@@ -46,24 +47,42 @@
         --dark-dark-white: #212C60;
         --text-black: #FCFCFC;
 
+        /* Dark and Light are switched */
+
         --light-purple: #9E4BC2;
+        --light-purple-shade: #7A319A;
         --dark-purple: #E6BEF7;
-        --light-purple-shadow: #7A319A;
-        --dark-purple-shadow: #D2A3E6;
+        --dark-purple-shade: #D2A3E6;
 
         --light-yellow: #564112;
+        --light-yellow-shade: #43320A;
         --dark-yellow: #FFE8B4;
-        --light-yellow-shadow: #43320A;
-        --dark-yellow-shadow: #F3DBA4;
+        --dark-yellow-shade: #F3DBA4;
 
         --light-green: #147557;
         --dark-green: #7BEDCA;
-        --light-green-shadow: #5FD6B1;
+        --dark-green-shade: #5FD6B1;
 
         --light-grey: #757575;
+        --light-grey-shade: #5A5A5A;
         --dark-grey: #D5D5D5;
+        --dark-grey-shade:#C5C5C5;
+
+
+
 
     }
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
 
 body {
@@ -131,8 +150,8 @@ a:focus {
 .image-frame {
     border: 0.5rem solid var(--white);
     box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.5);
-    width: 100%;
-    max-width: 40rem;
+    width: calc(100% - 1rem);
+    max-width: var(--content-width);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -158,7 +177,7 @@ details summary {
 
 details summary:hover {
     cursor: pointer;
-    background-color: var(--light-yellow-shadow);
+    background-color: var(--light-yellow-shade);
 }
 
 details summary:focus {

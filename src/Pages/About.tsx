@@ -14,7 +14,7 @@ export function About() {
         <title>About - Intersectional Design Lab</title>
       </head>
       <main id="main-content">
-        <h1 ref={headingRef} tabIndex="-1">About</h1>
+        <h1 ref={headingRef} tabIndex={-1}>About</h1>
         <h2>Intersectional Design Lab</h2>
         <p>
           Intersectional Design Lab is an initiative run by Kosei Oki, where I
@@ -47,11 +47,13 @@ export function About() {
           better place for everyone through design. I am also an IAAP Certified
           Professional in Accessibility Core Competencies (CPACC).
         </p>
+        <div>
         <img
           src={AboutImage}
           className="image-frame"
           alt="Kosei presenting to a classroom, smiling and prompting students to raise their hands. The presentation slide reads “Native elements work just better”, and shows a good code example using a simple button element alongside a bad one using a div tag with many attributes, photo."
         />
+        </div>
       </main>
     </>
   );

@@ -5,9 +5,8 @@ ul.card-list {
     display: grid;
     align-items: stretch;
     justify-items: stretch;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     gap: 2rem;
-    width: 100%;
 }
 
 /* Remove the default margin from headings inside cards */
@@ -19,9 +18,11 @@ ul.card-list h4 {
 
 ul.card-list li {
     display: flex;
+ 
 }
 ul.card-list li article {
     width: 100%;
+    margin: 0;
     padding: 2rem;
     border-radius: 2rem;
     background-color: var(--dark-white);
@@ -42,6 +43,8 @@ ul.card-list li article a {
 ul.card-list li article a {
     text-decoration: none;
 }
+
+/* Hover and focus stuff */
 
 ul.card-list li article:hover a {
     text-decoration: underline;

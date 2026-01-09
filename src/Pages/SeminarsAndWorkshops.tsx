@@ -10,11 +10,11 @@ export function SeminarsAndWorkshops() {
   return (
     <>
       <head>
-        <title>Seminars and Workshops - Intersectional Design Lab</title>
+        <title>Seminars & Workshops - Intersectional Design Lab</title>
       </head>
       <main id="main-content">
         <h1 ref={headingRef} tabIndex="-1">
-          Seminars and Workshops
+          Seminars & Workshops
         </h1>
         <p>Coming soon! This page is under construction.</p>
       </main>

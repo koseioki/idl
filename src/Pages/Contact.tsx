@@ -16,7 +16,7 @@ export function Contact() {
       <title>Contact - Intersectional Design Lab</title>
     </head>
     <main id="main-content">
-      <h1 ref={headingRef} tabIndex="-1">Contact</h1>
+      <h1 ref={headingRef} tabIndex={-1}>Contact</h1>
       <p>
         If you have any questions, feedback, or would like to get involved, please reach
         out!
