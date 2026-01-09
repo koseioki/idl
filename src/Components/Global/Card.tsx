@@ -1,11 +1,18 @@
 import { NavLink } from "react-router-dom";
 import { Icon } from "./Icon";
+import { useNavigate } from "react-router-dom";
 import "./Card.css";
 
 export function Card({ heading, headingLevel, disabled, children, linkTo }) {
   // Set a heading level depending on the headingLevel prop
 
   const HeadingTag = `h${headingLevel}` as React.ElementType;
+  const navigate = useNavigate();
+  const handleClick = () => {
+    if (!disabled) {
+      navigate(linkTo);
+    }
+  };
 
   if (disabled) {
     return (
@@ -19,13 +26,7 @@ export function Card({ heading, headingLevel, disabled, children, linkTo }) {
     );
   } else {
     return (
-      <article
-        onClick={() => {
-          if (linkTo) {
-            window.location.href = linkTo;
-          }
-        }}
-      >
+      <article onClick={handleClick}>
         <HeadingTag>
           <NavLink to={linkTo}>
             <span>{heading}</span>
