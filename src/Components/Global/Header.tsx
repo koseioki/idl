@@ -24,7 +24,6 @@ export function Header() {
       mql.addEventListener("change", handler);
     } else {
       // Safari < 14
-      // @ts-ignore
       mql.addListener(handler);
     }
 
@@ -32,7 +31,6 @@ export function Header() {
       if (mql.removeEventListener) {
         mql.removeEventListener("change", handler);
       } else {
-        // @ts-ignore
         mql.removeListener(handler);
       }
     };
