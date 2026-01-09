@@ -141,7 +141,6 @@ export function WhatIsIntersectionalDesign() {
           </div>
         </details>
 
-        {/* <Drawing /> */}
 
         <h2>Intersectionality + Design = Intersectional Design</h2>
         <p>
@@ -150,7 +149,7 @@ export function WhatIsIntersectionalDesign() {
           technology (ICT).
         </p>
 
-        <Drawing />
+        {/* <Drawing /> */}
 
         <h2>How does discrimination affect design?</h2>
         <p>
@@ -175,7 +174,7 @@ export function WhatIsIntersectionalDesign() {
           <li>
             <Card
             heading="Culture, Race, and Geographic Location"
-            headingLevel="3"
+            headingLevel={3}
             disabled>
               <p></p>
             </Card>
@@ -183,7 +182,7 @@ export function WhatIsIntersectionalDesign() {
           <li>
             <Card
             heading="Disability and Ageing"
-            headingLevel="3"
+            headingLevel={3}
             disabled>
               <p></p>
             </Card>
@@ -191,7 +190,7 @@ export function WhatIsIntersectionalDesign() {
           <li>
             <Card
             heading="Economic Status"
-            headingLevel="3"
+            headingLevel={3}
             disabled>
               <p></p>
             </Card>

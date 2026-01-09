@@ -36,7 +36,7 @@ export function EventsAndResources() {
                 We host seminars, webinars, workshops, talks, and similar
                 events.
               </p>
-              <Drawing />
+              {/* <Drawing /> */}
             </Card>
           </li>
           <li>
@@ -50,7 +50,7 @@ export function EventsAndResources() {
                 We share our curated research resources, including books,
                 videos, courses, and more.
               </p>
-              <Drawing />
+              {/* <Drawing /> */}
             </Card>
           </li>
         </ul>

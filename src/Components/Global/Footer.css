@@ -14,3 +14,14 @@ footer a {
     padding: 1.5rem 1rem;
 
 }
+
+@media (prefers-color-scheme: dark) {
+    footer {
+        background-color: var(--dark-white);
+        color: var(--text-black);
+    }
+
+    footer a {
+        color: var(--dark-green);
+    }
+}

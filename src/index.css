@@ -98,6 +98,10 @@ h6 {
     max-width: var(--content-width);
 }
 
+h1,h2 {
+    margin-top: 3rem;
+}
+
 h1:focus {
     outline: none;
 }
@@ -129,6 +133,13 @@ a:focus {
     box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.5);
     width: 100%;
     max-width: 40rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    .image-frame {
+        border: 0.5rem solid var(--dark-grey);
+        filter: brightness(0.8);
+    }
 }
 
 details {

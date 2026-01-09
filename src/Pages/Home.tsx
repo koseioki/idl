@@ -41,7 +41,7 @@ export function Home() {
               We share practical design guides for each design element from an
               intersectional perspective.
             </p>
-            <Drawing />
+            {/* <Drawing /> */}
           </Card>
         </li>
         <li>
@@ -53,7 +53,7 @@ export function Home() {
             <p>
               We host seminars, webinars, workshops, talks, and similar events.
             </p>
-            <Drawing />
+            {/* <Drawing /> */}
           </Card>
         </li>
         <li>
@@ -66,7 +66,7 @@ export function Home() {
               We share our curated research resources, including books, videos,
               courses, and more.
             </p>
-            <Drawing />
+            {/* <Drawing /> */}
           </Card>
         </li>
       </ul>
