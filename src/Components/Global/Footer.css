@@ -1,4 +1,4 @@
-footer{
+footer {
     background-color: var(--dark-grey-shade);
     margin-top: 4rem;
     color: var(--white);
@@ -10,7 +10,7 @@ footer a {
 }
 
 footer a:focus-visible {
-        outline-color: var(--white);
+    outline-color: var(--white);
 }
 
 .footer-content {
@@ -28,5 +28,9 @@ footer a:focus-visible {
 
     footer a {
         color: var(--dark-green);
+    }
+
+    footer a:focus-visible {
+        outline-color: var(--text-black);
     }
 }
