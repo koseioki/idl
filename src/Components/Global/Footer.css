@@ -4,8 +4,13 @@ footer{
     color: var(--white);
 }
 
+
 footer a {
     color: var(--light-green);
+}
+
+footer a:focus-visible {
+        outline-color: var(--white);
 }
 
 .footer-content {

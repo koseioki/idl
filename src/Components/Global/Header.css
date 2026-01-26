@@ -98,9 +98,11 @@ header {
     /* color: var(--white); */
 }
 
-.header-nav a:focus {
-    outline: none;
-    box-shadow: var(--focus-indicator-inset);
+.header-nav a:focus-visible {
+    /* outline: none;
+    box-shadow: var(--focus-indicator-inset); */
+        outline: var(--focus-indicator);
+    outline-offset: calc(-1*var(--focus-indicator-offset));
 }
 
 
