@@ -30,7 +30,7 @@ export function Home() {
       alt="Two people are discussing a computer. One person has tangled thoughts above their head, while the other has a light bulb above hers, drawing."/>
 
 
-      <h2>What We Offer</h2>
+      <h2>What we offer</h2>
 
       <ul className="card-list">
         <li>

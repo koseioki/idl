@@ -1,9 +1,4 @@
-/* @font-face {
-    font-family: 'HelvetiHand';
-    src: url('fonts/HelvetiHand.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-} */
+
 
 :root {
     --white: #FCFCFC;
@@ -88,7 +83,7 @@
 }
 
 body {
-    font-family: Inter, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 1.1rem;
     line-height: 1.5;
     color: var(--text-black);

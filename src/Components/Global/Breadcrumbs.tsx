@@ -14,10 +14,11 @@ export function Breadcrumbs() {
 
   // Optional: Override automatic formatting for specific routes
   const routeNames: Record<string, string> = {
-    // Add custom names here only if needed, e.g.:
-    // "api": "API",
-    // "faq": "FAQ",
+
     "what-is-intersectional-design": "What is Intersectional Design?",
+    "design-in-practice": "Design in Practice",
+    "events-and-resources": "Events & Resources",
+
   };
 
   // Generate breadcrumb items from the current path

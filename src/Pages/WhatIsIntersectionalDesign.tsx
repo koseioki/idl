@@ -69,7 +69,7 @@ export function WhatIsIntersectionalDesign() {
         </p>
 
         <details>
-          <summary>Continue Reading Transcript</summary>
+          <summary>Continue reading transcript</summary>
           <div>
             <p>
               But it's not as simple as just adding up oppressions and
@@ -150,7 +150,7 @@ export function WhatIsIntersectionalDesign() {
 
         {/* <Drawing /> */}
 
-        <h2>What Characteristics Should We Be Aware Of?</h2>
+        <h2>What characteristics should we be aware Of?</h2>
         <p>
           Discrimination can manifest in various forms, each impacting
           individuals and communities in unique ways. Understanding these types
