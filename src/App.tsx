@@ -8,8 +8,6 @@ import { DesignInPractice } from "./Pages/DesignInPractice";
 import { EventsAndResources } from "./Pages/EventsAndResources";
 import { Footer } from "./Components/Global/Footer";
 import { Contact } from "./Pages/Contact";
-import { TestPage } from "./Pages/TestPage";
-// import { useEffect, useRef } from "react";
 import { ResourceLibrary } from "./Pages/ResourceLibrary";
 import { SeminarsAndWorkshops } from "./Pages/SeminarsAndWorkshops";
 import { Breadcrumbs } from "./Components/Global/Breadcrumbs";
@@ -44,7 +42,6 @@ function App() {
             element={<WhatIsIntersectionalDesign />}
           />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/test" element={<TestPage />} />
         </Routes>
         <Footer />
       </Router>

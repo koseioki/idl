@@ -68,7 +68,7 @@ export function About() {
         <p>
           Kosei has an educational background in Applied Informatics, UX design,
           and Intersectional Studies. He has worked as an engineer at
-          a Danish tech agency and with several NGOs in England and Denmark,
+          a Danish tech agency, and has been involved with several NGOs in England and Denmark,
           focusing on multicultural self-integration, social justice, disability
           rights, and Queer communities.
         </p>
