@@ -7,7 +7,8 @@ import react from '@vitejs/plugin-react'
 
     const config = {
         plugins: [react()],
-        base: "/"
+        base: "/",
+        assetsInclude: ['**/*.md']
     };
 
     // if (command !== "serve") {
