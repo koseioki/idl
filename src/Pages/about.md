@@ -11,7 +11,7 @@ gender, sexual orientation, social class, disability, and
 more—especially for those who are often ignored or overlooked in
 society.
 
-### The 3 core activities of Intersectional Design Lab</h3>
+### The 3 core activities of Intersectional Design Lab
 
 - #### Research
     We study how intersectionality affects design and explore ways to

@@ -150,7 +150,7 @@ export function WhatIsIntersectionalDesign() {
 
         {/* <Drawing /> */}
 
-        <h2>What characteristics should we be aware Of?</h2>
+        <h2>What characteristics should we be aware of?</h2>
         <p>
           Discrimination can manifest in various forms, each impacting
           individuals and communities in unique ways. Understanding these types
