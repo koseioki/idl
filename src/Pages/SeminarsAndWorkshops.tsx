@@ -3,16 +3,12 @@ export function SeminarsAndWorkshops() {
 
 
   return (
-    <>
-      <head>
-        <title>Seminars & Workshops - Intersectional Design Lab</title>
-      </head>
+   
       <main id="main-content">
         <H1>
           Seminars & Workshops
         </H1>
         <p>Coming soon! This page is under construction.</p>
       </main>
-    </>
   );
 }

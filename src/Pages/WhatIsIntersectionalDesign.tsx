@@ -1,4 +1,3 @@
-import { Card } from "../Components/Global/Card";
 import { H1 } from "../Components/Global/H1";
 export function WhatIsIntersectionalDesign() {
   return (
