@@ -1,21 +1,14 @@
-import { useEffect, useRef } from "react";
+import { H1 } from "../Components/Global/H1";
 
 export function ResourceLibrary() {
-  const headingRef = useRef<HTMLHeadingElement>(null);
-  useEffect(() => {
-    if (headingRef.current) {
-      headingRef.current.focus();
-    }
-  }, []);
+
   return (
     <>
-      <head>
-        <title>Resource Library - Intersectional Design Lab</title>
-      </head>
+
       <main id="main-content">
-        <h1 ref={headingRef} tabIndex={-1}>
+        <H1>
           Resource Library
-        </h1>
+        </H1>
         <p>Coming soon! This page is under construction.</p>
       </main>
     </>

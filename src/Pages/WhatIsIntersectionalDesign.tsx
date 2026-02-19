@@ -1,14 +1,6 @@
 import { Card } from "../Components/Global/Card";
-import { useEffect, useRef } from "react";
-
+import { H1 } from "../Components/Global/H1";
 export function WhatIsIntersectionalDesign() {
-  const headingRef = useRef<HTMLHeadingElement>(null);
-  useEffect(() => {
-    if (headingRef.current) {
-      headingRef.current.focus();
-    }
-  }, []);
-
   return (
     <>
       <head>
@@ -17,9 +9,7 @@ export function WhatIsIntersectionalDesign() {
         </title>
       </head>
       <main id="main-content">
-        <h1 ref={headingRef} tabIndex={-1}>
-          What is Intersectional Design?
-        </h1>
+        <H1>What is Intersectional Design?</H1>
         <h2>What is Intersectionality?</h2>
 
         {/* Inserting youtube video */}
@@ -140,7 +130,6 @@ export function WhatIsIntersectionalDesign() {
           </div>
         </details>
 
-
         <h2>Intersectionality + Design = Intersectional Design</h2>
         <p>
           At Intersectional Design Lab, we incorporate the concept of
@@ -160,11 +149,7 @@ export function WhatIsIntersectionalDesign() {
 
         <ul className="card-list">
           <li>
-            <Card
-            heading="Sex and Gender"
-            headingLevel={3}
-            disabled
-            linkTo="">
+            <Card heading="Sex and Gender" headingLevel={3} disabled linkTo="">
               <p>
                 A person's sex and gender can influence their experiences and
                 access to resources.
@@ -173,28 +158,26 @@ export function WhatIsIntersectionalDesign() {
           </li>
           <li>
             <Card
-            heading="Culture, Race, and Geographic Location"
-            headingLevel={3}
-            disabled
-            linkTo="">
+              heading="Culture, Race, and Geographic Location"
+              headingLevel={3}
+              disabled
+              linkTo=""
+            >
               <p></p>
             </Card>
           </li>
           <li>
             <Card
-            heading="Disability and Ageing"
-            headingLevel={3}
-            disabled
-            linkTo="">
+              heading="Disability and Ageing"
+              headingLevel={3}
+              disabled
+              linkTo=""
+            >
               <p></p>
             </Card>
           </li>
           <li>
-            <Card
-            heading="Economic Status"
-            headingLevel={3}
-            disabled
-            linkTo="">
+            <Card heading="Economic Status" headingLevel={3} disabled linkTo="">
               <p></p>
             </Card>
           </li>

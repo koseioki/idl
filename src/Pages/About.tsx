@@ -2,22 +2,24 @@ import AboutImage from "../assets/img/about.jpg";
 import { useEffect, useRef } from "react";
 import { RenderMarkdown } from "../Components/Global/RenderMarkdown";
 import Content from './about.md?raw';
+import { H1 } from "../Components/Global/H1";
 export function About() {
-  const headingRef = useRef<HTMLHeadingElement>(null);
-  useEffect(() => {
-    if (headingRef.current) {
-      headingRef.current.focus();
-    }
-  }, []);
+  // const headingRef = useRef<HTMLHeadingElement>(null);
+  // useEffect(() => {
+  //   if (headingRef.current) {
+  //     headingRef.current.focus();
+  //   }
+  // }, []);
   return (
     <>
-      <head>
+      {/* <head>
         <title>About - Intersectional Design Lab</title>
-      </head>
+      </head> */}
       <main id="main-content">
-        <h1 ref={headingRef} tabIndex={-1}>
+        {/* <h1 ref={headingRef} tabIndex={-1}>
           About
-        </h1>
+        </h1> */}
+        <H1>About</H1>
         
         <RenderMarkdown mdFile={Content} />
        

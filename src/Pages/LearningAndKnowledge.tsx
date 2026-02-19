@@ -1,12 +1,11 @@
 import { Card } from "../Components/Global/Card";
+import { H1 } from "../Components/Global/H1";
 export function LearningAndKnowledge() {
   return (
     <>
-      <head>
-        <title>Learning and Knowledge - Intersectional Design Lab</title>
-      </head>
+
       <main id="main-content">
-        <h1>Learning and Knowledge</h1>
+        <H1>Learning and Knowledge</H1>
         <p>Coming soon! This page is under construction.</p>
         <ul className="card-list">
           <li>

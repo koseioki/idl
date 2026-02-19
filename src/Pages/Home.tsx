@@ -1,17 +1,15 @@
 import { NavLink } from "react-router-dom";
 import "./Home.css";
-
-// import { Icon } from "../Components/Global/Icon";
 import { Card } from "../Components/Global/Card";
 import { Drawing } from "../Components/Global/Drawing";
-// import TwoPeopleCraftingICT from "../assets/drawings/two-people-crafting-ict.svg";
 
 export function Home() {
+  // Change document title
+  document.title = "Home - Intersectional Design Lab";
+
   return (
     <>
-    <head>
-      <title>Home - Intersectional Design Lab</title>
-    </head>
+
     <main id="main-content">
       <h1>How can we make the digital world inclusive?</h1>
       <p>

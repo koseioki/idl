@@ -1,11 +1,6 @@
-import { useEffect, useRef } from "react";
+import { H1 } from "../Components/Global/H1";
 export function SeminarsAndWorkshops() {
-  const headingRef = useRef<HTMLHeadingElement>(null);
-  useEffect(() => {
-    if (headingRef.current) {
-      headingRef.current.focus();
-    }
-  }, []);
+
 
   return (
     <>
@@ -13,9 +8,9 @@ export function SeminarsAndWorkshops() {
         <title>Seminars & Workshops - Intersectional Design Lab</title>
       </head>
       <main id="main-content">
-        <h1 ref={headingRef} tabIndex={-1}>
+        <H1>
           Seminars & Workshops
-        </h1>
+        </H1>
         <p>Coming soon! This page is under construction.</p>
       </main>
     </>
