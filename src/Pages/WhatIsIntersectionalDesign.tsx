@@ -139,49 +139,6 @@ export function WhatIsIntersectionalDesign() {
 
         {/* <Drawing /> */}
 
-        <h2>What characteristics should we be aware of?</h2>
-        <p>
-          Discrimination can manifest in various forms, each impacting
-          individuals and communities in unique ways. Understanding these types
-          of discrimination is crucial for creating inclusive designs that cater
-          to diverse needs. Here are some common types of discrimination:
-        </p>
-
-        <ul className="card-list">
-          <li>
-            <Card heading="Sex and Gender" headingLevel={3} disabled linkTo="">
-              <p>
-                A person's sex and gender can influence their experiences and
-                access to resources.
-              </p>
-            </Card>
-          </li>
-          <li>
-            <Card
-              heading="Culture, Race, and Geographic Location"
-              headingLevel={3}
-              disabled
-              linkTo=""
-            >
-              <p></p>
-            </Card>
-          </li>
-          <li>
-            <Card
-              heading="Disability and Ageing"
-              headingLevel={3}
-              disabled
-              linkTo=""
-            >
-              <p></p>
-            </Card>
-          </li>
-          <li>
-            <Card heading="Economic Status" headingLevel={3} disabled linkTo="">
-              <p></p>
-            </Card>
-          </li>
-        </ul>
       </main>
     </>
   );

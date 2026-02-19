@@ -1,8 +1,7 @@
 import { useEffect, useRef } from "react";
 
-
 export function H1({ children }) {
-    // Focus the heading when the component mounts
+  // Focus the heading when the component mounts
   const headingRef = useRef<HTMLHeadingElement>(null);
   useEffect(() => {
     if (headingRef.current) {
@@ -10,7 +9,7 @@ export function H1({ children }) {
     }
   }, []);
 
-//   Change the page title to match the heading text
+  //   Change the page title to match the heading text
   useEffect(() => {
     document.title = `${children} - Intersectional Design Lab`;
   }, [children]);
