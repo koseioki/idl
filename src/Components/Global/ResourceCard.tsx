@@ -1,14 +1,10 @@
 import "./ResourceCard.css";
 
 type Resource = {
-  ID?: string;
   id?: string;
-  Name?: string;
   name?: string;
-  Auther?: string;
-  Author?: string;
+  slug?: string;
   author?: string;
-  Image?: string;
   image?: string;
 };
 
@@ -17,9 +13,9 @@ type ResourceCardProps = {
 };
 
 export function ResourceCard({ resource }: ResourceCardProps) {
-  const title = resource.Name ?? resource.name ?? "Untitled resource";
-  const author = resource.Auther ?? resource.Author ?? resource.author;
-  const image = resource.Image ?? resource.image;
+  const title =  resource.name ?? "Untitled resource";
+  const author = resource.author;
+  const image = resource.image;
 
   return (
     <article>
@@ -27,7 +23,9 @@ export function ResourceCard({ resource }: ResourceCardProps) {
         {image ? <img src={image} alt="" /> : null}
       </div>
       <div>
-        <h3>{title}</h3>
+        <a href={`/resources/${resource.slug ?? resource.id ?? ""}`}>
+        <h2>{title}</h2>
+        </a>
         {author ? <p>By {author}</p> : null}
         </div>
     </article>

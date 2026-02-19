@@ -13,7 +13,6 @@ ul.resource-list li article {
     flex-direction: row;
     align-items: start;
     gap: 2rem;
-
 }
 
 .resource-list li div:has(img) {
