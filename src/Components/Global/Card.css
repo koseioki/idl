@@ -18,8 +18,9 @@ ul.card-list h4 {
 
 ul.card-list li {
     display: flex;
- 
+
 }
+
 ul.card-list li article {
     width: 100%;
     margin: 0;
@@ -58,6 +59,6 @@ ul.card-list li article a:focus-visible {
 
 ul.card-list li article:has(a:focus-visible) {
     /* box-shadow: var(--focus-indicator); */
-        outline: var(--focus-indicator);
+    outline: var(--focus-indicator);
     outline-offset: var(--focus-indicator-offset);
 }

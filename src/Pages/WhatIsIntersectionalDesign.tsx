@@ -1,4 +1,5 @@
 import { H1 } from "../Components/Global/H1";
+import { References } from "../Components/Global/References";
 export function WhatIsIntersectionalDesign() {
   return (
     <>
@@ -10,7 +11,6 @@ export function WhatIsIntersectionalDesign() {
       <main id="main-content">
         <H1>What is Intersectional Design?</H1>
         <h2>What is Intersectionality?</h2>
-
         {/* Inserting youtube video */}
         <iframe
           // width="560"
@@ -24,7 +24,6 @@ export function WhatIsIntersectionalDesign() {
           allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
           // allowfullscreen
         ></iframe>
-
         <p>
           Intersectionality is a way of understanding social relations by
           examining intersecting forms of discrimination.
@@ -49,14 +48,12 @@ export function WhatIsIntersectionalDesign() {
           Intersectionality is about understanding and addressing all potential
           roadblocks to an individual or group's well-being.
         </p>
-
         <p className="small-text">
           By{" "}
           <a href="https://www.youtube.com/watch?v=O1islM0ytkE&t=1s">
             Peter Hopkins
           </a>
         </p>
-
         <details>
           <summary>Continue reading transcript</summary>
           <div>
@@ -128,16 +125,14 @@ export function WhatIsIntersectionalDesign() {
             </p>
           </div>
         </details>
-
         <h2>Intersectionality + Design = Intersectional Design</h2>
         <p>
           At Intersectional Design Lab, we incorporate the concept of
           intersectionality into the design of information and communication
           technology (ICT).
         </p>
-
         {/* <Drawing /> */}
-
+        <References ids={["23459734"]} />
       </main>
     </>
   );
