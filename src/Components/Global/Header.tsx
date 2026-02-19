@@ -55,10 +55,10 @@ export function Header() {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/design-in-practice">Design in Practice</NavLink>
+              <NavLink to="/research-projects">Research Projects</NavLink>
             </li>
             <li>
-              <NavLink to="/events-and-resources">Events & Resources</NavLink>
+              <NavLink to="/learning-and-knowledge">Learning and Knowledge</NavLink>
             </li>
             <li>
               <NavLink to="/about">About</NavLink>

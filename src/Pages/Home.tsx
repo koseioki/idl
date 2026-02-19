@@ -15,7 +15,7 @@ export function Home() {
     <main id="main-content">
       <h1>How can we make the digital world inclusive?</h1>
       <p>
-        At Intersectional Design Lab, we research and share design practices for
+        At Intersectional Design Lab, wwe research, experiment with, and sharedesign practices for
         Information and Communication Technologies (ICT) from an{" "}
         <i>intersectional perspective</i> to make the digital space a more
         inclusive place for everyone.
@@ -30,25 +30,40 @@ export function Home() {
       alt="Two people are discussing a computer. One person has tangled thoughts above their head, while the other has a light bulb above hers, drawing."/>
 
 
-      <h2>What we offer</h2>
+      <h2>Research Projects</h2>
 
       <ul className="card-list">
         <li>
           <Card
-          heading="Design in Practice Guide"
+          heading="Marginalisation and Design"
           headingLevel={3}
-          linkTo="/design-in-practice"
+          linkTo="/"
           disabled={false}>
             <p>
-              We share practical design guides for each design element from an
-              intersectional perspective.
+              What kinds of marginalisation exist, and how do they affect design?
             </p>
             {/* <Drawing /> */}
           </Card>
         </li>
         <li>
           <Card
-          heading="Seminars & Workshops"
+          heading="Design in Practice"
+          headingLevel={3}
+          linkTo="/design-in-practice"
+          disabled={false}>
+            <p>
+              We discuss how design can become more inclusive, with practical examples.
+            </p>
+            {/* <Drawing /> */}
+          </Card>
+        </li>
+</ul>
+      <h2>Learning and Knowledge</h2>
+
+<ul className="card-list">
+        <li>
+          <Card
+          heading="Seminars and Workshops"
           headingLevel={3}
           linkTo="/events-and-resources/seminars-and-workshops"
           disabled={false}>

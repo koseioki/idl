@@ -5,12 +5,14 @@ import { About } from "./Pages/About";
 import { Header } from "./Components/Global/Header";
 import { WhatIsIntersectionalDesign } from "./Pages/WhatIsIntersectionalDesign";
 import { DesignInPractice } from "./Pages/DesignInPractice";
-import { EventsAndResources } from "./Pages/EventsAndResources";
 import { Footer } from "./Components/Global/Footer";
 import { Contact } from "./Pages/Contact";
 import { ResourceLibrary } from "./Pages/ResourceLibrary";
 import { SeminarsAndWorkshops } from "./Pages/SeminarsAndWorkshops";
 import { Breadcrumbs } from "./Components/Global/Breadcrumbs";
+import { ResearchProjects } from "./Pages/ResearchProjects";
+import { LearningAndKnowledge } from "./Pages/LearningAndKnowledge";
+import { MarginalisationAndDesign } from "./Pages/MarginalisationAndDesign";
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -23,24 +25,28 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
 
-          <Route path="/design-in-practice" element={<DesignInPractice />} />
-          <Route
-            path="/events-and-resources"
-            element={<EventsAndResources />}
-          />
-          <Route
-            path="/events-and-resources/seminars-and-workshops"
-            element={<SeminarsAndWorkshops />}
-          />
-          <Route
-            path="/events-and-resources/resource-library"
-            element={<ResourceLibrary />}
-          />
-          <Route path="/about" element={<About />} />
+        
           <Route
             path="/what-is-intersectional-design"
             element={<WhatIsIntersectionalDesign />}
           />
+
+          <Route path="/research-projects" element={<ResearchProjects />} />
+          <Route path="/research-projects/marginalisation-and-design" element={<MarginalisationAndDesign />} />
+          <Route path="/research-projects/design-in-practice" element={<DesignInPractice />} />
+
+
+          <Route path="/learning-and-knowledge" element={<LearningAndKnowledge />} />
+          <Route
+            path="/learning-and-knowledge/seminars-and-workshops"
+            element={<SeminarsAndWorkshops />}
+          />
+          <Route
+            path="/learning-and-knowledge/resource-library"
+            element={<ResourceLibrary />}
+          />
+          <Route path="/about" element={<About />} />
+
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />

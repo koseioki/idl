@@ -19,17 +19,19 @@ society.
     involves reviewing academic papers, books, and other media, as
     well as conducting fieldwork.
 
-- #### Share
-    We share our findings with designers, developers, and anyone
-    interested—through articles, talks, webinars, and more—in order to
-    raise awareness and provide practical tools for integrating
-    intersectionality into ICT design.
 
 - #### Experiment
 
     We invite everyone to explore intersectional design through
     discussion, reflection, and hands-on experimentation with the
     ideas and insights we share.
+
+- #### Knowledge Sharing
+
+    We share our findings with designers, developers, and anyone
+    interested—through articles, talks, webinars, and more—in order to
+    raise awareness and provide practical tools for integrating
+    intersectionality into ICT design.
 
 ## Team
 Intersectional Design Lab is run by Kosei Oki.
