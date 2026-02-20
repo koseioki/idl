@@ -13,6 +13,7 @@ import { Breadcrumbs } from "./Components/Global/Breadcrumbs";
 import { ResearchProjects } from "./Pages/ResearchProjects";
 import { LearningAndKnowledge } from "./Pages/LearningAndKnowledge";
 import { MarginalisationAndDesign } from "./Pages/MarginalisationAndDesign";
+import { ResourceDetail } from "./Pages/ResourceDetail";
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -45,6 +46,7 @@ function App() {
             path="/learning-and-knowledge/resource-library"
             element={<ResourceLibrary />}
           />
+          <Route path="/learning-and-knowledge/resource-library/:slug" element={<ResourceDetail />} />
           <Route path="/about" element={<About />} />
 
           <Route path="/contact" element={<Contact />} />

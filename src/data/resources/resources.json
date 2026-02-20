@@ -1,0 +1,23 @@
+[
+    {
+        "id": "23459734",
+        "name": "What is intersectionality?",
+        "slug": "what-is-intersectionality",
+        "author": "Peter Hopkins",
+        "year" : 2018,
+        "format": 3,
+        "image": "https://i.ytimg.com/vi/O1islM0ytkE/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCe7hYVhwOQcg28uMF72hQoTzP8jg",
+        "source": "https://www.youtube.com/watch?v=O1islM0ytkE"
+    },
+    {
+        "id": "98765432",
+        "name": "Digital Inclusion",
+        "slug": "digital-inclusion",
+        "author": "Brit Ross Winthereik, Margunn Aanestad, Åsa Mäkitalo",
+        "year": 2024,
+        "format": [1, 2],
+        "publisher": "Djøf forlag",
+        "image": "https://djoefforlag.dk/cdn/shop/files/740bdea86e8b56de48cf79780f7c03b3_04c6e54e-2bbf-4118-8e29-590e5a4046b2.jpg?v=1771481054&width=165",
+        "source": "https://djoefforlag.dk/products/digital-inclusion"
+    }
+]
