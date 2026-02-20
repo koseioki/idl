@@ -6,6 +6,9 @@ type ReferenceResource = {
     name?: string;
     author?: string;
     image?: string;
+    year?: number;
+    publisher?: string;
+    source?: string;
 };
 
 type ReferencesProps = {

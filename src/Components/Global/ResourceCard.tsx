@@ -6,6 +6,9 @@ type Resource = {
   slug?: string;
   author?: string;
   image?: string;
+  year?: number;
+  format?: number | number[];
+  publisher?: string;
 };
 
 type ResourceCardProps = {
@@ -13,24 +16,29 @@ type ResourceCardProps = {
 };
 
 import { useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export function ResourceCard({ resource }: ResourceCardProps) {
-  const title = resource.name ?? "Untitled resource";
-  const author = resource.author;
-  const image = resource.image;
+  const path = `/learning-and-knowledge/resource-library/${resource.slug ?? resource.id ?? ""}`;
 
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate(`/resources/${resource.slug ?? resource.id ?? ""}`);
+    navigate(path);
   };
   return (
     <article onClick={handleClick}>
-      <div>{image ? <img src={image} alt="" /> : null}</div>
+
+      <div>{resource.image ? <img src={resource.image} alt="" /> : null}</div>
+
       <div>
-        <a href={`/resources/${resource.slug ?? resource.id ?? ""}`}>
-          <h2>{title}</h2>
-        </a>
-        {author ? <p>By {author}</p> : null}
+        <NavLink to={path}>
+          <h2>{resource.name ?? "Untitled resource"}</h2>
+        </NavLink>
+        <p>
+          {resource.author ? resource.author : null}{" "}
+          {resource.year ? `(${resource.year})` : null}
+        </p>
+        <p>{resource.publisher ? resource.publisher : null}</p>
       </div>
     </article>
   );
