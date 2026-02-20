@@ -12,7 +12,7 @@ export function ResourceLibrary() {
       <H1>Resource Library</H1>
 
       {resources.length > 0 ? (
-        <ul className="card-list resource-list">
+        <ul className="resource-list">
           {resources.map((resource, index) => {
             const id = resource.id ?? `${resource.name ?? "resource"}-${index}`;
 

@@ -28,7 +28,7 @@ export function References({ ids }: ReferencesProps) {
     return (
         <section>
             <h2>References</h2>
-            <ul className="card-list resource-list">
+            <ul className="resource-list">
                 {selectedResources.map((resource) => (
                     <li key={resource.id}>
                         <ResourceCard resource={resource} />
