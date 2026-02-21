@@ -17,7 +17,18 @@
         "year": 2024,
         "format": [1, 2],
         "publisher": "Djøf forlag",
-        "image": "https://djoefforlag.dk/cdn/shop/files/740bdea86e8b56de48cf79780f7c03b3_04c6e54e-2bbf-4118-8e29-590e5a4046b2.jpg?v=1771481054&width=165",
+        "image": "https://djoefforlag.dk/cdn/shop/files/740bdea86e8b56de48cf79780f7c03b3.jpg?v=1771655013",
         "source": "https://djoefforlag.dk/products/digital-inclusion"
+    },
+    {
+        "id": "12345678",
+        "name": "Design for Real Life",
+        "slug": "design-for-real-life",
+        "author": "Eric Meyer, Sara Wachter-Boettcher",
+        "year": 2016,
+        "format": [1,2],
+        "publisher": "A Book Apart",
+        "image": "https://abookapart.com/cdn/shop/products/ABA-cover-18_aea67455-a1b9-486c-a817-fbbbbda3637d_112x@3x﹖v=1554390815.png",
+        "source":"https://abookapart.com/products/design-for-real-life"
     }
 ]

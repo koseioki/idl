@@ -6,7 +6,7 @@ export function SeminarsAndWorkshops() {
    
       <main id="main-content">
         <H1>
-          Seminars & Workshops
+          Seminars and Workshops
         </H1>
         <p>Coming soon! This page is under construction.</p>
       </main>

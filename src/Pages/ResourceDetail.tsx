@@ -12,6 +12,7 @@ export function ResourceDetail() {
   return (
     <main id="main-content">
       <H1>{resource?.name ?? "Resource Detail"}</H1>
+      <div className="resource-detail-wrapper">
       {resource?.image ? <a href={resource.source}><img src={resource.image} alt="Open resource" /></a> : null}
 
       <dl>
@@ -31,6 +32,7 @@ export function ResourceDetail() {
           </dd>
         ) : null}
       </dl>
+      </div>
     </main>
   );
 }

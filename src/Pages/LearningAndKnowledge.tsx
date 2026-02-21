@@ -9,7 +9,7 @@ export function LearningAndKnowledge() {
         <p>Coming soon! This page is under construction.</p>
         <CardList>
           <Card
-            heading="Seminars & Workshops"
+            heading="Seminars and Workshops"
             headingLevel={2}
             linkTo="/learning-and-knowledge/seminars-and-workshops"
             disabled={false}
