@@ -1,4 +1,4 @@
-import { ResourceCard } from "./ResourceCard";
+import { ResourceCard } from "../Resources/ResourceCard";
 import resourcesData from "../../data/resources/resources.json";
 
 type ReferenceResource = {

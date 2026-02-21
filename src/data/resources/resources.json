@@ -64,5 +64,16 @@
         "publisher": "W. W. Norton & Company",
         "image":"https://cdn2.wwnorton.com/wwnproducts/TRADE/5/4/9780393356045/9780393356045_300.jpeg",
         "source": "https://wwnorton.com/books/Technically-Wrong/"
+    },
+    {
+        "id": "67890123",
+        "title": "Testability and Validity of WCAG 2.0: The Expertise Effect",
+        "slug": "testability-and-validity-of-wcag-2.0",
+        "author": "Giorgio Brajnik, Yeliz Yesilada, Simon Harper",
+        "year": 2010,
+        "format": 4,
+        "image": "https://intersectionaldesignlab.com/assets/resources/testability-and-validity-of-wcag-2-0-the-expertise-effect.png",
+        "source": "https://dl.acm.org/doi/10.1145/1878803.1878813"
+
     }
 ]

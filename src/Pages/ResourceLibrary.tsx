@@ -1,5 +1,5 @@
 import { H1 } from "../Components/Global/H1";
-import { ResourceCard } from "../Components/Global/ResourceCard";
+import { ResourceCard } from "../Components/Resources/ResourceCard";
 import resourcesData from "../data/resources/resources.json";
 
 export function ResourceLibrary() {

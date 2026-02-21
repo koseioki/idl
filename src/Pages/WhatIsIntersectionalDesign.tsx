@@ -1,5 +1,5 @@
 import { H1 } from "../Components/Global/H1";
-import { References } from "../Components/Global/References";
+import { References } from "../Components/Resources/References";
 export function WhatIsIntersectionalDesign() {
   return (
     <>
