@@ -4,5 +4,5 @@
     max-width: 20rem;
     aspect-ratio: 1/1;
     object-fit: contain;
-    /* object-position: left; */
+    object-position: left;
 }

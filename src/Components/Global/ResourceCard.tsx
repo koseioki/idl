@@ -2,7 +2,8 @@ import "./ResourceCard.css";
 
 type Resource = {
   id?: string;
-  name?: string;
+  title?: string;
+  subtitle?: string;
   slug?: string;
   author?: string;
   image?: string;
@@ -32,7 +33,8 @@ export function ResourceCard({ resource }: ResourceCardProps) {
 
       <div>
         <NavLink to={path}>
-          <h2>{resource.name ?? "Untitled resource"}</h2>
+          <h2>{resource.title ?? "Untitled resource"}</h2>
+          {resource.subtitle ? <p>{resource.subtitle}</p> : null}
         </NavLink>
         <p>
           {resource.author ? resource.author : null}{" "}

@@ -14,7 +14,7 @@ export function ResourceLibrary() {
       {resources.length > 0 ? (
         <ul className="resource-list">
           {resources.map((resource, index) => {
-            const id = resource.id ?? `${resource.name ?? "resource"}-${index}`;
+            const id = resource.id ?? `${resource.title ?? "resource"}-${index}`;
 
             return (
               <li key={id}>

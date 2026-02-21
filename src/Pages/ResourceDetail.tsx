@@ -11,7 +11,8 @@ export function ResourceDetail() {
 
   return (
     <main id="main-content">
-      <H1>{resource?.name ?? "Resource Detail"}</H1>
+      <H1>{resource?.title ?? "Resource Detail"}</H1>
+      {resource?.subtitle ? <p>{resource.subtitle}</p> : null}
       <div className="resource-detail-wrapper">
       {resource?.image ? <a href={resource.source}><img src={resource.image} alt="Open resource" /></a> : null}
 

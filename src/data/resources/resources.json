@@ -1,7 +1,7 @@
 [
     {
         "id": "23459734",
-        "name": "What is intersectionality?",
+        "title": "What is intersectionality?",
         "slug": "what-is-intersectionality",
         "author": "Peter Hopkins",
         "year" : 2018,
@@ -11,7 +11,7 @@
     },
     {
         "id": "98765432",
-        "name": "Digital Inclusion",
+        "title": "Digital Inclusion",
         "slug": "digital-inclusion",
         "author": "Brit Ross Winthereik, Margunn Aanestad, Åsa Mäkitalo",
         "year": 2024,
@@ -22,7 +22,7 @@
     },
     {
         "id": "12345678",
-        "name": "Design for Real Life",
+        "title": "Design for Real Life",
         "slug": "design-for-real-life",
         "author": "Eric Meyer, Sara Wachter-Boettcher",
         "year": 2016,
@@ -30,5 +30,39 @@
         "publisher": "A Book Apart",
         "image": "https://abookapart.com/cdn/shop/products/ABA-cover-18_aea67455-a1b9-486c-a817-fbbbbda3637d_112x@3x﹖v=1554390815.png",
         "source":"https://abookapart.com/products/design-for-real-life"
+    },
+    {
+        "id": "34609834",
+        "title": "Inclusive Design Communities",
+        "slug": "inclusive-design-communities",
+        "author": "Sameera Kapila",
+        "year": 2022,
+        "format": 1,
+        "publisher": "A Book Apart",
+        "image": "https://abookapart.com/cdn/shop/products/aba-cover-42_112x@3x﹖v=1660142571.png",
+        "source": "https://abookapart.com/products/inclusive-design-communities"
+    },
+    {
+        "id": "45678901",
+        "title": "Design for Safety",
+        "slug": "design-for-safety",
+        "author": "Eva PenzeyMoog",
+        "year": 2021,
+        "format": [1,2],
+        "publisher": "A Book Apart",
+        "image": "https://abookapart.com/cdn/shop/products/aba-cover-37_112x@3x﹖v=1627955454.png",
+        "source": "https://abookapart.com/products/design-for-safety"
+    },
+    {
+        "id": "56789012",
+        "title": "Technically Wrong",
+        "slug": "technically-wrong",
+        "subtitle": "Sexist Apps, Biased Algorithms, and other Threats of Toxic Tech",
+        "author": "Sara Wachter-Boettcher",
+        "year": 2018,
+        "format": 1,
+        "publisher": "W. W. Norton & Company",
+        "image":"https://cdn2.wwnorton.com/wwnproducts/TRADE/5/4/9780393356045/9780393356045_300.jpeg",
+        "source": "https://wwnorton.com/books/Technically-Wrong/"
     }
 ]
