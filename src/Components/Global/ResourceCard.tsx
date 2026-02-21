@@ -34,7 +34,7 @@ export function ResourceCard({ resource }: ResourceCardProps) {
       <div>
         <NavLink to={path}>
           <h2>{resource.title ?? "Untitled resource"}</h2>
-          {resource.subtitle ? <p>{resource.subtitle}</p> : null}
+          {resource.subtitle ? <span>{resource.subtitle}</span> : null}
         </NavLink>
         <p>
           {resource.author ? resource.author : null}{" "}

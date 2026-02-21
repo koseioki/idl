@@ -11,28 +11,33 @@ export function ResourceDetail() {
 
   return (
     <main id="main-content">
-      <H1>{resource?.title ?? "Resource Detail"}</H1>
-      {resource?.subtitle ? <p>{resource.subtitle}</p> : null}
       <div className="resource-detail-wrapper">
-      {resource?.image ? <a href={resource.source}><img src={resource.image} alt="Open resource" /></a> : null}
+        <H1>{resource?.title ?? "Resource Detail"}</H1>
+        {resource?.subtitle ? <p>{resource.subtitle}</p> : null}
 
-      <dl>
-        {resource?.author ? <dt>Author:</dt> : null}
-        {resource?.author ? <dd>{resource.author}</dd> : null}
-
-        {resource?.year ? <dt>Year:</dt> : null}
-        {resource?.year ? <dd>{resource.year}</dd> : null}
-
-        {resource?.publisher ? <dt>Publisher:</dt> : null}
-        {resource?.publisher ? <dd>{resource.publisher}</dd> : null}
-
-        {resource?.source ? <dt>Source:</dt> : null}
-        {resource?.source ? (
-          <dd>
-            <a href={resource.source}>{resource.source}</a>
-          </dd>
+        {resource?.image ? (
+          <a href={resource.source}>
+            <img src={resource.image} alt="Open resource" />
+          </a>
         ) : null}
-      </dl>
+
+        <dl>
+          {resource?.author ? <dt>Author:</dt> : null}
+          {resource?.author ? <dd>{resource.author}</dd> : null}
+
+          {resource?.year ? <dt>Year:</dt> : null}
+          {resource?.year ? <dd>{resource.year}</dd> : null}
+
+          {resource?.publisher ? <dt>Publisher:</dt> : null}
+          {resource?.publisher ? <dd>{resource.publisher}</dd> : null}
+
+          {resource?.source ? <dt>Source:</dt> : null}
+          {resource?.source ? (
+            <dd>
+              <a href={resource.source}>{resource.source}</a>
+            </dd>
+          ) : null}
+        </dl>
       </div>
     </main>
   );
