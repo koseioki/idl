@@ -47,7 +47,7 @@ export function ResourceCard({ resource }: ResourceCardProps) {
           {resource.author ? resource.author : null}{" "}
           {resource.year ? `(${resource.year})` : null}
         </p>
-        <p>{resource.publisher ? resource.publisher : null}</p>
+        {/* <p>{resource.publisher ? resource.publisher : null}</p> */}
         <ResourceFormat format={resource.format ?? 0} />
       </div>
     </article>

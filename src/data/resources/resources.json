@@ -5,7 +5,7 @@
     "slug": "what-is-intersectionality",
     "author": "Peter Hopkins",
     "year": 2018,
-    "format": 3,
+    "format": [3, 5],
     "image": "https://i.ytimg.com/vi/O1islM0ytkE/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCe7hYVhwOQcg28uMF72hQoTzP8jg",
     "source": "https://www.youtube.com/watch?v=O1islM0ytkE"
   },
@@ -32,6 +32,18 @@
     "source": "https://abookapart.com/products/design-for-real-life"
   },
   {
+    "id": "90123456",
+    "title": "Living with Developmental Language Disorder (DLD)",
+    "slug": "living-with-developmental-language-disorder",
+    "author": "DLDandMe.org",
+    "year": 2019,
+    "format": [3, 5],
+    "publisher": "BoysTownHospital",
+    "image": "https://i.ytimg.com/vi/KrOISXtCgVA/hqdefault_211866.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLD2SBOfuU8npiZU05bofWXQQOZjPw",
+    "source": "https://www.youtube.com/watch?v=KrOISXtCgVA",
+    "note": "This video contains expressions that may suggest linguistic incompetence or stereotypes about people from a particular nation."
+  },
+  {
     "id": "34609834",
     "title": "Inclusive Design Communities",
     "slug": "inclusive-design-communities",
@@ -53,6 +65,7 @@
     "image": "https://abookapart.com/cdn/shop/products/aba-cover-37_112x@3x﹖v=1627955454.png",
     "source": "https://abookapart.com/products/design-for-safety"
   },
+
   {
     "id": "56789012",
     "title": "Technically Wrong",
@@ -74,5 +87,30 @@
     "format": 4,
     "image": "/src/assets/resources/testability-and-validity-of-wcag-2-0-the-expertise-effect.png",
     "source": "https://dl.acm.org/doi/10.1145/1878803.1878813"
+  },
+
+  {
+    "id": "78901234",
+    "title": "What Every Engineer Should Know About Digital Accessibility",
+    "slug": "what-every-engineer-should-know-about-digital-accessibility",
+    "author": "Sarah Horton, David Sloan",
+    "year": 2024,
+    "format": [1, 2],
+    "image": "https://images.routledge.com/common/jackets/amazon/978103226/9781032263861.jpg",
+    "source": "https://www.routledge.com/What-Every-Engineer-Should-Know-About-Digital-Accessibility/Horton-Sloan/p/book/9781032263861"
+  },
+  {
+    "id": "89012345",
+    "title": "Trauma-informed Design",
+    "subtitle": "A Framework for Designers, Architects, and Other Practitioners",
+    "slug": "trauma-informed-design",
+    "author": "Christine Ann Awad Cowart with Dr. J. Davis Harte, Adrienne Erdman, Janet E. Roche",
+    "year": 2024,
+    "format": 1,
+    "publisher": "Trauma-informed Design Society",
+    "image": "https://static.wixstatic.com/media/8fe619_2debcc60dc1b43a88d4182ec92cc15b2~mv2.png/v1/fill/w_600,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/8fe619_2debcc60dc1b43a88d4182ec92cc15b2~mv2.png",
+    "source": "https://www.tidsociety.com/product-page/trauma-informed-design"
   }
+
+ 
 ]

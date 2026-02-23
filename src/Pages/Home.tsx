@@ -14,7 +14,7 @@ export function Home() {
         <h1>How can we make the digital world more inclusive?</h1>
         <p>
           At Intersectional Design Lab, we research, experiment with, and
-          sharedesign practices for Information and Communication Technologies
+          share design practices for Information and Communication Technologies
           (ICT) from an <i>intersectional perspective</i> to make the digital
           space a more inclusive place for everyone.
         </p>
