@@ -7,6 +7,14 @@
     margin-top: 2rem;
 }
 
+.resource-subtitle {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 0;
+    /* color: var(--dark-gray); */
+    margin-top: 0.5rem;
+}
+
 .note-section {
     max-width: var(--content-width);
     display: block;
@@ -18,5 +26,5 @@
 }
 
 .note-section h2{
-    margin-top: 1rem;
+    margin: 0;
 }

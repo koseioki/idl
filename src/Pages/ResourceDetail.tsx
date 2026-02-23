@@ -16,20 +16,27 @@ export function ResourceDetail() {
     <main id="main-content">
       <div className="resource-detail-wrapper">
         <H1>{resource?.title ?? "Resource Detail"}</H1>
-        {resource?.subtitle ? <p>{resource.subtitle}</p> : null}
+        
+        {resource?.subtitle ? (
+          <span className="resource-subtitle">{resource.subtitle}</span>
+        ) : null}
+    
 
         {resource?.note ? (
           <section className="note-section">
             <h2>Note</h2>
-            {resource.note}
+            <p>{resource.note}</p>
           </section>
         ) : null}
 
-        {imageUrl ? (
-          <a href={resource.source}>
-            <img src={imageUrl} alt="Open resource" />
-          </a>
-        ) : null}
+
+        <div>
+          {imageUrl ? (
+            <a href={resource.source}>
+              <img src={imageUrl} alt="Open resource" />
+            </a>
+          ) : null}
+        </div>
 
         <h2>Details</h2>
         <dl>
@@ -42,6 +49,9 @@ export function ResourceDetail() {
 
           {resource?.author ? <dt>Author:</dt> : null}
           {resource?.author ? <dd>{resource.author}</dd> : null}
+
+          {resource?.edition ? <dt>Edition:</dt> : null}
+          {resource?.edition ? <dd>{resource.edition}</dd> : null}
 
           {resource?.year ? <dt>Year:</dt> : null}
           {resource?.year ? <dd>{resource.year}</dd> : null}

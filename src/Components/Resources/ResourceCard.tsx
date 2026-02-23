@@ -10,6 +10,7 @@ type Resource = {
   year?: number;
   format?: number | number[];
   publisher?: string;
+  
 };
 
 type ResourceCardProps = {

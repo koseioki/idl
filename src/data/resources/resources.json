@@ -1,5 +1,18 @@
 [
   {
+    "id": "34567890",
+    "title": "Privilege",
+    "subtitle": "A Reader",
+    "slug": "privilege-a-reader",
+    "author": "Michael S. Kimmel, Abby L. Ferber",
+    "edition": "4th Edition",
+    "year": 2016,
+    "format": [1, 2],
+    "publisher": "Routledge",
+    "image": "https://images.routledge.com/common/jackets/amazon/978081335/9780813350035.jpg",
+    "source": "https://www.routledge.com/Privilege-A-Reader/SKimmel-Ferber/p/book/9780813350035"
+  },
+  {
     "id": "23459734",
     "title": "What is intersectionality?",
     "slug": "what-is-intersectionality",
