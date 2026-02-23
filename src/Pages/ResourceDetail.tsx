@@ -2,6 +2,7 @@ import resourcesData from "../data/resources/resources.json";
 import "./ResourceDetail.css";
 import { useParams } from "react-router-dom";
 import { H1 } from "../Components/Global/H1";
+import { ResourceFormat } from "../Components/Resources/ResourceFormat";
 
 export function ResourceDetail() {
   const { slug } = useParams();
@@ -22,6 +23,9 @@ export function ResourceDetail() {
         ) : null}
 
         <dl>
+             {resource?.format ? <dt>Format:</dt> : null}
+          {resource?.format ? <dd><ResourceFormat format={resource.format} /></dd> : null}
+
           {resource?.author ? <dt>Author:</dt> : null}
           {resource?.author ? <dd>{resource.author}</dd> : null}
 
@@ -31,6 +35,7 @@ export function ResourceDetail() {
           {resource?.publisher ? <dt>Publisher:</dt> : null}
           {resource?.publisher ? <dd>{resource.publisher}</dd> : null}
 
+       
           {resource?.source ? <dt>Source:</dt> : null}
           {resource?.source ? (
             <dd>

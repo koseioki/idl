@@ -18,6 +18,8 @@ type ResourceCardProps = {
 
 import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
+import { ResourceFormat } from "./ResourceFormat";
+import { Icon } from "../Global/Icon";
 
 export function ResourceCard({ resource }: ResourceCardProps) {
   const path = `/learning-and-knowledge/resource-library/${resource.slug ?? resource.id ?? ""}`;
@@ -33,14 +35,18 @@ export function ResourceCard({ resource }: ResourceCardProps) {
 
       <div>
         <NavLink to={path}>
-          <h2>{resource.title ?? "Untitled resource"}</h2>
+          <div>
+            <h2>{resource.title ?? "Untitled resource"}</h2>
           {resource.subtitle ? <span>{resource.subtitle}</span> : null}
+          </div>
+          <Icon />
         </NavLink>
         <p>
           {resource.author ? resource.author : null}{" "}
           {resource.year ? `(${resource.year})` : null}
         </p>
         <p>{resource.publisher ? resource.publisher : null}</p>
+        <ResourceFormat format={resource.format ?? 0} />
       </div>
     </article>
   );
