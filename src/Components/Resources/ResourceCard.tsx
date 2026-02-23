@@ -20,9 +20,11 @@ import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import { ResourceFormat } from "./ResourceFormat";
 import { Icon } from "../Global/Icon";
+import { resolveResourceImageUrl } from "../../utils/resolveResourceImageUrl";
 
 export function ResourceCard({ resource }: ResourceCardProps) {
   const path = `/learning-and-knowledge/resource-library/${resource.slug ?? resource.id ?? ""}`;
+  const imageUrl = resolveResourceImageUrl(resource.image);
 
   const navigate = useNavigate();
   const handleClick = () => {
@@ -31,7 +33,7 @@ export function ResourceCard({ resource }: ResourceCardProps) {
   return (
     <article onClick={handleClick}>
 
-      <div>{resource.image ? <img src={resource.image} alt="" /> : null}</div>
+      <div>{imageUrl ? <img src={imageUrl} alt="" /> : null}</div>
 
       <div>
         <NavLink to={path}>

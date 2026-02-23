@@ -3,12 +3,14 @@ import "./ResourceDetail.css";
 import { useParams } from "react-router-dom";
 import { H1 } from "../Components/Global/H1";
 import { ResourceFormat } from "../Components/Resources/ResourceFormat";
+import { resolveResourceImageUrl } from "../utils/resolveResourceImageUrl";
 
 export function ResourceDetail() {
   const { slug } = useParams();
   const resource = resourcesData.find(
     (res) => res.slug === slug || res.id === slug,
   );
+  const imageUrl = resolveResourceImageUrl(resource?.image);
 
   return (
     <main id="main-content">
@@ -16,9 +18,9 @@ export function ResourceDetail() {
         <H1>{resource?.title ?? "Resource Detail"}</H1>
         {resource?.subtitle ? <p>{resource.subtitle}</p> : null}
 
-        {resource?.image ? (
+        {imageUrl ? (
           <a href={resource.source}>
-            <img src={resource.image} alt="Open resource" />
+            <img src={imageUrl} alt="Open resource" />
           </a>
         ) : null}
 
