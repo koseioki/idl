@@ -6,7 +6,7 @@ export function ResearchProjects() {
     <>
       <main id="main-content">
         <H1>Research Projects</H1>
-        <p>Coming soon! This page is under construction.</p>
+        {/* <p>Coming soon! This page is under construction.</p> */}
         <CardList>
           <Card
             heading="Marginalisation and Design"

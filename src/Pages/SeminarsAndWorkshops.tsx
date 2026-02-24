@@ -8,7 +8,7 @@ export function SeminarsAndWorkshops() {
         <H1>
           Seminars and Workshops
         </H1>
-        <p>Coming soon! This page is under construction.</p>
+        <p>There are no upcoming events yet.</p>
       </main>
   );
 }

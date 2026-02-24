@@ -6,7 +6,7 @@ export function LearningAndKnowledge() {
     <>
       <main id="main-content">
         <H1>Learning and Knowledge</H1>
-        <p>Coming soon! This page is under construction.</p>
+        {/* <p>Coming soon! This page is under construction.</p> */}
         <CardList>
           <Card
             heading="Seminars and Workshops"
