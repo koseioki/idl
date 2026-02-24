@@ -1,4 +1,5 @@
 import { H1 } from "../Components/Global/H1";
+import { InTextCitation } from "../Components/Resources/InTextCitation";
 import { References } from "../Components/Resources/References";
 export function WhatIsIntersectionalDesign() {
   return (
@@ -48,12 +49,14 @@ export function WhatIsIntersectionalDesign() {
           Intersectionality is about understanding and addressing all potential
           roadblocks to an individual or group's well-being.
         </p>
-        <p className="small-text">
+        {/* <p className="small-text">
           By{" "}
           <a href="https://www.youtube.com/watch?v=O1islM0ytkE&t=1s">
             Peter Hopkins
           </a>
-        </p>
+        </p> */}
+
+        <InTextCitation id="23459734" />
         <details>
           <summary>Continue reading transcript</summary>
           <div>

@@ -32,7 +32,7 @@ export function ResourceCard({ resource }: ResourceCardProps) {
     navigate(path);
   };
   return (
-    <article onClick={handleClick}>
+    <article onClick={handleClick} id={resource.slug}>
 
       <div>{imageUrl ? <img src={imageUrl} alt="" /> : null}</div>
 

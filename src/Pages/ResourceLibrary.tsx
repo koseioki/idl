@@ -11,7 +11,7 @@ export function ResourceLibrary() {
     <main id="main-content">
       <H1>Resource Library</H1>
       <p>We share our curated research resources, including books, videos, courses, and more.</p>
-      <p>All resources are reviewed by the Intersectional Design Lab.</p>
+      <p>All resources are reviewed by Intersectional Design Lab.</p>
 
       {resources.length > 0 ? (
         <ul className="resource-list">
