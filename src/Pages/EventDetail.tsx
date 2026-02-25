@@ -2,6 +2,8 @@ import { useParams } from "react-router-dom";
 import SeminarAndWorkshopsData from "../data/seminars-and-workshops/seminars-and-workshops.json";
 import { H1 } from "../Components/Global/H1";
 import "./EventDetail.css";
+import { resolveResourceImageUrl } from "../utils/resolveResourceImageUrl";
+
 
 export function EventDetail() {
   const { slug } = useParams();
@@ -30,7 +32,7 @@ export function EventDetail() {
       <div>
         <img
           className="event-image"
-          src={event?.image}
+          src={resolveResourceImageUrl(event?.image)}
           alt={event?.["image-alt"]}
         />
       </div>
