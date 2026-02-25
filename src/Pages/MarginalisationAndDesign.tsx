@@ -13,8 +13,8 @@ export function MarginalisationAndDesign() {
         <h2>
           Project Background
         </h2>
-        <p>Research shows that various forms of marginalisation (e.g., gender, race, disabilities) affect individuals' day-to-day lives and use of Information and Communication Technologies (ICT) This leads to digital exclusion and the chronic acceleration of that exclusion <InTextCitation id="56789012" />, <InTextCitation id="34567893" />.
-        </p>
+        <p>Various forms of marginalisation (such as gender, disability, and other social factors) affect people’s day-to-day lives and their use of Information and Communication Technologies (ICT).</p>
+        <p>These inequalities can lead to digital exclusion and perpetuate a cycle of increasing digital disadvantage over time <InTextCitation id="56789012" />, <InTextCitation id="34567893" />.</p>
 
         <h2>
           Project Goals

@@ -4,14 +4,12 @@ import { H1 } from "../Components/Global/H1";
 import "./EventDetail.css";
 import { resolveResourceImageUrl } from "../utils/resolveResourceImageUrl";
 
-
 export function EventDetail() {
   const { slug } = useParams();
   const event = SeminarAndWorkshopsData.find(
     (ev) => ev.slug === slug || ev.id === slug,
   );
-    const imageUrl = resolveResourceImageUrl(event?.image);
-
+  const imageUrl = resolveResourceImageUrl(event?.image);
 
   return (
     <main id="main-content">
@@ -20,24 +18,31 @@ export function EventDetail() {
         {event?.date}, at {event?.place}
       </p>
 
-<div style={{ display: "flex", flexDirection: "row", gap: "2rem", flexWrap: "wrap" }}>
-      <div>
-        <p>{event?.description}</p>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          gap: "2rem",
+          flexWrap: "wrap",
+        }}
+      >
+        <div>
+          <p>{event?.description}</p>
 
-        <h2>Takeaways</h2>
-        <ul>
-          {event?.takeaways.map((takeaway, index) => (
-            <li key={index}>{takeaway}</li>
-          ))}
-        </ul>
-      </div>
-      <div>
-        <img
-          className="event-image"
-          src={imageUrl}
-          alt={event?.["image-alt"]}
-        />
-      </div>
+          <h2>Takeaways</h2>
+          <ul>
+            {event?.takeaways.map((takeaway, index) => (
+              <li key={index}><p>{takeaway}</p></li>
+            ))}
+          </ul>
+        </div>
+        <div>
+          <img
+            className="event-image"
+            src={imageUrl}
+            alt={event?.["image-alt"]}
+          />
+        </div>
       </div>
     </main>
   );
