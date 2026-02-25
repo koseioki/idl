@@ -149,18 +149,21 @@ a:focus-visible {
     font-size: 0.9rem;
 }
 
-.image-frame {
+/* .image-frame {
     border: 0.5rem solid var(--white);
     box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.5);
     width: calc(100% - 1rem);
     max-width: var(--content-width);
-}
+} */
 
 @media (prefers-color-scheme: dark) {
-    .image-frame {
+    /* .image-frame {
         border: 0.5rem solid var(--dark-grey);
         filter: brightness(0.8);
-    }
+    } */
+     img{
+        filter: brightness(0.8);
+     }
 }
 /* 
 details {

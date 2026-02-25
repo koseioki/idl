@@ -7,7 +7,7 @@ export function MarginalisationAndDesign() {
     <>
       <main id="main-content">
         <H1>Marginalisation and Design</H1>
-        <p>Last updated: 2026-02-25</p>
+        <p>Last updated: 25-02-2026</p>
   
 
         <h2>

@@ -14,6 +14,7 @@ import { ResearchProjects } from "./Pages/ResearchProjects";
 import { LearningAndKnowledge } from "./Pages/LearningAndKnowledge";
 import { MarginalisationAndDesign } from "./Pages/MarginalisationAndDesign";
 import { ResourceDetail } from "./Pages/ResourceDetail";
+import { EventDetail } from "./Pages/EventDetail";
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -42,6 +43,7 @@ function App() {
             path="/learning-and-knowledge/seminars-and-workshops"
             element={<SeminarsAndWorkshops />}
           />
+          <Route path="/learning-and-knowledge/seminars-and-workshops/:slug" element={<EventDetail />} />
           <Route
             path="/learning-and-knowledge/resource-library"
             element={<ResourceLibrary />}
