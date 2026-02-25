@@ -10,6 +10,8 @@ export function EventDetail() {
   const event = SeminarAndWorkshopsData.find(
     (ev) => ev.slug === slug || ev.id === slug,
   );
+    const imageUrl = resolveResourceImageUrl(event?.image);
+
 
   return (
     <main id="main-content">
@@ -32,7 +34,7 @@ export function EventDetail() {
       <div>
         <img
           className="event-image"
-          src={resolveResourceImageUrl(event?.image)}
+          src={imageUrl}
           alt={event?.["image-alt"]}
         />
       </div>

@@ -2,7 +2,7 @@ Intersectional Design Lab is run by Kosei Oki.
 
 Kosei has an educational background in Applied Informatics, User Experience (UX) Design, and Intersectional Studies.
 
-He has worked as an engineer at a Danish tech agency, and has been involved with several NGOs in England and Denmark, focusing on multicultural self-integration, social justice, disability rights, and Queer communities.
+He has worked as an engineer at a Danish tech agency, and has been involved with several NGOs in England and Denmark, focusing on multicultural communication, social justice, disability rights, and Queer communities.
 
 Drawing on these experiences, he works on making the world a better place for everyone through design.
 
