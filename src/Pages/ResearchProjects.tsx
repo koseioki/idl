@@ -6,7 +6,7 @@ export function ResearchProjects() {
     <>
       <main id="main-content">
         <H1>Research Projects</H1>
-        {/* <p>Coming soon! This page is under construction.</p> */}
+        <p>Here is an overview of the research projects by the Intersectional Design Lab. The research is continuously conducted and updated.</p>
         <CardList>
           <Card
             heading="Marginalisation and Design"

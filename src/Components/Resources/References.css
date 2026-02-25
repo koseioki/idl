@@ -1,0 +1,56 @@
+.references summary {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+
+
+}
+
+.references summary h2 {
+    margin: 0;
+
+}
+
+.references details>summary {
+    list-style-type: none;
+}
+
+.references details>summary::-webkit-details-marker {
+    display: none;
+}
+
+.references details>summary::before {
+    content: '+';
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.references details[open]>summary::before {
+    content: '−';
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+
+.references details {
+    margin-top: 3rem;
+    max-width: var(--content-width);
+    border: 0.0625rem solid var(--light-grey);
+    padding: 0;
+}
+
+.references details ul {
+    margin-bottom: 0;
+}
+
+.references summary:hover {
+    cursor: pointer;
+    background-color: var(--dark-white);
+}
+
+    
+
+.references summary:focus-visible {
+    outline: var(--focus-indicator);
+}

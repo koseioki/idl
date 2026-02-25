@@ -170,6 +170,18 @@
     "publisher": "Morgan Kaufmann",
     "format": 1,
     "image": "https://ars.els-cdn.com/content/image/3-s2.0-C20150014514-cov200h.gif"
+  },
+  {
+    "id": "34567893",
+    "title": "Introduction to Web Accessibility",
+    "slug": "introduction-to-web-accessibility-w3c",
+    "author": "W3C Web Accessibility Initiative (WAI)",
+    "author-short": "W3C WAI",
+    "year": 2026,
+    "format": 5,
+    "publisher": "W3C",
+    "source": "https://www.w3.org/WAI/fundamentals/accessibility-intro/",
+    "image": "/src/assets/resources/introduction-to-web-accessibility-w3c.png"
   }
 
  

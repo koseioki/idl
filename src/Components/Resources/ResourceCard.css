@@ -53,6 +53,7 @@ ul.resource-list li article:has(a:focus-visible) {
 ul.resource-list li article:hover a,
 ul.resource-list li article:has(a:focus-visible) a {
     text-decoration: underline;
+    outline: none;
 }
 
 

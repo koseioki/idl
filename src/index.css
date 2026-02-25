@@ -162,7 +162,7 @@ a:focus-visible {
         filter: brightness(0.8);
     }
 }
-
+/* 
 details {
     max-width: var(--content-width);
     background-color: var(--light-yellow);
@@ -183,8 +183,6 @@ details summary:hover {
 }
 
 details summary:focus-visible {
-    /* outline: none;
-    box-shadow: var(--focus-indicator-inset); */
     outline: var(--focus-indicator);
     outline-offset: var(--focus-indicator-offset);
 }
@@ -196,7 +194,7 @@ details[open] summary {
 
 details div {
     padding: 1rem 2rem 2rem 2rem;
-}
+} */
 
 
 dt{
