@@ -3,6 +3,16 @@ const localResourceImages = import.meta.glob("../assets/resources/*.{png,jpg,jpe
   import: "default",
 }) as Record<string, string>;
 
+const localSeminarImages = import.meta.glob("../assets/seminars-and-workshops/*.{png,jpg,jpeg,webp,avif,svg,gif}", {
+  eager: true,
+  import: "default",
+}) as Record<string, string>;
+
+const localSrcAssetImages = {
+  ...localResourceImages,
+  ...localSeminarImages,
+};
+
 export function resolveResourceImageUrl(image?: string): string | undefined {
   if (!image) {
     return undefined;
@@ -12,13 +22,13 @@ export function resolveResourceImageUrl(image?: string): string | undefined {
     return image;
   }
 
-  if (image.startsWith("/src/assets/resources/")) {
+  if (image.startsWith("/src/assets/")) {
     const fileName = image.split("/").pop();
     if (!fileName) {
       return undefined;
     }
 
-    const matchedEntry = Object.entries(localResourceImages).find(([path]) =>
+    const matchedEntry = Object.entries(localSrcAssetImages).find(([path]) =>
       path.endsWith(`/${fileName}`),
     );
 
