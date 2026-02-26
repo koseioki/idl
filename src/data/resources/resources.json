@@ -1,5 +1,19 @@
 [
   {
+    "id": "48572098",
+    "title": "Social marginalization",
+    "slug": "social-marginalization",
+    "subtitle": "A scoping review of 50 years of research",
+    "author": "Sam Fluit, Laura Cortés-García & Tilmann von Soest",
+    "author-short": "Fluit, Cortés-García, and von Soest",
+    "year": 2024,
+    "format": 4,
+    "publisher": "Humanities and Social Sciences Communications volume",
+    "source": "https://doi.org/10.1057/s41599-024-04210-y",
+
+    "image": "/src/assets/resources/social-marginalization.png"
+  },
+  {
     "id": "34567890",
     "title": "Privilege",
     "subtitle": "A Reader",

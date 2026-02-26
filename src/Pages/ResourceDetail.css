@@ -1,10 +1,17 @@
 .resource-detail-wrapper img {
     width: 100%;
     max-width: 20rem;
-    aspect-ratio: 1/1;
+    max-height: 20rem;;
+    /* aspect-ratio: 1/1; */
     object-fit: contain;
     object-position: left;
     margin-top: 2rem;
+}
+
+
+/* doing this way so that it won't overwrite the dark-mode brightness */
+.resource-detail-wrapper a:has(img):hover {
+    filter: brightness(0.9);
 }
 
 .resource-subtitle {
