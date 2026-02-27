@@ -1,14 +1,12 @@
-.references summary {
+.references summary {}
+
+.references summary h2 {
+    margin: 0;
+    /* font-size: 1.5rem; */
     display: flex;
     align-items: center;
     gap: 1rem;
     padding: 1rem;
-
-
-}
-
-.references summary h2 {
-    margin: 0;
 
 }
 
@@ -20,13 +18,13 @@
     display: none;
 }
 
-.references details>summary::before {
+.references details>summary span::before {
     content: '+';
     font-size: 2rem;
     text-decoration: none;
 }
 
-.references details[open]>summary::before {
+.references details[open]>summary span::before {
     content: '−';
     font-size: 2rem;
     text-decoration: none;

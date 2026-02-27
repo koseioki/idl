@@ -33,7 +33,7 @@ export function References({ ids }: ReferencesProps) {
     <section className="references">
       <details>
         <summary>
-          <h2>References</h2>
+          <h2><span aria-hidden="true"></span>References</h2>
         </summary>
         <ul className="resource-list">
           {selectedResources.map((resource) => (
