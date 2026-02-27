@@ -1,6 +1,6 @@
-import { H1 } from "../Components/Global/H1";
-import { ResourceCard } from "../Components/Resources/ResourceCard";
-import resourcesData from "../data/resources/resources.json";
+import { H1 } from "../../components/header-and-footer/H1";
+import { ResourceCard } from "../../components/resources/ResourceCard";
+import resourcesData from "../../data/resources/resources.json";
 
 export function ResourceLibrary() {
   const resources = Array.isArray(resourcesData)

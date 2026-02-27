@@ -1,6 +1,6 @@
-import { Card } from "../Components/Global/Card";
-import { CardList } from "../Components/Global/CardList";
-import { H1 } from "../Components/Global/H1";
+import { Card } from "../../components/global/Card";
+import { CardList } from "../../components/global/CardList";
+import { H1 } from "../../components/header-and-footer/H1";
 export function ResearchProjects() {
   return (
     <>

@@ -1,6 +1,6 @@
-import { RenderMarkdown } from "../Components/Global/RenderMarkdown";
+import { RenderMarkdown } from "../../utils/RenderMarkdown";
 import Content from './contact.md?raw';
-import { H1 } from "../Components/Global/H1";
+import { H1 } from "../../components/header-and-footer/H1";
 export function Contact() {
 
 

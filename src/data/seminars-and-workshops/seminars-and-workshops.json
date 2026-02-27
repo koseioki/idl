@@ -12,7 +12,7 @@
             "Accessibility and aesthetics can coexist if integrated from the beginning.",
             "Design for real people—guidelines are there to help you achieve that, not the other way around."
         ],
-        "image": "/src/assets/seminars-and-workshops/accessibility-makes-us-better-designers-developers.jpg",
+        "image": "/src/assets/img/seminars-and-workshops/accessibility-makes-us-better-designers-developers.jpg",
         "image-alt" : "Kosei presenting to a classroom, smiling and prompting students to raise their hands. The presentation slide reads “Native elements work just better”, and shows a good code example using a simple button element alongside a bad one using a div tag with many attributes, photo."
         
     }

@@ -20,7 +20,7 @@ type ResourceCardProps = {
 import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import { ResourceFormat } from "./ResourceFormat";
-import { Icon } from "../Global/Icon";
+import { Icon } from "../global/Icon";
 import { resolveResourceImageUrl } from "../../utils/resolveResourceImageUrl";
 
 export function ResourceCard({ resource }: ResourceCardProps) {

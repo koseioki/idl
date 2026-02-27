@@ -1,8 +1,8 @@
-import AboutImage from "../assets/img/kosei.jpeg";
-import { RenderMarkdown } from "../Components/Global/RenderMarkdown";
+import AboutImage from "../../assets/img/kosei.jpeg";
+import { RenderMarkdown } from "../../utils/RenderMarkdown";
 import AboutIntersectionalDesignLab from "./about-intersectional-design-lab.md?raw";
 import AboutTeam from "./about-team.md?raw";
-import { H1 } from "../Components/Global/H1";
+import { H1 } from "../../components/header-and-footer/H1";
 import "./About.css";
 export function About() {
   return (

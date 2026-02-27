@@ -1,4 +1,4 @@
-import { H1 } from "../Components/Global/H1";
+import { H1 } from "../../components/header-and-footer/H1";
 
 export function DesignInPractice() {
 

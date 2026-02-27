@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom";
-import SeminarAndWorkshopsData from "../data/seminars-and-workshops/seminars-and-workshops.json";
-import { H1 } from "../Components/Global/H1";
+import SeminarAndWorkshopsData from "../../data/seminars-and-workshops/seminars-and-workshops.json";
+import { H1 } from "../../components/header-and-footer/H1";
 import "./EventDetail.css";
-import { resolveResourceImageUrl } from "../utils/resolveResourceImageUrl";
+import { resolveResourceImageUrl } from "../../utils/resolveResourceImageUrl";
 
 export function EventDetail() {
   const { slug } = useParams();

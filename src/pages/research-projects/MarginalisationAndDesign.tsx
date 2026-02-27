@@ -1,6 +1,6 @@
-import { H1 } from "../Components/Global/H1";
-import { InTextCitation } from "../Components/Resources/InTextCitation";
-import { References } from "../Components/Resources/References";
+import { H1 } from "../../components/header-and-footer/H1";
+import { InTextCitation } from "../../components/resources/InTextCitation";
+import { References } from "../../components/resources/References";
 
 export function MarginalisationAndDesign() {
 

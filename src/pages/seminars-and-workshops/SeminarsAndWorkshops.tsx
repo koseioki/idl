@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
-import { H1 } from "../Components/Global/H1";
-import seminarsAndWorkshopsData from "../data/seminars-and-workshops/seminars-and-workshops.json";
+import { H1 } from "../../components/header-and-footer/H1";
+import seminarsAndWorkshopsData from "../../data/seminars-and-workshops/seminars-and-workshops.json";
 export function SeminarsAndWorkshops() {
 
 

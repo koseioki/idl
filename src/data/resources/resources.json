@@ -11,7 +11,7 @@
     "publisher": "Humanities and Social Sciences Communications volume",
     "source": "https://doi.org/10.1057/s41599-024-04210-y",
 
-    "image": "/src/assets/resources/social-marginalization.png"
+    "image": "/src/assets/img/resources/social-marginalization.png"
   },
   {
     "id": "34567890",
@@ -133,7 +133,7 @@
     "author-short": "Brajnik, Yesilada, and Harper",
     "year": 2010,
     "format": 4,
-    "image": "/src/assets/resources/testability-and-validity-of-wcag-2-0-the-expertise-effect.png",
+    "image": "/src/assets/img/resources/testability-and-validity-of-wcag-2-0-the-expertise-effect.png",
     "source": "https://dl.acm.org/doi/10.1145/1878803.1878813"
   },
 
@@ -195,7 +195,7 @@
     "format": 5,
     "publisher": "W3C",
     "source": "https://www.w3.org/WAI/fundamentals/accessibility-intro/",
-    "image": "/src/assets/resources/introduction-to-web-accessibility-w3c.png"
+    "image": "/src/assets/img/resources/introduction-to-web-accessibility-w3c.png"
   }
 
  

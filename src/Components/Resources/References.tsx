@@ -1,4 +1,4 @@
-import { ResourceCard } from "../Resources/ResourceCard";
+import { ResourceCard } from "./ResourceCard";
 import "./References.css";
 import resourcesData from "../../data/resources/resources.json";
 

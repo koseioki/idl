@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom";
 import "./Home.css";
-import { Card } from "../Components/Global/Card";
-import { Drawing } from "../Components/Global/Drawing";
-import { CardList } from "../Components/Global/CardList";
+import { Card } from "../components/global/Card";
+import { Drawing } from "../components/global/Drawing";
+import { CardList } from "../components/global/CardList";
 
 export function Home() {
   // Change document title

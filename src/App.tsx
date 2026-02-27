@@ -1,20 +1,20 @@
 // import './App.css'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Home } from "./Pages/Home";
-import { About } from "./Pages/About";
-import { Header } from "./Components/Global/Header";
-import { WhatIsIntersectionalDesign } from "./Pages/WhatIsIntersectionalDesign";
-import { DesignInPractice } from "./Pages/DesignInPractice";
-import { Footer } from "./Components/Global/Footer";
-import { Contact } from "./Pages/Contact";
-import { ResourceLibrary } from "./Pages/ResourceLibrary";
-import { SeminarsAndWorkshops } from "./Pages/SeminarsAndWorkshops";
-import { Breadcrumbs } from "./Components/Global/Breadcrumbs";
-import { ResearchProjects } from "./Pages/ResearchProjects";
-import { LearningAndKnowledge } from "./Pages/LearningAndKnowledge";
-import { MarginalisationAndDesign } from "./Pages/MarginalisationAndDesign";
-import { ResourceDetail } from "./Pages/ResourceDetail";
-import { EventDetail } from "./Pages/EventDetail";
+import { Home } from "./pages/Home";
+import { About } from "./pages/about/About";
+import { Header } from "./components/header-and-footer/Header";
+import { WhatIsIntersectionalDesign } from "./pages/what-is-intersectional-design/WhatIsIntersectionalDesign";
+import { DesignInPractice } from "./pages/research-projects/DesignInPractice";
+import { Footer } from "./components/header-and-footer/Footer";
+import { Contact } from "./pages/contact/Contact";
+import { ResourceLibrary } from "./pages/resource-library/ResourceLibrary";
+import { SeminarsAndWorkshops } from "./pages/seminars-and-workshops/SeminarsAndWorkshops";
+import { Breadcrumbs } from "./components/header-and-footer/Breadcrumbs";
+import { ResearchProjects } from "./pages/research-projects/ResearchProjects";
+import { LearningAndKnowledge } from "./pages/LearningAndKnowledge";
+import { MarginalisationAndDesign } from "./pages/research-projects/MarginalisationAndDesign";
+import { ResourceDetail } from "./pages/resource-library/ResourceDetail";
+import { EventDetail } from "./pages/seminars-and-workshops/EventDetail";
 
 function App() {
   // const [count, setCount] = useState(0)

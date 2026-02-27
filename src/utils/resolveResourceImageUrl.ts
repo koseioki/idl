@@ -1,9 +1,9 @@
-const localResourceImages = import.meta.glob("../assets/resources/*.{png,jpg,jpeg,webp,avif,svg,gif}", {
+const localResourceImages = import.meta.glob("../assets/img/resources/*.{png,jpg,jpeg,webp,avif,svg,gif}", {
   eager: true,
   import: "default",
 }) as Record<string, string>;
 
-const localSeminarImages = import.meta.glob("../assets/seminars-and-workshops/*.{png,jpg,jpeg,webp,avif,svg,gif}", {
+const localSeminarImages = import.meta.glob("../assets/img/seminars-and-workshops/*.{png,jpg,jpeg,webp,avif,svg,gif}", {
   eager: true,
   import: "default",
 }) as Record<string, string>;

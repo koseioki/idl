@@ -1,10 +1,10 @@
-import resourcesData from "../data/resources/resources.json";
+import resourcesData from "../../data/resources/resources.json";
 import "./ResourceDetail.css";
 import { useParams } from "react-router-dom";
-import { H1 } from "../Components/Global/H1";
-import { ResourceFormat } from "../Components/Resources/ResourceFormat";
-import { resolveResourceImageUrl } from "../utils/resolveResourceImageUrl";
-import { Note } from "../Components/Global/Note";
+import { H1 } from "../../components/header-and-footer/H1";
+import { ResourceFormat } from "../../components/resources/ResourceFormat";
+import { resolveResourceImageUrl } from "../../utils/resolveResourceImageUrl";
+import { Note } from "../../components/global/Note";
 
 export function ResourceDetail() {
   const { slug } = useParams();
