@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { H1 } from "../Components/Global/H1";
 import { ResourceFormat } from "../Components/Resources/ResourceFormat";
 import { resolveResourceImageUrl } from "../utils/resolveResourceImageUrl";
+import { Note } from "../Components/Global/Note";
 
 export function ResourceDetail() {
   const { slug } = useParams();
@@ -23,10 +24,7 @@ export function ResourceDetail() {
     
 
         {resource?.note ? (
-          <section className="note-section">
-            <h2>Note</h2>
-            <p>{resource.note}</p>
-          </section>
+          <Note title="Note:">{resource.note}</Note>
         ) : null}
 
 

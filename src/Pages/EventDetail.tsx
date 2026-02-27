@@ -15,7 +15,7 @@ export function EventDetail() {
     <main id="main-content">
       <H1>{event?.title}</H1>
       <p>
-        {event?.date}, at {event?.place}
+        {new Date(event?.date).toLocaleDateString([], { year: 'numeric', month: 'long', day: 'numeric' })}, at {event?.place}
       </p>
 
       <div

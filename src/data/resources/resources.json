@@ -47,11 +47,11 @@
     "year": 2024,
     "format": [1, 2],
     "publisher": "Djøf forlag",
-    "image": "https://djoefforlag.dk/cdn/shop/files/740bdea86e8b56de48cf79780f7c03b3.jpg?v=1771655013",
+    "image": "https://cdn.shopify.com/s/files/1/0509/9529/8464/files/740bdea86e8b56de48cf79780f7c03b3_e956b821-4b7c-45ee-854b-caf7b82c6352_200x.jpg?v=1772160516",
     "source": "https://djoefforlag.dk/products/digital-inclusion"
   },
   {
-    "id": "12345678",
+    "id": "05843586",
     "title": "Design for Real Life",
     "slug": "design-for-real-life",
     "author": "Eric Meyer, Sara Wachter-Boettcher",
@@ -101,7 +101,7 @@
   },
 
   {
-    "id": "23456789",
+    "id": "38557493",
     "title": "The urgency of intersectionality",
     "slug": "the-urgency-of-intersectionality",
     "author": "Kimberlé Crenshaw",
@@ -174,7 +174,7 @@
     "image": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1678962904i/123254411.jpg"
   },
   {
-    "id": "01234567",
+    "id": "30058449",
     "title": "Designing User Interfaces for an Aging Population",
     "slug": "designing-user-interfaces-for-an-aging-population",
     "subtitle": "Towards Universal Design",

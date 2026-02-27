@@ -4,7 +4,6 @@ import seminarsAndWorkshopsData from "../data/seminars-and-workshops/seminars-an
 export function SeminarsAndWorkshops() {
 
 
-
   return (
    
       <main id="main-content">
@@ -18,7 +17,7 @@ export function SeminarsAndWorkshops() {
           {seminarsAndWorkshopsData.map((event) => (
             <li key={event.id}>
               <NavLink to={`/learning-and-knowledge/seminars-and-workshops/${event.slug}`}>
-                {event.title} - {new Date(event.date).toLocaleDateString()}
+                {event.title} - {new Date(event.date).toLocaleDateString([], { year: 'numeric', month: 'long', day: 'numeric' })}
               </NavLink>
             </li>
           ))}

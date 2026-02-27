@@ -1,0 +1,13 @@
+.note-section {
+    max-width: var(--content-width);
+    display: block;
+    background-color: var(--light-blue);
+    color: inherit;
+    border-radius: 2rem;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.note-section h2{
+    margin-top: 0;
+}

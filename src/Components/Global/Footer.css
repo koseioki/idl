@@ -20,6 +20,15 @@ footer a:focus-visible {
 
 }
 
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+  
+}
+
 @media (prefers-color-scheme: dark) {
     footer {
         background-color: var(--dark-white);
