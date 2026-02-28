@@ -3,7 +3,6 @@ import AboutIntersectionalDesignLab from "./about-intersectional-design-lab.mdx"
 import AboutTeam from "./about-team.mdx";
 import { H1 } from "../../components/header-and-footer/H1";
 import "./About.css";
-import { Drawing } from "../../components/global/Drawing";
 export function About() {
   return (
     <>

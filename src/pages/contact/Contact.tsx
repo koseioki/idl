@@ -1,4 +1,3 @@
-import { RenderMarkdown } from "../../utils/RenderMarkdown";
 import ContactText from './contact.mdx';
 import { H1 } from "../../components/header-and-footer/H1";
 import { Drawing } from "../../components/global/Drawing";
