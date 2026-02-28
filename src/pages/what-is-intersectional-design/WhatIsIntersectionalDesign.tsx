@@ -2,7 +2,10 @@ import { Note } from "../../components/global/Note";
 import { H1 } from "../../components/header-and-footer/H1";
 import { InTextCitation } from "../../components/resources/InTextCitation";
 import { References } from "../../components/resources/References";
+import { NavLink } from "react-router-dom";
 export function WhatIsIntersectionalDesign() {
+  const lastUpdated = "2026-02-28";
+
   return (
     <>
       <head>
@@ -11,27 +14,67 @@ export function WhatIsIntersectionalDesign() {
         </title>
       </head>
       <main id="main-content">
+        <H1>What is Intersectional Design?</H1>
+
         <Note title="Note:">
           <p>
             This page is a work in progress. We are still developing the
             content.
           </p>
-          <p>Last updated: 2026-02-28</p>
+          <p>
+            Last updated:{" "}
+            {new Date(lastUpdated).toLocaleDateString([], {
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            })}
+          </p>
         </Note>
-        <H1>What is Intersectional Design?</H1>
+
+        <p>
+          Intersectional design is an idea that combines intersectionality and
+          design.
+        </p>
+        <p>
+          Current approaches to inclusive design—such as accessible design,
+          trauma-informed design, and easy-to-use design—often focus on just one
+          perspective or “axis” of identity or marginalisation, missing those
+          with intersecting factors <InTextCitation id="23459734" />.
+        </p>
+        <p>
+          Intersectional design aims to incorporate as many axes as possible at
+          the same time, to create digital spaces and surroundings that are
+          truly inclusive for everyone.
+        </p>
+
         <h2>What is Intersectionality?</h2>
-        {/* Inserting youtube video */}
+        <p>
+          Intersectionality is a way of understanding social relations by
+          examining intersecting forms of discrimination.
+        </p>
+        <p>
+          <NavLink to="what-is-intersectionality">Read more about "What is Intersectionality?"</NavLink>
+        </p>
+
+        <h2>Why is Intersectional Design Important?</h2>
+        <NavLink to="/">
+          Read more about "Why is Intersectional Design Important?"
+        </NavLink>
+        <h2>How Do We Start?</h2>
+        <p>
+          At Intersectional Design Lab, we recommend starting by understanding
+          the specific marginalisation and challenges people face, one by one.
+          This builds empathy and helps you truly "put yourself in their shoes."
+        </p>
+        <NavLink to="/">Read more about "How Do We Start?"</NavLink>
+
+        {/* <h2>What is Intersectionality?</h2>
         <iframe
-          // width="560"
-          // height="315"
+     
           className="youtube-video"
           src="https://www.youtube-nocookie.com/embed/O1islM0ytkE?si=XNP-7wdXZfmkJfNx"
           title="YouTube video player"
-          // frameborder="0"
-          // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          // referrerpolicy="strict-origin-when-cross-origin"
-          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-          // allowfullscreen
+           allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
         ></iframe>
         <p>
           Intersectionality is a way of understanding social relations by
@@ -57,12 +100,7 @@ export function WhatIsIntersectionalDesign() {
           Intersectionality is about understanding and addressing all potential
           roadblocks to an individual or group's well-being.
         </p>
-        {/* <p className="small-text">
-          By{" "}
-          <a href="https://www.youtube.com/watch?v=O1islM0ytkE&t=1s">
-            Peter Hopkins
-          </a>
-        </p> */}
+   
 
         <InTextCitation id="23459734" />
         <details>
@@ -142,7 +180,7 @@ export function WhatIsIntersectionalDesign() {
           intersectionality into the design of information and communication
           technology (ICT).
         </p>
-        {/* <Drawing /> */}
+       */}
         <References ids={["23459734"]} />
       </main>
     </>

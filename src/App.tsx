@@ -15,6 +15,7 @@ import { LearningAndKnowledge } from "./pages/LearningAndKnowledge";
 import { MarginalisationAndDesign } from "./pages/research-projects/MarginalisationAndDesign";
 import { ResourceDetail } from "./pages/resource-library/ResourceDetail";
 import { EventDetail } from "./pages/seminars-and-workshops/EventDetail";
+import { WhatIsIntersectionality } from "./pages/what-is-intersectional-design/WhatIsIntersectionality";
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -32,6 +33,7 @@ function App() {
             path="/what-is-intersectional-design"
             element={<WhatIsIntersectionalDesign />}
           />
+          <Route path="/what-is-intersectional-design/what-is-intersectionality" element={<WhatIsIntersectionality />} />
 
           <Route path="/research-projects" element={<ResearchProjects />} />
           <Route path="/research-projects/marginalisation-and-design" element={<MarginalisationAndDesign />} />

@@ -9,6 +9,10 @@
     --dark-purple: #9E4BC2;
     --dark-purple-shade: #7A319A;
 
+    --dark-red: #9B353E;
+    --light-red: #FFBDC3;
+
+
     --light-yellow: #FFE8B4;
     --light-yellow-shade: #F3DBA4;
     --dark-yellow: #564112;
@@ -50,6 +54,9 @@
         --light-purple-shade: #7A319A;
         --dark-purple: #E6BEF7;
         --dark-purple-shade: #D2A3E6;
+
+        --dark-red: #FFBDC3;
+        --light-red: #9B353E;
 
         --light-yellow: #564112;
         --light-yellow-shade: #43320A;
@@ -157,14 +164,16 @@ a:focus-visible {
 } */
 
 @media (prefers-color-scheme: dark) {
+
     /* .image-frame {
         border: 0.5rem solid var(--dark-grey);
         filter: brightness(0.8);
     } */
-     img{
+    img {
         filter: brightness(0.8);
-     }
+    }
 }
+
 /* 
 details {
     max-width: var(--content-width);
@@ -200,27 +209,45 @@ details div {
 } */
 
 
-dt{
+dt {
     font-weight: bold;
     margin-top: 2rem;
 }
+
 dd {
     margin: 0;
 }
 
+
+blockquote {
+    border-left: 0.5rem solid var(--dark-red);
+    max-width: var(--content-width);
+    font-size: 1.25rem;
+    font-style: italic;
+    padding-left: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+
+}
+
+cite{
+    max-width: var(--content-width);
+    display: block;
+    text-align: right;
+    margin-top: 0.5rem;
+}
+
 .youtube-video {
+    margin: 2rem 0;
     border-radius: 2rem;
     width: 100%;
     max-width: var(--content-width);
     aspect-ratio: 16/9;
-    /* border: 1px red solid; */
     border: none;
 }
 
 .html5-video-player button:focus-visible,
 .html5-video-player a:focus-visible {
-    /* outline: none;
-    box-shadow: var(--focus-indicator); */
     outline: var(--focus-indicator);
     outline-offset: var(--focus-indicator-offset);
 }
