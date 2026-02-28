@@ -174,39 +174,6 @@ a:focus-visible {
     }
 }
 
-/* 
-details {
-    max-width: var(--content-width);
-    background-color: var(--light-yellow);
-    border-radius: 2rem;
-    margin: 2rem 0;
-}
-
-details summary {
-    font-weight: bold;
-    padding: 2rem;
-    border-radius: 2rem;
-    background-color: var(--light-yellow);
-}
-
-details summary:hover {
-    cursor: pointer;
-    background-color: var(--light-yellow-shade);
-}
-
-details summary:focus-visible {
-    outline: var(--focus-indicator);
-    outline-offset: var(--focus-indicator-offset);
-}
-
-details[open] summary {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-}
-
-details div {
-    padding: 1rem 2rem 2rem 2rem;
-} */
 
 
 dt {

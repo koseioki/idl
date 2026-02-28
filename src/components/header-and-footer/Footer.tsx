@@ -1,3 +1,4 @@
+// import { NavLink } from "react-router-dom";
 import "./Footer.css";
 export function Footer() {
   return (
@@ -19,6 +20,9 @@ export function Footer() {
           </a>
         </li>
         </ul>
+        {/* <NavLink to="/inclusion-equity-and-accessibility-statement">
+          Inclusion, Equity, and Accessibility Statement
+        </NavLink> */}
         <p>@ 2026 Intersectional Design Lab</p>
       </div>
     </footer>

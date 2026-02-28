@@ -1,0 +1,33 @@
+
+details.accordion  {
+    max-width: var(--content-width);
+    background-color: var(--light-yellow);
+    border-radius: 2rem;
+    margin: 2rem 0;
+}
+
+details.accordion  summary {
+    font-weight: bold;
+    padding: 2rem;
+    border-radius: 2rem;
+    background-color: var(--light-yellow);
+}
+
+details.accordion  summary:hover {
+    cursor: pointer;
+    background-color: var(--light-yellow-shade);
+}
+
+details.accordion summary:focus-visible {
+    outline: var(--focus-indicator);
+    outline-offset: var(--focus-indicator-offset);
+}
+
+details.accordion[open] summary {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+details.accordion div {
+    padding: 1rem 2rem 2rem 2rem;
+}

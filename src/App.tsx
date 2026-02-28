@@ -17,6 +17,7 @@ import { ResourceDetail } from "./pages/resource-library/ResourceDetail";
 import { EventDetail } from "./pages/seminars-and-workshops/EventDetail";
 import { WhatIsIntersectionality } from "./pages/what-is-intersectional-design/WhatIsIntersectionality";
 import { HowDoWeStart } from "./pages/what-is-intersectional-design/HowDoWeStart";
+import { InclusionEquityAndAccessibilityStatement } from "./pages/InclusionEquityAndAccessibilityStatement";
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -56,6 +57,7 @@ function App() {
           <Route path="/about" element={<About />} />
 
           <Route path="/contact" element={<Contact />} />
+          <Route path="/inclusion-equity-and-accessibility-statement" element={<InclusionEquityAndAccessibilityStatement />} />
         </Routes>
         <Footer />
       </Router>
