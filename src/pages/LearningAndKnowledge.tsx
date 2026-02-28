@@ -34,7 +34,10 @@ export function LearningAndKnowledge() {
               We share our curated research resources, including books, videos,
               courses, and more.
             </p>
-            {/* <Drawing /> */}
+            <Drawing
+              name="Library"
+              alt=""
+            />
           </Card>
         </CardList>
       </main>

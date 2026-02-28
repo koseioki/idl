@@ -14,6 +14,7 @@ import Share from '../../assets/drawings/share.svg';
 import Experiment from '../../assets/drawings/experiment.svg';
 import Contact from '../../assets/drawings/contact.svg';
 import Research from '../../assets/drawings/research.svg';
+import Library from '../../assets/drawings/library.svg';
 import './Drawing.css';
 const svgMap = {
   Placeholder,
@@ -23,6 +24,7 @@ const svgMap = {
   Contact,
   Research,
   Share,
+  Library
 };
 
 export function Drawing({ name, strokeColor = "currentColor", alt }) {
