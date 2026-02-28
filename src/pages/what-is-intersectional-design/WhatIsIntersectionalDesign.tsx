@@ -66,7 +66,7 @@ export function WhatIsIntersectionalDesign() {
           the specific marginalisation and challenges people face, one by one.
           This builds empathy and helps you truly "put yourself in their shoes."
         </p>
-        <NavLink to="/">Read more about "How Do We Start?"</NavLink>
+        <NavLink to="how-do-we-start">Read more about "How Do We Start?"</NavLink>
 
         {/* <h2>What is Intersectionality?</h2>
         <iframe

@@ -220,14 +220,25 @@ dd {
 
 
 blockquote {
-    border-left: 0.5rem solid var(--dark-red);
     max-width: var(--content-width);
     font-size: 1.25rem;
     font-style: italic;
-    padding-left: 1rem;
+    padding-left: 3rem;
     margin-left: 0;
     margin-right: 0;
+    display: block;
+    position: relative;
+}
 
+blockquote::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 1rem;
+    border-radius: 2rem;
+    background-color: var(--dark-red);
 }
 
 cite{
