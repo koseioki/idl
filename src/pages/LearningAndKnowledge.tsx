@@ -1,6 +1,7 @@
 import { Card } from "../components/global/Card";
 import { CardList } from "../components/global/CardList";
 import { H1 } from "../components/header-and-footer/H1";
+import { Drawing } from "../components/global/Drawing";
 export function LearningAndKnowledge() {
   return (
     <>
@@ -17,7 +18,10 @@ export function LearningAndKnowledge() {
             <p>
               We host seminars, webinars, workshops, talks, and similar events.
             </p>
-            {/* <Drawing /> */}
+            <Drawing
+              name="Share"
+              alt=""
+            />
           </Card>
 
           <Card

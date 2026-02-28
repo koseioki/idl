@@ -208,7 +208,28 @@
     "publisher": "W3C",
     "source": "https://www.w3.org/WAI/fundamentals/accessibility-intro/",
     "image": "/src/assets/img/resources/introduction-to-web-accessibility-w3c.png"
+  },
+  {
+    "id": "01234567",
+    "title": "Why the internet hates my surname",
+    "slug": "why-the-internet-hates-my-surname",
+    "author": "Luke O’Sullivan",
+    "year": 2025,
+    "format": [3, 5],
+    "image": "https://i.ytimg.com/vi/0f3RMYTCvMU/hqdefault_29866.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLClZYG7qWzOE36Rqs1ybaEqiIt1Iw",
+    "source": "https://www.youtube.com/watch?v=0f3RMYTCvMU",
+    "note": "This video does not include captions or audio description, but automated captions are available."
+  },
+  {
+    "id": "45678902",
+    "title": "You Can't Say You Can't Play",
+    "slug": "you-cant-say-you-cant-play",
+    "author": "Vivian Gussin Paley",
+    "author-short": "Paley",
+    "year": 1993,
+    "format": 1,
+    "publisher": "Harvard University Press",
+    "image": "https://www.hup.harvard.edu/img/feeds/jackets/9780674965904.png?fm=jpg&q=80&fit=max&w=200",
+    "source": "https://www.hup.harvard.edu/books/9780674965904"
   }
-
- 
 ]

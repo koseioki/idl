@@ -9,10 +9,20 @@
 import { useEffect, useRef, useState } from 'react';
 import Placeholder from '../../assets/drawings/placeholder.svg';
 import TwoPeopleCraftingICT from '../../assets/drawings/two-people-crafting-ict.svg';
+import HomeNGO from '../../assets/drawings/home-ngo.svg';
+import Share from '../../assets/drawings/share.svg';
+import Experiment from '../../assets/drawings/experiment.svg';
+import Contact from '../../assets/drawings/contact.svg';
+import Research from '../../assets/drawings/research.svg';
 import './Drawing.css';
 const svgMap = {
   Placeholder,
   TwoPeopleCraftingICT,
+  HomeNGO,
+  Experiment,
+  Contact,
+  Research,
+  Share,
 };
 
 export function Drawing({ name, strokeColor = "currentColor", alt }) {

@@ -223,7 +223,7 @@ blockquote {
     max-width: var(--content-width);
     font-size: 1.25rem;
     font-style: italic;
-    padding-left: 3rem;
+    padding-left: 2rem;
     margin-left: 0;
     margin-right: 0;
     display: block;
@@ -236,7 +236,7 @@ blockquote::before {
     left: 0;
     top: 0;
     bottom: 0;
-    width: 1rem;
+    width: 0.75rem;
     border-radius: 2rem;
     background-color: var(--dark-red);
 }

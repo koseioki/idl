@@ -1,7 +1,6 @@
 .drawing {
     width: 100%;
-    max-width: var(--content-width);
-    /* border: 1px solid red; */
+    max-width: calc(var(--content-width)/3*2);
 }
 
 .drawing svg {
