@@ -1,3 +1,4 @@
+import { Note } from "../../components/global/Note";
 import { H1 } from "../../components/header-and-footer/H1";
 import { InTextCitation } from "../../components/resources/InTextCitation";
 import { References } from "../../components/resources/References";
@@ -10,6 +11,13 @@ export function WhatIsIntersectionalDesign() {
         </title>
       </head>
       <main id="main-content">
+        <Note title="Note:">
+          <p>
+            This page is a work in progress. We are still developing the
+            content.
+          </p>
+          <p>Last updated: 2026-02-28</p>
+        </Note>
         <H1>What is Intersectional Design?</H1>
         <h2>What is Intersectionality?</h2>
         {/* Inserting youtube video */}
