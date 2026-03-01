@@ -97,9 +97,15 @@ export function ResourceLibrary() {
       </p>
       <p>All resources are reviewed by Intersectional Design Lab.</p>
 
+
       <div className="search-and-filter">
+
+        <details>
+          <summary>Filter resources</summary>
         <form onSubmit={handleApplyFilters}>
           <fieldset>
+
+
             <legend>Filter by type:</legend>
             <input
               type="checkbox"
@@ -160,6 +166,7 @@ export function ResourceLibrary() {
           </button>
 
         </form>
+        </details>
       </div>
 
           <p>{filteredResources.length} resources found</p>
