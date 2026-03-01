@@ -86,6 +86,9 @@ export function ResourceLibrary() {
     });
 
     setFilteredResources(nextResources);
+    // set the focus on the "** resources found" text
+    const resultsText = document.getElementById("results-text");
+    resultsText?.focus();
   }
 
   return (
@@ -169,7 +172,7 @@ export function ResourceLibrary() {
         </details>
       </div>
 
-          <p>{filteredResources.length} resources found</p>
+          <p tabIndex={-1} id="results-text">{filteredResources.length} resources found</p>
 
       {filteredResources.length > 0 ? (
         <ul className="resource-list">

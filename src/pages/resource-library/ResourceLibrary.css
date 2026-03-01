@@ -97,3 +97,8 @@
     outline: var(--focus-indicator);
     outline-offset: var(--focus-indicator-offset);
 }
+
+/* Kill the outline */
+p:focus{
+    outline:none;
+}
