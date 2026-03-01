@@ -8,8 +8,6 @@ export function About() {
     <>
       <main id="main-content">
         <H1>About</H1>
-
-        <h2>Intersectional Design Lab</h2>
  
         <AboutIntersectionalDesignLab />
 
