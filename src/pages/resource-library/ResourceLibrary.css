@@ -1,0 +1,59 @@
+.search-and-filter form {
+    /* border: 0.0625rem solid var(--text-black); */
+    padding: 1rem 0;
+}
+
+.search-and-filter fieldset {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0;
+    margin-bottom: 1rem;
+    border: none;
+}
+
+.search-and-filter legend {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.search-and-filter label {
+    border-radius: 1rem;
+    border: 0.0625rem solid var(--text-black);
+    padding: 0.5rem 1.5rem;
+}
+
+.search-and-filter label:hover {
+    background-color: var(--dark-white);
+    cursor: pointer;
+}
+
+.search-and-filter input[type="checkbox"] {
+    /* sr-only */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.search-and-filter input[type="checkbox"]:checked+label {
+    font-weight: bold;
+    border-width: 0.125rem;
+    border-style: inset;
+}
+
+.search-and-filter input[type="checkbox"]:checked+label::before {
+    content: "✓";
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+
+.search-and-filter input[type="checkbox"]:focus-visible+label {
+    outline: var(--focus-indicator);
+    outline-offset: var(--focus-indicator-offset);
+}
