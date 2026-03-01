@@ -42,6 +42,23 @@ export function ResourceLibrary() {
   const [filteredResources, setFilteredResources] =
     useState<Resource[]>(allResources);
 
+  const selectedFormatIds = (Object.keys(selectedFilters) as FilterKey[])
+    .filter((filterKey) => selectedFilters[filterKey])
+    .map((filterKey) => FILTER_TO_FORMAT[filterKey]);
+
+  const matchingResourcesCount =
+    selectedFormatIds.length === 0
+      ? allResources.length
+      : allResources.filter((resource) => {
+          const formatValues = Array.isArray(resource.format)
+            ? resource.format
+            : [resource.format ?? 0];
+
+          return formatValues.some((formatValue) =>
+            selectedFormatIds.includes(formatValue),
+          );
+        }).length;
+
   // Updates a single checkbox value while preserving the others.
   function handleCheckboxChange(filter: FilterKey, isChecked: boolean) {
     setSelectedFilters((current) => ({ ...current, [filter]: isChecked }));
@@ -50,11 +67,6 @@ export function ResourceLibrary() {
   // Applies filters on form submit and prevents a full page reload.
   function handleApplyFilters(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-
-    // Convert selected checkbox keys into their matching numeric format IDs.
-    const selectedFormatIds = (Object.keys(selectedFilters) as FilterKey[])
-      .filter((filterKey) => selectedFilters[filterKey])
-      .map((filterKey) => FILTER_TO_FORMAT[filterKey]);
 
     // If nothing is selected, show every resource.
     if (selectedFormatIds.length === 0) {
@@ -142,7 +154,9 @@ export function ResourceLibrary() {
           </fieldset>
 
           <button className="button" type="submit">
-            Apply filters
+            {/* Apply filters */}
+            See {matchingResourcesCount} result
+            {matchingResourcesCount === 1 ? "" : "s"}
           </button>
 
         </form>
