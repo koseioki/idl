@@ -3,7 +3,6 @@ import "./Home.css";
 import { Card } from "../components/global/Card";
 import { Drawing } from "../components/global/Drawing";
 import { CardList } from "../components/global/CardList";
-import { Accordion } from "../components/global/Accordion";
 
 export function Home() {
   // Change document title
