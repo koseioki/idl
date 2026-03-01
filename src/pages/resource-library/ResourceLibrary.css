@@ -8,9 +8,24 @@
 .search-and-filter summary {
     font-weight: bold;
     cursor: pointer;
-    padding: 1rem 2rem;
+    padding: 1rem 1.5rem;
     border-radius: 2rem;
-    /* list-style: none; */
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+
+.search-and-filter summary::before {
+    content: '+';
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+  
+}
+
+.search-and-filter details[open]>summary::before {
+    content: '−';
+   
 }
 
 .search-and-filter summary:hover {

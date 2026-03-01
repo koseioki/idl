@@ -109,7 +109,7 @@ export function ResourceLibrary() {
           <fieldset>
 
 
-            <legend>Filter by type:</legend>
+            <legend>Filter by format:</legend>
             <input
               type="checkbox"
               id="book"
