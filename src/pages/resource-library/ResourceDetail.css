@@ -12,6 +12,7 @@
 /* doing this way so that it won't overwrite the dark-mode brightness */
 .resource-detail-wrapper a:has(img):hover {
     filter: brightness(0.9);
+    cursor: pointer;
 }
 
 .resource-subtitle {

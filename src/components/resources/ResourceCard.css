@@ -14,7 +14,6 @@ ul.resource-list li article {
     gap: 2rem;
     border-bottom: 1px solid var(--dark-dark-white);
     padding: 1.5rem 1rem;
-    cursor: pointer;
 }
 
 /* Expand the div that contains the title to format */
@@ -44,6 +43,8 @@ ul.resource-list li article a {
 
 ul.resource-list li article:hover {
     background-color: var(--dark-white);
+        cursor: pointer;
+
 }
 
 ul.resource-list li article:has(a:focus-visible) {

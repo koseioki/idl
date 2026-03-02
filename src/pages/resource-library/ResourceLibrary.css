@@ -7,7 +7,6 @@
 
 .search-and-filter summary {
     font-weight: bold;
-    cursor: pointer;
     padding: 1rem 1.5rem;
     border-radius: 2rem;
     list-style-type: none;
@@ -20,16 +19,18 @@
     content: '+';
     font-size: 1.5rem;
     margin-right: 0.5rem;
-  
+
 }
 
 .search-and-filter details[open]>summary::before {
     content: '−';
-   
+
 }
 
 .search-and-filter summary:hover {
     background-color: var(--dark-white);
+    cursor: pointer;
+
 }
 
 .search-and-filter summary:focus-visible {
@@ -104,7 +105,7 @@
 
     color: var(--dark-green);
     margin-right: 0.5rem;
- 
+
 }
 
 
@@ -114,6 +115,6 @@
 }
 
 /* Kill the outline */
-p:focus{
-    outline:none;
+p:focus {
+    outline: none;
 }
