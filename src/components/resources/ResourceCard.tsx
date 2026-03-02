@@ -10,6 +10,8 @@ type Resource = {
   year?: number;
   format?: number | number[];
   publisher?: string;
+  source?: string;
+  language?: string;
   
 };
 
@@ -17,11 +19,18 @@ type ResourceCardProps = {
   resource: Resource;
 };
 
+
+
 import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import { ResourceFormat } from "./ResourceFormat";
 import { Icon } from "../global/Icon";
 import { resolveResourceImageUrl } from "../../utils/resolveResourceImageUrl";
+
+
+const languageDisplayNames = new Intl.DisplayNames(["en"], {
+  type: "language",
+});
 
 export function ResourceCard({ resource }: ResourceCardProps) {
   const path = `/learning-and-knowledge/resource-library/${resource.slug ?? resource.id ?? ""}`;
@@ -31,6 +40,9 @@ export function ResourceCard({ resource }: ResourceCardProps) {
   const handleClick = () => {
     navigate(path);
   };
+
+
+
   return (
     <article onClick={handleClick} id={resource.slug}>
 
@@ -39,7 +51,7 @@ export function ResourceCard({ resource }: ResourceCardProps) {
       <div>
         <NavLink to={path}>
           <div>
-            <h2>{resource.title ?? "Untitled resource"}</h2>
+            <h2>{resource.title ?? "Untitled resource"} {resource?.language ? `(in ${languageDisplayNames.of(resource.language) ?? resource.language})` : null}</h2>
           {resource.subtitle ? <span>{resource.subtitle}</span> : null}
           </div>
           <Icon />

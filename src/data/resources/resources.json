@@ -244,5 +244,30 @@
     "publisher": "SSM - Population Health",
     "source": "https://www.sciencedirect.com/science/article/pii/S2352827321000732",
     "image": "/src/assets/img/resources/intersectionality-in-quantitative-research.png"
+  },
+  {
+    "id": "67890124",
+    "title": "Overlay Fact Sheet",
+    "slug": "overlay-fact-sheet",
+    "author": "Karl Groves",
+    "author-short": "Groves",
+    "year": 2026,
+    "format": 5,
+    "source": "https://overlayfactsheet.com/en/",
+    "image": "/src/assets/img/resources/overlay-fact-sheet.png"
+  },
+  {
+    "id": "78901235",
+    "title": "The population's experiences and challenges in a digital society",
+    "slug": "the-populations-experiences-and-challenges-in-a-digital-society",
+    "subtitle": "with a focus on the elderly",
+    "language": "da",
+    "original-title": "Befolkningens oplevelser og udfordringer i et digitalt samfund — med fokus på ældre",
+    "author": "Epinion",
+    "author-short": "Epinion",
+    "year": 2023,
+    "format": 4,
+    "source": "https://billeder.aeldresagen.dk/cdn/xZfS6x/2023-oplevelser-udfordringer-digitalt-samfundweb.pdf",
+    "image": "/src/assets/img/resources/the-populations-experiences-and-challenges-in-a-digital-society.png"
   }
 ]

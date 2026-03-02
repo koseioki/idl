@@ -6,6 +6,10 @@ import { ResourceFormat } from "../../components/resources/ResourceFormat";
 import { resolveResourceImageUrl } from "../../utils/resolveResourceImageUrl";
 import { Note } from "../../components/global/Note";
 
+const languageDisplayNames = new Intl.DisplayNames(["en"], {
+  type: "language",
+});
+
 export function ResourceDetail() {
   const { slug } = useParams();
   const resource = resourcesData.find(
@@ -13,10 +17,11 @@ export function ResourceDetail() {
   );
   const imageUrl = resolveResourceImageUrl(resource?.image);
 
+
   return (
     <main id="main-content">
       <div className="resource-detail-wrapper">
-        <H1>{resource?.title ?? "Resource Detail"}</H1>
+        <H1>{resource?.title ?? "Resource Detail"} {resource?.language ? `(in ${languageDisplayNames.of(resource.language) ?? resource.language})` : null}</H1>
         
         {resource?.subtitle ? (
           <span className="resource-subtitle">{resource.subtitle}</span>
@@ -38,6 +43,8 @@ export function ResourceDetail() {
 
         <h2>Details</h2>
         <dl>
+
+
           {resource?.format ? <dt>Format:</dt> : null}
           {resource?.format ? (
             <dd>
@@ -47,6 +54,12 @@ export function ResourceDetail() {
 
           {resource?.author ? <dt>Author:</dt> : null}
           {resource?.author ? <dd>{resource.author}</dd> : null}
+
+          <dt>Language:</dt>
+          <dd>{resource?.language ? languageDisplayNames.of(resource.language) : "English"}</dd>
+
+          {resource?.["original-title"] ? <dt>Original title:</dt> : null}
+          {resource?.["original-title"] ? <dd lang={resource.language}><em>{resource["original-title"]}</em></dd> : null}
 
           {resource?.edition ? <dt>Edition:</dt> : null}
           {resource?.edition ? <dd>{resource.edition}</dd> : null}

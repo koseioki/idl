@@ -6,7 +6,7 @@ ul.card-list {
     align-items: stretch;
     justify-items: stretch;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    gap: 2rem;
+    gap: 1rem;
 }
 
 /* Remove the default margin from headings inside cards */
