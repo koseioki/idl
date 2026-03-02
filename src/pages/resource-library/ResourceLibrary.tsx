@@ -7,6 +7,7 @@ import "./ResourceLibrary.css";
 type Resource = {
   id?: string;
   title?: string;
+  year?: number;
   format?: number | number[];
 };
 
@@ -21,11 +22,15 @@ const FILTER_TO_FORMAT: Record<FilterKey, number> = {
   internetSource: 5,
 };
 
+function sortByYearDescending(resources: Resource[]): Resource[] {
+  return [...resources].sort((a, b) => (b.year ?? 0) - (a.year ?? 0));
+}
+
 export function ResourceLibrary() {
   // Normalize the imported JSON to always be an array.
-  const allResources: Resource[] = Array.isArray(resourcesData)
-    ? resourcesData
-    : [resourcesData];
+  const allResources: Resource[] = sortByYearDescending(
+    Array.isArray(resourcesData) ? resourcesData : [resourcesData],
+  );
 
   // Tracks which checkboxes are currently selected.
   const [selectedFilters, setSelectedFilters] = useState<
@@ -85,7 +90,7 @@ export function ResourceLibrary() {
       );
     });
 
-    setFilteredResources(nextResources);
+    setFilteredResources(sortByYearDescending(nextResources));
     // set the focus on the "** resources found" text
     const resultsText = document.getElementById("results-text");
     resultsText?.focus();
@@ -96,9 +101,8 @@ export function ResourceLibrary() {
       <H1>Resource Library</H1>
       <p>
         We share our curated research resources, including books, videos,
-        courses, and more.
-      </p>
-      <p>All resources are reviewed by Intersectional Design Lab.</p>
+        courses, and more. All resources are reviewed by Intersectional Design Lab.</p>
+      <p>Last updated: {new Date("2026-03-02").toLocaleDateString([], { year: 'numeric', month: 'long', day: 'numeric' })}</p>
 
 
       <div className="search-and-filter">

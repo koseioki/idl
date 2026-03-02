@@ -20,7 +20,7 @@
     "author-short": "Fluit, Cortés-García, and von Soest",
     "year": 2024,
     "format": 4,
-    "publisher": "Humanities and Social Sciences Communications volume",
+    "publisher": "Humanities and Social Sciences Communications",
     "source": "https://doi.org/10.1057/s41599-024-04210-y",
 
     "image": "/src/assets/img/resources/social-marginalization.png"
@@ -231,5 +231,18 @@
     "publisher": "Harvard University Press",
     "image": "https://www.hup.harvard.edu/img/feeds/jackets/9780674965904.png?fm=jpg&q=80&fit=max&w=200",
     "source": "https://www.hup.harvard.edu/books/9780674965904"
+  },
+  {
+    "id": "56789013",
+    "title": "Intersectionality in quantitative research",
+    "slug": "intersectionality-in-quantitative-research",
+    "subtitle": "A systematic review of its emergence and applications of theory and methods",
+    "author": "Greta R Bauer, Siobhan M Churchill, Mayuri Mahendran, Chantel Walwyn, Daniel Lizotte, Alma Angelica Villa-Rueda",
+    "author-short": "Bauer et al.",
+    "year": 2021,
+    "format": 4,
+    "publisher": "SSM - Population Health",
+    "source": "https://www.sciencedirect.com/science/article/pii/S2352827321000732",
+    "image": "/src/assets/img/resources/intersectionality-in-quantitative-research.png"
   }
 ]
