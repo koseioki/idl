@@ -12,7 +12,7 @@ type Resource = {
   publisher?: string;
   source?: string;
   language?: string;
-  
+  category?: number | number[];
 };
 
 type ResourceCardProps = {
@@ -26,6 +26,7 @@ import { NavLink } from "react-router-dom";
 import { ResourceFormat } from "./ResourceFormat";
 import { Icon } from "../global/Icon";
 import { resolveResourceImageUrl } from "../../utils/resolveResourceImageUrl";
+import { ResourceCategory } from "./ResourceCategory";
 
 
 const languageDisplayNames = new Intl.DisplayNames(["en"], {
@@ -62,6 +63,7 @@ export function ResourceCard({ resource }: ResourceCardProps) {
         </p>
         {/* <p>{resource.publisher ? resource.publisher : null}</p> */}
         <ResourceFormat format={resource.format ?? 0} />
+        <ResourceCategory category={resource.category ?? 0} />
       </div>
     </article>
   );

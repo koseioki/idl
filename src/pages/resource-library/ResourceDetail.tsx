@@ -5,6 +5,7 @@ import { H1 } from "../../components/header-and-footer/H1";
 import { ResourceFormat } from "../../components/resources/ResourceFormat";
 import { resolveResourceImageUrl } from "../../utils/resolveResourceImageUrl";
 import { Note } from "../../components/global/Note";
+import { ResourceCategory } from "../../components/resources/ResourceCategory";
 
 const languageDisplayNames = new Intl.DisplayNames(["en"], {
   type: "language",
@@ -17,21 +18,21 @@ export function ResourceDetail() {
   );
   const imageUrl = resolveResourceImageUrl(resource?.image);
 
-
   return (
     <main id="main-content">
       <div className="resource-detail-wrapper">
-        <H1>{resource?.title ?? "Resource Detail"} {resource?.language ? `(in ${languageDisplayNames.of(resource.language) ?? resource.language})` : null}</H1>
-        
+        <H1>
+          {resource?.title ?? "Resource Detail"}{" "}
+          {resource?.language
+            ? `(in ${languageDisplayNames.of(resource.language) ?? resource.language})`
+            : null}
+        </H1>
+
         {resource?.subtitle ? (
           <span className="resource-subtitle">{resource.subtitle}</span>
         ) : null}
-    
 
-        {resource?.note ? (
-          <Note title="Note:">{resource.note}</Note>
-        ) : null}
-
+        {resource?.note ? <Note title="Note:">{resource.note}</Note> : null}
 
         <div>
           {imageUrl ? (
@@ -43,23 +44,38 @@ export function ResourceDetail() {
 
         <h2>Details</h2>
         <dl>
-
-
-          {resource?.format ? <dt>Format:</dt> : null}
           {resource?.format ? (
-            <dd>
-              <ResourceFormat format={resource.format} />
-            </dd>
+            <>
+              <dt>Format:</dt>
+              <dd>
+                <ResourceFormat format={resource.format} />
+              </dd>
+            </>
           ) : null}
-
+          {resource?.category ? (
+            <>
+              <dt>Category:</dt>
+              <dd>
+                <ResourceCategory category={resource.category} />
+              </dd>
+            </>
+          ) : null}
           {resource?.author ? <dt>Author:</dt> : null}
           {resource?.author ? <dd>{resource.author}</dd> : null}
 
           <dt>Language:</dt>
-          <dd>{resource?.language ? languageDisplayNames.of(resource.language) : "English"}</dd>
+          <dd>
+            {resource?.language
+              ? languageDisplayNames.of(resource.language)
+              : "English"}
+          </dd>
 
           {resource?.["original-title"] ? <dt>Original title:</dt> : null}
-          {resource?.["original-title"] ? <dd lang={resource.language}><em>{resource["original-title"]}</em></dd> : null}
+          {resource?.["original-title"] ? (
+            <dd lang={resource.language}>
+              <em>{resource["original-title"]}</em>
+            </dd>
+          ) : null}
 
           {resource?.edition ? <dt>Edition:</dt> : null}
           {resource?.edition ? <dd>{resource.edition}</dd> : null}

@@ -91,7 +91,7 @@ ul.resource-format-list{
     flex-wrap: wrap;
     gap: 0.5rem;
     list-style: none;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     padding: 0;
 }
 
@@ -100,7 +100,7 @@ ul.resource-format-list li {
     background-color: var(--dark-white);
     font-size: 0.9rem;
     padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     z-index: 99;
     border: var(--light-grey) 0.0625rem solid;
 }
