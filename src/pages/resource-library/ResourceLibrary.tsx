@@ -69,7 +69,7 @@ const FILTER_TO_FORMAT: Record<FilterKey, number> = {
 };
 
 function sortByYearDescending(resources: Resource[]): Resource[] {
-  return [...resources].sort((a, b) => (b.year ?? 0) - (a.year ?? 0));
+  return [...resources].sort((a, b) => (a.year ?? 0) - (b.year ?? 0));
 }
 
 export function ResourceLibrary() {

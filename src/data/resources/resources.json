@@ -278,5 +278,36 @@
     "category": [99, 103],
     "source": "https://billeder.aeldresagen.dk/cdn/xZfS6x/2023-oplevelser-udfordringer-digitalt-samfundweb.pdf",
     "image": "/src/assets/img/resources/the-populations-experiences-and-challenges-in-a-digital-society.png"
-  }
+  },
+  {
+    "id": "89012346",
+    "title": "Involuntarily logged out",
+    "slug": "involuntarily-logged-out",
+    "subtitle": "We have created a subclass of digitally helpless.",
+    "language": "no",
+    "original-title": "Ufrivillig logget ut: Vi har skapt en underklasse av digitalt hjelpeløse.",
+    "author": "Tove Andersson",
+    "author-short": "Andersson",
+    "year": 2022,
+    "format": [4, 5],
+    "category": [99, 103],
+    "source": "https://www.nrk.no/ytring/ufrivillig-logget-ut-1.15863031",
+    "image": "https://gfx.nrk.no/iAEMbaAiN3xiPBPsOse8xgA1JIeEyzVTENWopTZ5Aujw.jpg"
+    },
+    {
+    "id": "90123457",
+    "title": "Closed",
+    "slug": "closed",
+    "subtitle": "My dad was a busy man with a website and his own company, until the digital crash. You should preferably be young, healthy and quick when everything is done online.",
+    "language": "no",
+    "original-title": "Stengt ute: Pappaen min var en oppegående mann med nettside og eget firma, til det krasja digitalt. Du skal helst være ung, frisk og kjapp når alt ordnes på nett.",
+    "author": "Astrid Marie Holand",
+    "author-short": "Holand",
+    "year": 2021,
+    "format": [4, 5],
+    "category": [99, 103],
+    "source": "https://www.nrk.no/ytring/stengt-ute-1.15522823",
+    "image": "https://gfx.nrk.no/MU96X91zLDDhGFkNtRWpSwuT5KxeeBeEIbExfQERr5mQ.jpg"
+    }
+
 ]
