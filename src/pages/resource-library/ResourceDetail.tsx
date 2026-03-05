@@ -43,56 +43,57 @@ export function ResourceDetail() {
         </div>
 
         <h2>Details</h2>
-        <dl>
-          {resource?.format ? (
-            <>
-              <dt>Format:</dt>
-              <dd>
-                <ResourceFormat format={resource.format} />
-              </dd>
-            </>
-          ) : null}
-          {resource?.category ? (
-            <>
-              <dt>Category:</dt>
-              <dd>
-                <ResourceCategory category={resource.category} />
-              </dd>
-            </>
-          ) : null}
-          {resource?.author ? <dt>Author:</dt> : null}
-          {resource?.author ? <dd>{resource.author}</dd> : null}
+          <dl>
+            {resource?.format ? (
+              <>
+                <dt>Format:</dt>
+                <dd>
+                  <ResourceFormat format={resource.format} />
+                </dd>
+              </>
+            ) : null}
+            {resource?.category ? (
+              <>
+                <dt>Category:</dt>
+                <dd>
+                  <ResourceCategory category={resource.category} />
+                </dd>
+              </>
+            ) : null}
+            {resource?.author ? <dt>Author:</dt> : null}
+            {resource?.author ? <dd>{resource.author}</dd> : null}
 
-          <dt>Language:</dt>
-          <dd>
-            {resource?.language
-              ? languageDisplayNames.of(resource.language)
-              : "English"}
-          </dd>
-
-          {resource?.["original-title"] ? <dt>Original title:</dt> : null}
-          {resource?.["original-title"] ? (
-            <dd lang={resource.language}>
-              <em>{resource["original-title"]}</em>
-            </dd>
-          ) : null}
-
-          {resource?.edition ? <dt>Edition:</dt> : null}
-          {resource?.edition ? <dd>{resource.edition}</dd> : null}
-
-          {resource?.year ? <dt>Year:</dt> : null}
-          {resource?.year ? <dd>{resource.year}</dd> : null}
-
-          {resource?.publisher ? <dt>Publisher:</dt> : null}
-          {resource?.publisher ? <dd>{resource.publisher}</dd> : null}
-
-          {resource?.source ? <dt>Source:</dt> : null}
-          {resource?.source ? (
+            <dt>Language:</dt>
             <dd>
-              <a href={resource.source}>{resource.source}</a>
+              {resource?.language
+                ? languageDisplayNames.of(resource.language)
+                : "English"}
             </dd>
-          ) : null}
-        </dl>
+
+            {resource?.["original-title"] ? <dt>Original title:</dt> : null}
+            {resource?.["original-title"] ? (
+              <dd lang={resource.language}>
+                <em>{resource["original-title"]}</em>
+              </dd>
+            ) : null}
+
+            {resource?.edition ? <dt>Edition:</dt> : null}
+            {resource?.edition ? <dd>{resource.edition}</dd> : null}
+
+            {resource?.year ? <dt>Year:</dt> : null}
+            {resource?.year ? <dd>{resource.year}</dd> : null}
+
+            {resource?.publisher ? <dt>Publisher:</dt> : null}
+            {resource?.publisher ? <dd>{resource.publisher}</dd> : null}
+
+            {resource?.source ? <dt>Source:</dt> : null}
+            {resource?.source ? (
+              <dd>
+                <a href={resource.source}>{resource.source}</a>
+              </dd>
+            ) : null}
+          </dl>
+        
       </div>
     </main>
   );

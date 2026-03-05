@@ -1,3 +1,6 @@
+.resource-detail-wrapper{
+    max-width: var(--content-width);
+}
 .resource-detail-wrapper img {
     width: 100%;
     max-width: 20rem;
