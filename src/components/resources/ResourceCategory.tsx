@@ -1,5 +1,6 @@
 export function ResourceCategory({ category }: { category: number | number[] }) {
     const categoryNames: Record<number, string> = {
+        99: "ICT Inclusion",
         100: "Intersectionality",
         101: "Race, Ethnicity, and Religion",
         102: "Geographical Location and Migration Status",

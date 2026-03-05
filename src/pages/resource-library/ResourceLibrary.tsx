@@ -12,7 +12,7 @@ type Resource = {
   category?: number | number[];
 };
 
-type FilterKey = "book" | "ebook" | "video" | "article" | "internetSource" | "intersectionality" | "raceEthnicityReligion" | "geographicalLocationMigrationStatus" | "ageDisabilityHealth" | "socioeconomicStatus" | "genderSex";
+type FilterKey = "book" | "ebook" | "video" | "article" | "internetSource" | "ictInclusion" | "intersectionality" | "raceEthnicityReligion" | "geographicalLocationMigrationStatus" | "ageDisabilityHealth" | "socioeconomicStatus" | "genderSex";
 
 type FormatFilterKey =
   | "book"
@@ -22,6 +22,7 @@ type FormatFilterKey =
   | "internetSource";
 
 type CategoryFilterKey =
+  | "ictInclusion"
   | "intersectionality"
   | "raceEthnicityReligion"
   | "geographicalLocationMigrationStatus"
@@ -40,6 +41,7 @@ const FORMAT_FILTER_KEYS: FormatFilterKey[] = [
 
 // Category filters map to values stored in resource.category.
 const CATEGORY_FILTER_KEYS: CategoryFilterKey[] = [
+  "ictInclusion",
   "intersectionality",
   "raceEthnicityReligion",
   "geographicalLocationMigrationStatus",
@@ -57,6 +59,7 @@ const FILTER_TO_FORMAT: Record<FilterKey, number> = {
   video: 3,
   article: 4,
   internetSource: 5,
+  ictInclusion: 99,
   intersectionality: 100,
   raceEthnicityReligion: 101,
   geographicalLocationMigrationStatus: 102,
@@ -84,6 +87,7 @@ export function ResourceLibrary() {
     video: false,
     article: false,
     internetSource: false,
+    ictInclusion: false,
     intersectionality: false,
     raceEthnicityReligion: false,
     geographicalLocationMigrationStatus: false,
@@ -234,6 +238,10 @@ export function ResourceLibrary() {
 
             <fieldset>
               <legend>Filter by category:</legend>
+              <input type="checkbox" id="ict-inclusion" name="ict-inclusion" checked={selectedFilters.ictInclusion} onChange={(event) => handleCheckboxChange("ictInclusion", event.target.checked)} />
+              <label htmlFor="ict-inclusion">ICT Inclusion</label>
+
+
               <input
                 type="checkbox"
                 id="intersectionality"

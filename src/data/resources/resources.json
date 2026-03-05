@@ -6,7 +6,7 @@
     "author": "Kimberlé Crenshaw",
     "author-short": "Crenshaw",
     "year": 2015,
-    "format": [5],
+    "format": [4,5],
     "category": [100,101,105],
     "publisher": "The Washington Post",
     "source": "https://www.washingtonpost.com/news/in-theory/wp/2015/09/24/why-intersectionality-cant-wait/",
@@ -62,7 +62,7 @@
     "author-short": "Winthereik, Aanestad, and Mäkitalo",
     "year": 2024,
     "format": [1, 2],
-    "category": [102, 103],
+    "category": [99, 102, 103],
     "publisher": "Djøf forlag",
     "image": "https://imgcdn.saxo.com/_9788757455250",
     "source": "https://djoefforlag.dk/products/digital-inclusion"
@@ -75,7 +75,7 @@
     "author-short": "Meyer and Wachter-Boettcher",
     "year": 2016,
     "format": [1, 2],
-    "category": 103,
+    "category": [99, 103],
     "publisher": "A Book Apart",
     "image": "https://abookapart.com/cdn/shop/products/ABA-cover-18_aea67455-a1b9-486c-a817-fbbbbda3637d_112x@3x﹖v=1554390815.png",
     "source": "https://abookapart.com/products/design-for-real-life"
@@ -115,7 +115,7 @@
     "author-short": "PenzeyMoog",
     "year": 2021,
     "format": [1, 2],
-    "category": 103,
+    "category": [99, 103],
     "publisher": "A Book Apart",
     "image": "https://abookapart.com/cdn/shop/products/aba-cover-37_112x@3x﹖v=1627955454.png",
     "source": "https://abookapart.com/products/design-for-safety"
@@ -143,7 +143,7 @@
     "author-short": "Wachter-Boettcher",
     "year": 2018,
     "format": 1,
-    "category": [101, 105],
+    "category": [99, 101, 105],
     "publisher": "W. W. Norton & Company",
     "image": "https://cdn2.wwnorton.com/wwnproducts/TRADE/5/4/9780393356045/9780393356045_300.jpeg",
     "source": "https://wwnorton.com/books/Technically-Wrong/"
@@ -156,7 +156,7 @@
     "author-short": "Brajnik, Yesilada, and Harper",
     "year": 2010,
     "format": 4,
-    "category": 103,
+    "category": [99, 103],
     "image": "/src/assets/img/resources/testability-and-validity-of-wcag-2-0-the-expertise-effect.png",
     "source": "https://dl.acm.org/doi/10.1145/1878803.1878813"
   },
@@ -169,7 +169,7 @@
     "author-short": "Horton and Sloan",
     "year": 2024,
     "format": [1, 2],
-    "category": 103,
+    "category": [99, 103],
     "image": "https://images.routledge.com/common/jackets/amazon/978103226/9781032263861.jpg",
     "source": "https://www.routledge.com/What-Every-Engineer-Should-Know-About-Digital-Accessibility/Horton-Sloan/p/book/9781032263861"
   },
@@ -210,7 +210,7 @@
     "year": 2017,
     "publisher": "Morgan Kaufmann",
     "format": 1,
-    "category": 103,
+    "category": [99, 103],
     "image": "https://ars.els-cdn.com/content/image/3-s2.0-C20150014514-cov200h.gif"
   },
   {
@@ -221,7 +221,7 @@
     "author-short": "W3C WAI",
     "year": 2026,
     "format": 5,
-    "category": 103,
+    "category": [99, 103],
     "publisher": "W3C",
     "source": "https://www.w3.org/WAI/fundamentals/accessibility-intro/",
     "image": "/src/assets/img/resources/introduction-to-web-accessibility-w3c.png"
@@ -230,10 +230,10 @@
     "id": "99483722",
     "title": "Why the internet hates my surname",
     "slug": "why-the-internet-hates-my-surname",
-    "author": "Luke O’Sullivan",
+    "author": "Luke O'Sullivan",
     "year": 2025,
     "format": [3, 5],
-    "category": [101, 102],
+    "category": [99, 101, 102],
     "image": "https://i.ytimg.com/vi/0f3RMYTCvMU/hqdefault_29866.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLClZYG7qWzOE36Rqs1ybaEqiIt1Iw",
     "source": "https://www.youtube.com/watch?v=0f3RMYTCvMU",
     "note": "This video does not include captions or audio description, but automated captions are available."
@@ -260,7 +260,7 @@
     "author-short": "Groves",
     "year": 2026,
     "format": 5,
-    "category": 103,
+    "category": [99, 103],
     "source": "https://overlayfactsheet.com/en/",
     "image": "/src/assets/img/resources/overlay-fact-sheet.png"
   },
@@ -275,7 +275,7 @@
     "author-short": "Epinion",
     "year": 2023,
     "format": 4,
-    "category": 103,
+    "category": [99, 103],
     "source": "https://billeder.aeldresagen.dk/cdn/xZfS6x/2023-oplevelser-udfordringer-digitalt-samfundweb.pdf",
     "image": "/src/assets/img/resources/the-populations-experiences-and-challenges-in-a-digital-society.png"
   }
