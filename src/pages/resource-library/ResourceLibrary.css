@@ -15,14 +15,14 @@
 }
 
 
-.search-and-filter summary::before {
+.search-and-filter summary span::before {
     content: '+';
     font-size: 1.5rem;
     margin-right: 0.5rem;
 
 }
 
-.search-and-filter details[open]>summary::before {
+.search-and-filter details[open]>summary span::before {
     content: '−';
 
 }

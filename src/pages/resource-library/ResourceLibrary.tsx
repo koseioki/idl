@@ -176,7 +176,7 @@ export function ResourceLibrary() {
 
       <div className="search-and-filter">
         <details>
-          <summary>Filter resources</summary>
+          <summary><span aria-hidden="true"></span>Filter resources</summary>
           <form onSubmit={handleApplyFilters}>
             <fieldset>
               <legend>Filter by format:</legend>
