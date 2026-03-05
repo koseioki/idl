@@ -20,7 +20,6 @@ export function LearningAndKnowledge() {
             </p>
             <Drawing
               name="Share"
-              alt=""
             />
           </Card>
 
@@ -36,7 +35,6 @@ export function LearningAndKnowledge() {
             </p>
             <Drawing
               name="Library"
-              alt=""
             />
           </Card>
         </CardList>

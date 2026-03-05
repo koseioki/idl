@@ -10,7 +10,7 @@ export function Contact() {
       <H1>Contact</H1>
 
       <ContactText />
-      <Drawing name="Contact" alt="" />
+      <Drawing name="Contact" />
     </main>
     </>
   );

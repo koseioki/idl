@@ -16,6 +16,7 @@ import Contact from '../../assets/drawings/contact.svg';
 import Research from '../../assets/drawings/research.svg';
 import Library from '../../assets/drawings/library.svg';
 import './Drawing.css';
+
 const svgMap = {
   Placeholder,
   TwoPeopleCraftingICT,
@@ -27,9 +28,29 @@ const svgMap = {
   Library
 };
 
-export function Drawing({ name, strokeColor = "currentColor", alt }) {
+const drawingAriaLabels = {
+  Placeholder: '',
+  TwoPeopleCraftingICT:
+    'Two people are discussing a computer. One person has tangled thoughts above their head, while the other has a light bulb above hers',
+  HomeNGO: 'A house with the Intersectional Design Lab’s logo and a tag that reads “NGO”',
+  Share: 'A person with short curly hair and earrings is presenting a slide',
+  Experiment: 'Two people, one with glasses, short hair, and a beard, and the other with longer hair, are having a discussion',
+  Contact: 'Contact illustration',
+  Research: 'A person with long hair is looking at a piece of paper through a magnifying glass, with a concentrated expression and thought bubbles showing tangled ideas',
+  Library: 'A person wearing glasses and a scarf around their head is holding books in front of a bookshelf'
+};
+
+type DrawingName = keyof typeof svgMap;
+
+type DrawingProps = {
+  name: DrawingName;
+  strokeColor?: string;
+};
+
+export function Drawing({ name, strokeColor = "currentColor" }: DrawingProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [svgContent, setSvgContent] = useState<string>('');
+  const ariaLabel = drawingAriaLabels[name] || drawingAriaLabels.Placeholder;
 
   useEffect(() => {
     const svgPath = svgMap[name] || svgMap.Placeholder;
@@ -63,7 +84,7 @@ export function Drawing({ name, strokeColor = "currentColor", alt }) {
 
   // return <div ref={containerRef} style={{ display: 'inline-block', lineHeight: 0 }} />;
     return (
-    <div className="drawing" ref={containerRef} aria-label={alt} role="img" />
+    <div className="drawing" ref={containerRef} aria-label={`${ariaLabel}, drawing`} role="img" />
   );
 
 }

@@ -25,7 +25,6 @@ export function Home() {
       {/* <img src={TwoPeopleCraftingICT} alt="Two people crafting ICT" /> */}
       <Drawing
         name="TwoPeopleCraftingICT"
-        alt="Two people are discussing a computer. One person has tangled thoughts above their head, while the other has a light bulb above hers, drawing."
       />
 
       <h2>Research Projects</h2>
@@ -68,7 +67,7 @@ export function Home() {
           <p>
             We host seminars, webinars, workshops, talks, and similar events.
           </p>
-          <Drawing name="Share" alt="" />
+          <Drawing name="Share" />
         </Card>
 
         <Card
@@ -81,7 +80,7 @@ export function Home() {
             We share our curated research resources, including books, videos,
             courses, and more.
           </p>
-          <Drawing name="Library" alt="" />
+          <Drawing name="Library" />
         </Card>
       </CardList>
     </main>
