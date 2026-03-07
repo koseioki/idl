@@ -308,6 +308,18 @@
     "category": [99, 103],
     "source": "https://www.nrk.no/ytring/stengt-ute-1.15522823",
     "image": "https://gfx.nrk.no/MU96X91zLDDhGFkNtRWpSwuT5KxeeBeEIbExfQERr5mQ.jpg"
+    },
+    {
+      "id": "22203342",
+      "title": "Neurodiversity Design System",
+      "slug": "neurodiversity-design-system",
+      "author": "Will Soward",
+      "author-short": "Soward",
+      "year": 2026,
+      "format": 5,
+      "category": [99, 103],
+      "source": "https://neurodiversity.design/",
+      "image": "/src/assets/img/resources/neurodiversity-design-system.png"
     }
 
 ]
