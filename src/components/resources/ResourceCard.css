@@ -41,6 +41,16 @@ ul.resource-list li article a {
     justify-content: space-between;
 }
 
+ul.resource-list li article h2 {
+    margin: 0;
+    font-size: 1.25rem;
+ 
+}
+/* Subtitle */
+ul.resource-list li article a span{
+    font-size: 0.9rem;
+}
+
 ul.resource-list li article:hover {
     background-color: var(--dark-white);
         cursor: pointer;
@@ -58,11 +68,6 @@ ul.resource-list li article:has(a:focus-visible) a {
 }
 
 
-ul.resource-list li article h2 {
-    margin: 0;
-    font-size: 1.25rem;
- 
-}
 
 
 
@@ -89,18 +94,22 @@ ul.resource-format-list{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 0.25rem;
     list-style: none;
-    margin-top: 0.5rem;
+    margin-top: 0.25rem;
     padding: 0;
 }
 
-ul.resource-format-list li {
-    align-items: center;
-    background-color: var(--dark-white);
+/* only on the card */
+.resource-list ul.resource-format-list li {
+    color: var(--dark-grey-shade);
     font-size: 0.9rem;
-    padding: 0.5rem 1rem;
-    border-radius: 1rem;
-    z-index: 99;
-    border: var(--light-grey) 0.0625rem solid;
+}
+
+ul.resource-format-list li span::after {
+    content: '|';
+    padding-left: 0.25rem;
+}
+ul.resource-format-list li:last-child span::after {
+    display: none;
 }

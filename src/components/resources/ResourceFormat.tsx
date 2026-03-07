@@ -12,7 +12,7 @@ export function ResourceFormat({ format }: { format: number | number[] }) {
     return (
         <ul className="resource-format-list">
             {formatValues.map((formatValue) => (
-                <li key={formatValue}>{formatNames[formatValue] || "Unknown"}</li>
+                <li key={formatValue}>{formatNames[formatValue] || "Unknown"}<span aria-hidden="true"></span></li>
             ))}
         </ul>
     );

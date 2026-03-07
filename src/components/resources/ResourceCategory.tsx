@@ -15,7 +15,7 @@ export function ResourceCategory({ category }: { category: number | number[] }) 
     return (
         <ul className="resource-format-list">
             {categoryValues.map((categoryValue) => (
-                <li key={categoryValue}>{categoryNames[categoryValue] || "Unknown"}</li>
+                <li key={categoryValue}>{categoryNames[categoryValue] || "Unknown"}<span aria-hidden="true"></span></li>
             ))}
         </ul>
     );
