@@ -57,7 +57,7 @@ export function WhatIsIntersectionalDesign() {
         </p>
 
         <h2>Why is Intersectional Design Important?</h2>
-        <NavLink to="/">
+        <NavLink to="why-is-intersectional-design-important">
           Read more about "Why is Intersectional Design Important?"
         </NavLink>
         <h2>How Do We Start?</h2>

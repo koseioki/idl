@@ -53,13 +53,13 @@ export function ResourceCard({ resource }: ResourceCardProps) {
         <NavLink to={path}>
           <div>
             <h2>{resource.title ?? "Untitled resource"} {resource?.language ? `(in ${languageDisplayNames.of(resource.language) ?? resource.language})` : null}</h2>
-          {resource.subtitle ? <span>{resource.subtitle}</span> : null}
+          {resource.subtitle ? <span>{resource.subtitle.slice(0, 70)}{resource.subtitle.length > 70 ? "..." : null}</span> : null}
           </div>
           <Icon />
         </NavLink>
         <p>
           {resource.author ? resource.author : null}{" "}
-          {resource.year ? `(${resource.year})` : null}
+          {resource.year ? `(${resource.year})` : "(no date)"}
         </p>
         {/* <p>{resource.publisher ? resource.publisher : null}</p> */}
         <ResourceFormat format={resource.format ?? 0} />
