@@ -23,9 +23,10 @@ export function Breadcrumbs() {
 
   // Generate breadcrumb items from the current path
   const pathnames = location.pathname.split("/").filter((x) => x);
+  // console.log("Breadcrumbs pathnames:", pathnames); // Debugging log
 
-  // Don't show breadcrumbs on home page
-  if (pathnames.length === 0) {
+  // Don't show breadcrumbs on home page or notfound page
+  if (pathnames.length === 0 || pathnames.includes("not-found")) {
     return null;
   }
 

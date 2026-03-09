@@ -1,5 +1,5 @@
 // import './App.css'
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { About } from "./pages/about/About";
 import { Header } from "./components/header-and-footer/Header";
@@ -18,6 +18,7 @@ import { EventDetail } from "./pages/seminars-and-workshops/EventDetail";
 import { WhatIsIntersectionality } from "./pages/what-is-intersectional-design/WhatIsIntersectionality";
 import { HowDoWeStart } from "./pages/what-is-intersectional-design/HowDoWeStart";
 import { InclusionEquityAndAccessibilityStatement } from "./pages/InclusionEquityAndAccessibilityStatement";
+import { NotFound } from "./pages/NotFound";
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -58,6 +59,10 @@ function App() {
 
           <Route path="/contact" element={<Contact />} />
           <Route path="/inclusion-equity-and-accessibility-statement" element={<InclusionEquityAndAccessibilityStatement />} />
+
+
+          <Route path="/not-found" element={<NotFound />} />
+          <Route path="*" element={<Navigate to="/not-found" replace />} />
         </Routes>
         <Footer />
       </Router>
