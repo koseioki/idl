@@ -59,7 +59,7 @@ export function ResourceCard({ resource }: ResourceCardProps) {
         </NavLink>
         <p>
           {resource.author ? resource.author : null}{" "}
-          {resource.year ? `(${resource.year})` : null}
+          {resource.year ? `(${resource.year})` : "(no date)"}
         </p>
         {/* <p>{resource.publisher ? resource.publisher : null}</p> */}
         <ResourceFormat format={resource.format ?? 0} />
