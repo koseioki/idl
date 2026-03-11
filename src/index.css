@@ -3,6 +3,7 @@
     --dark-white: #E9E9E9;
     --dark-dark-white: #D9D9D9;
     --text-black: #15245F;
+    --black: #333333;
 
     --light-purple: #E6BEF7;
     --light-purple-shade: #D2A3E6;
@@ -47,6 +48,7 @@
         --dark-white: #141D45;
         --dark-dark-white: #212C60;
         --text-black: #FCFCFC;
+        --black: #D9D9D9;
 
         /* Dark and Light are switched */
 
