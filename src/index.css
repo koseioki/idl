@@ -171,6 +171,9 @@ a:focus-visible {
     outline-offset: var(--focus-indicator-offset);
 }
 
+ul{
+    max-width: var(--content-width);
+}
 
 
 @media (prefers-color-scheme: dark) {
@@ -201,8 +204,7 @@ blockquote {
     font-size: 1.25rem;
     font-style: italic;
     padding-left: 2rem;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 2rem 0;
     display: block;
     position: relative;
 }

@@ -40,17 +40,17 @@ export function WhatIsIntersectionalDesign() {
           <NavLink to="what-is-intersectionality">Read more about "What is Intersectionality?"</NavLink>
         </p>
 
-        <h2>Why is Intersectional Design Important?</h2>
+        <h2>Why is Intersectional Design important?</h2>
         <NavLink to="/">
-          Read more about "Why is Intersectional Design Important?"
+          Read more about "Why is Intersectional Design important?"
         </NavLink>
-        <h2>How Do We Start?</h2>
+        <h2>How do we start?</h2>
         <p>
           At Intersectional Design Lab, we recommend starting by understanding
           the specific marginalisation and challenges people face, one by one.
           This builds empathy and helps you truly "put yourself in their shoes."
         </p>
-        <NavLink to="how-do-we-start">Read more about "How Do We Start?"</NavLink>
+        <NavLink to="how-do-we-start">Read more about "How do we start?"</NavLink>
 
       </main>
   );
