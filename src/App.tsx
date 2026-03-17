@@ -19,6 +19,7 @@ import { WhatIsIntersectionality } from "./pages/what-is-intersectional-design/W
 import { HowDoWeStart } from "./pages/what-is-intersectional-design/HowDoWeStart";
 import { InclusionEquityAndAccessibilityStatement } from "./pages/InclusionEquityAndAccessibilityStatement";
 import { NotFound } from "./pages/NotFound";
+import { WhyIsIntersectionalDesignImportant } from "./pages/what-is-intersectional-design/WhyIsIntersectionalDesignImportant";
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -37,6 +38,7 @@ function App() {
             element={<WhatIsIntersectionalDesign />}
           />
           <Route path="/what-is-intersectional-design/what-is-intersectionality" element={<WhatIsIntersectionality />} />
+          <Route path="/what-is-intersectional-design/why-is-intersectional-design-important" element={<WhyIsIntersectionalDesignImportant />} />
           <Route path="/what-is-intersectional-design/how-do-we-start" element={<HowDoWeStart />} />
 
           <Route path="/research-projects" element={<ResearchProjects />} />

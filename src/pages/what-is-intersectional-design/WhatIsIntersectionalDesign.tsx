@@ -2,7 +2,7 @@ import { Note } from "../../components/global/Note";
 import { H1 } from "../../components/header-and-footer/H1";
 import { NavLink } from "react-router-dom";
 export function WhatIsIntersectionalDesign() {
-  const lastUpdated = "2026-02-28";
+  const lastUpdated = "2026-03-11";
 
   return (
     
@@ -41,7 +41,7 @@ export function WhatIsIntersectionalDesign() {
         </p>
 
         <h2>Why is Intersectional Design important?</h2>
-        <NavLink to="/">
+        <NavLink to="why-is-intersectional-design-important">
           Read more about "Why is Intersectional Design important?"
         </NavLink>
         <h2>How do we start?</h2>

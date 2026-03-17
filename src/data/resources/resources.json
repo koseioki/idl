@@ -317,6 +317,20 @@
       "category": [99, 103],
       "source": "https://neurodiversity.design/",
       "image": "/src/assets/img/resources/neurodiversity-design-system.png"
+    },
+    {
+      "id": "33304453",
+      "title": "World Social Report 2025",
+      "slug": "world-social-report-2025",
+      "subtitle": "A New Policy Consensus to Accelerate Social Progress",
+      "author": "United Nations Department of Economic and Social Affairs (UN DESA)",
+      "author-short": "UN DESA",
+      "year": 2025,
+      "format": 4,
+      "category": [102, 104],
+      "publisher": "United Nations",
+      "source": "https://social.desa.un.org/issues/world-social-report",
+      "image": "https://social.desa.un.org//sites/default/files/styles/max_width_400px_ri/public/2025-04/WSR2025-Cover-sm.jpg.jpg?itok=XeEJM61H"
     }
 
 ]
