@@ -2,7 +2,7 @@ import { Note } from "../../components/global/Note";
 import { H1 } from "../../components/header-and-footer/H1";
 import { NavLink } from "react-router-dom";
 export function WhatIsIntersectionalDesign() {
-  const lastUpdated = "2026-03-11";
+  const lastUpdated = "2026-04-15";
 
   return (
     

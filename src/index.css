@@ -175,6 +175,10 @@ ul{
     max-width: var(--content-width);
 }
 
+li {
+    margin-bottom: 0.5rem;
+}
+
 
 @media (prefers-color-scheme: dark) {
 

@@ -8,6 +8,10 @@ ul.resource-list {
     max-width: var(--content-width);
 }
 
+ul.resource-list li {
+    margin-bottom: 0;
+}
+
 ul.resource-list li article {
     display: flex;
     flex-direction: row;
