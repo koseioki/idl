@@ -54,12 +54,12 @@ export function WhyIsIntersectionalDesignImportant() {
 
       </p>
 
-      <h2>#3 It prevents a design that addresses one aspect of marginalisation from unintentionally harming other marginalised groups.</h2>
+      <h2 id="#it-prevents-a-design-that-addresses-one-aspect-of-marginalisation-from-unintentionally-harming-other-marginalised-groups">#3 It prevents a design that addresses one aspect of marginalisation from unintentionally harming other marginalised groups.</h2>
       <p>It is possible to create designs that address one aspect of marginalisation while causing disadvantages to others. For example: </p>
       <ul>
         <li>an artificial intelligence (AI)-powered translator can make communication easier for people who are not fluent in a language.</li>
       </ul>
-      <p>However, these tools are also known to contribute to environmental harm and labour exploitation in the Global South <InTextCitation id="00048338" /></p>
+      <p>However, these tools are also known to contribute to environmental harm and labour exploitation in the Global South <InTextCitation id="00048338" />.</p>
       <p>By developing a more comprehensive understanding of marginalisation, designers can minimise the unintended side effects that arise from solutions targeting only a single form of marginalisation.</p>
 
 
