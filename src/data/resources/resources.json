@@ -331,6 +331,20 @@
       "publisher": "United Nations",
       "source": "https://social.desa.un.org/issues/world-social-report",
       "image": "https://social.desa.un.org//sites/default/files/styles/max_width_400px_ri/public/2025-04/WSR2025-Cover-sm.jpg.jpg?itok=XeEJM61H"
+    },
+    {
+      "id": "00048338",
+      "title": "Artificial intelligence colonialism",
+      "slug": "artificial-intelligence-colonialism",
+      "subtitle": "environmental damage, labor exploitation, and human rights crises in the global south",
+      "author": "Salvador Santino F. Regilme",
+      "author-short": "Regilme",
+      "year": 2024,
+      "format": 4,
+      "category": [102, 104],
+      "publisher": "Johns Hopkins University Press",
+      "source": "https://www.researchgate.net/publication/388814014_Artificial_Intelligence_Colonialism_Environmental_Damage_Labor_Exploitation_and_Human_Rights_Crises_in_the_Global_South",
+      "image": "/src/assets/img/resources/artificial-intelligence-colonialism.png"
     }
 
 ]

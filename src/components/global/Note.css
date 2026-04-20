@@ -11,3 +11,7 @@
 .note-section h2{
     margin-top: 0;
 }
+
+.note-section a{
+    color: var(--text-black)
+}

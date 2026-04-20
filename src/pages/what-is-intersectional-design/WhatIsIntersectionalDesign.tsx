@@ -1,15 +1,15 @@
-import { Note } from "../../components/global/Note";
+// import { Note } from "../../components/global/Note";
 import { H1 } from "../../components/header-and-footer/H1";
 import { NavLink } from "react-router-dom";
 export function WhatIsIntersectionalDesign() {
-  const lastUpdated = "2026-04-15";
+  // const lastUpdated = "2026-04-15";
 
   return (
     
       <main id="main-content">
         <H1>What is Intersectional Design?</H1>
 
-        <Note title="Note:">
+        {/* <Note title="Note:">
           <p>
             This page is a work in progress. We are still developing the
             content.
@@ -22,7 +22,7 @@ export function WhatIsIntersectionalDesign() {
               day: "numeric",
             })}
           </p>
-        </Note>
+        </Note> */}
 
         <p>
           <b>Intersectional Design</b> is a concept that combines intersectionality and design—in other words, it’s about designing while considering “intersecting” forms of discrimination.

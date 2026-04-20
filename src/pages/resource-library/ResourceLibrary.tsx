@@ -169,14 +169,14 @@ export function ResourceLibrary() {
         courses, and more. All resources are reviewed by Intersectional Design
         Lab.
       </p>
-      <p>
+      {/* <p>
         Last updated:{" "}
         {new Date("2026-03-04").toLocaleDateString([], {
           year: "numeric",
           month: "long",
           day: "numeric",
         })}
-      </p>
+      </p> */}
 
       <div className="search-and-filter">
         <details>
