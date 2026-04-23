@@ -14,7 +14,6 @@
     align-items: center;
 }
 
-
 .search-and-filter summary span::before {
     content: '+';
     font-size: 1.5rem;
@@ -111,6 +110,10 @@
 .search-and-filter input[type="checkbox"]:focus-visible+label {
     outline: var(--focus-indicator);
     outline-offset: var(--focus-indicator-offset);
+}
+
+.search-and-filter .button{
+    /* margin: 0; */
 }
 
 /* Kill the outline */

@@ -9,22 +9,7 @@ export function WhatIsIntersectionalDesign() {
       <main id="main-content">
         <H1>What is Intersectional Design?</H1>
 
-        {/* <Note title="Note:">
-          <p>
-            This page is a work in progress. We are still developing the
-            content.
-          </p>
-          <p>
-            Last updated:{" "}
-            {new Date(lastUpdated).toLocaleDateString([], {
-              year: "numeric",
-              month: "long",
-              day: "numeric",
-            })}
-          </p>
-        </Note> */}
-
-        <p>
+        <p className="lead-text">
           <b>Intersectional Design</b> is a concept that combines intersectionality and design—in other words, it’s about designing while considering “intersecting” forms of discrimination.
         </p>
         <p>

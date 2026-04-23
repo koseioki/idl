@@ -1,0 +1,14 @@
+.side-nav{
+    /* padding: 1rem; */
+    /* border: 0.0625rem solid var(--dark-purple); */
+}
+
+.side-nav ul{
+    list-style: none;
+    gap: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-white);
+
+}

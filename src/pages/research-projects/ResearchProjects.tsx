@@ -24,32 +24,6 @@ export function ResearchProjects() {
             <p>{project.shortDescription}</p>
           </Card>))}
         </CardList>
-
-        {/* <CardList>
-          <Card
-            heading="Marginalisation and Design"
-            headingLevel={2}
-            linkTo="/research-projects/marginalisation-and-design"
-            disabled={false}
-          >
-            <p>
-              What kinds of marginalisation exist, and how do they affect
-              design?
-            </p>
-          </Card>
-
-          <Card
-            heading="Design in Practice"
-            headingLevel={2}
-            linkTo="/research-projects/design-in-practice"
-            disabled={false}
-          >
-            <p>
-              We discuss how design can become more inclusive, with practical
-              examples.
-            </p>
-          </Card>
-        </CardList> */}
       </main>
     </>
   );
