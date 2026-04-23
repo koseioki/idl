@@ -1,6 +1,7 @@
 .research-project-page {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     justify-content: space-between;
     width: 100%;
     gap: 2rem;
@@ -8,9 +9,14 @@
     max-width: var(--page-width);
     margin-top: 2rem;
     /* border: 1px blue solid; */
-
 }
 
+@media (max-width: 768px) {
+    .research-project-page {
+        flex-direction: column;
+    }
+
+}
 .research-project-page main,
 .research-project-page nav {
     /* border: 1px red solid; */
@@ -19,4 +25,9 @@
 .research-project-page main {
     flex: 3;
     /* padding-right: 2rem; */
+}
+
+.research-project-page nav {
+    flex: 1;
+    /* padding-left: 2rem; */
 }

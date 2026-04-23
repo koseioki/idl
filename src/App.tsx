@@ -22,6 +22,7 @@ import { NotFound } from "./pages/NotFound";
 import { WhyIsIntersectionalDesignImportant } from "./pages/what-is-intersectional-design/WhyIsIntersectionalDesignImportant";
 import { AboutThisProject } from "./pages/research-projects/AboutThisProject";
 import { ProjectOverview } from "./pages/research-projects/ProjectOverview";
+import { TypesOfMarginalisation } from "./pages/research-projects/TypesOfMarginalisation";
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -48,7 +49,7 @@ function App() {
           {/* <Route path="/research-projects/marginalisation-and-design" element={<MarginalisationAndDesign />} /> */}
           {/* <Route path="/research-projects/design-in-practice" element={<DesignInPractice />} /> */}
           <Route path="/research-projects/:slug/about-this-project" element={<AboutThisProject />} />
-
+          <Route path="/research-projects/:slug/types-of-marginalisation" element={<TypesOfMarginalisation />} />
           <Route path="/learning-and-knowledge" element={<LearningAndKnowledge />} />
           <Route
             path="/learning-and-knowledge/seminars-and-workshops"
