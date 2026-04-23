@@ -1,3 +1,5 @@
+// this page is deprecated
+
 import { H1 } from "../../components/header-and-footer/H1";
 
 export function DesignInPractice() {

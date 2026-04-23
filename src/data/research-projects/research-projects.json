@@ -1,0 +1,20 @@
+[
+    {
+        "id": "0",
+        "title": "Marginalisation and Design",
+        "slug": "marginalisation-and-design",
+        "shortDescription": "What kinds of marginalisation exist, and how do they affect design?",
+        "projectBackground": "Various forms of marginalisation (such as gender, disability, digital competencies, and other social factors) affect people’s day-to-day lives and their use of Information and Communication Technologies (ICT). These inequalities can lead to digital exclusion and perpetuate a cycle of increasing digital disadvantage over time.",
+        "projectGoals": [
+            "Understand what kinds of marginalisation exist.",
+            "Examine each axis of marginalisation and how it affects their overall day-to-day life.",
+            "Investigate how affected individuals interact with ICT and the challenges they face."
+        ]
+    },
+    {
+        "id": "1",
+        "title": "Design in Practice",
+        "slug": "design-in-practice",
+        "shortDescription": "We discuss how design can become more inclusive, with practical examples."
+    }
+]

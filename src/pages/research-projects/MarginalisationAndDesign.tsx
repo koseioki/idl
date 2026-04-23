@@ -1,3 +1,6 @@
+// this page is deprecated
+
+
 import { H1 } from "../../components/header-and-footer/H1";
 import { InTextCitation } from "../../components/resources/InTextCitation";
 import { References } from "../../components/resources/References";
