@@ -19,7 +19,7 @@ export function ResearchProjects() {
               heading={project.title}
               headingLevel={2}
               linkTo={`/research-projects/${project.slug}`}
-              disabled={false}
+              disabled={project.disabled}
           >
             <p>{project.shortDescription}</p>
           </Card>))}

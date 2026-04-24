@@ -1,7 +1,6 @@
 .research-project-page {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
     justify-content: space-between;
     width: 100%;
     gap: 2rem;
@@ -19,7 +18,7 @@
 }
 .research-project-page main,
 .research-project-page nav {
-    /* border: 1px red solid; */
+    border: 1px red solid;
 }
 
 .research-project-page main {

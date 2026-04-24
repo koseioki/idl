@@ -1,10 +1,8 @@
-// import './App.css'
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { About } from "./pages/about/About";
 import { Header } from "./components/header-and-footer/Header";
 import { WhatIsIntersectionalDesign } from "./pages/what-is-intersectional-design/WhatIsIntersectionalDesign";
-// import { DesignInPractice } from "./pages/research-projects/DesignInPractice";
 import { Footer } from "./components/header-and-footer/Footer";
 import { Contact } from "./pages/contact/Contact";
 import { ResourceLibrary } from "./pages/resource-library/ResourceLibrary";
@@ -12,7 +10,6 @@ import { SeminarsAndWorkshops } from "./pages/seminars-and-workshops/SeminarsAnd
 import { Breadcrumbs } from "./components/header-and-footer/Breadcrumbs";
 import { ResearchProjects } from "./pages/research-projects/ResearchProjects";
 import { LearningAndKnowledge } from "./pages/LearningAndKnowledge";
-// import { MarginalisationAndDesign } from "./pages/research-projects/MarginalisationAndDesign";
 import { ResourceDetail } from "./pages/resource-library/ResourceDetail";
 import { EventDetail } from "./pages/seminars-and-workshops/EventDetail";
 import { WhatIsIntersectionality } from "./pages/what-is-intersectional-design/WhatIsIntersectionality";
@@ -20,12 +17,12 @@ import { HowDoWeStart } from "./pages/what-is-intersectional-design/HowDoWeStart
 import { InclusionEquityAndAccessibilityStatement } from "./pages/InclusionEquityAndAccessibilityStatement";
 import { NotFound } from "./pages/NotFound";
 import { WhyIsIntersectionalDesignImportant } from "./pages/what-is-intersectional-design/WhyIsIntersectionalDesignImportant";
-import { AboutThisProject } from "./pages/research-projects/AboutThisProject";
 import { ProjectOverview } from "./pages/research-projects/ProjectOverview";
 import { TypesOfMarginalisation } from "./pages/research-projects/TypesOfMarginalisation";
+import { SubcategoriesOfTypesOfMarginalisation } from "./pages/research-projects/SubcategoriesOfTypesOfMarginalisation";
+import { MarginalisationArticle } from "./pages/research-projects/MarginalisationArticle";
 
 function App() {
-  // const [count, setCount] = useState(0)
 
   return (
     <>
@@ -46,10 +43,11 @@ function App() {
 
           <Route path="/research-projects" element={<ResearchProjects />} />
           <Route path="/research-projects/:slug" element={<ProjectOverview />} />
-          {/* <Route path="/research-projects/marginalisation-and-design" element={<MarginalisationAndDesign />} /> */}
-          {/* <Route path="/research-projects/design-in-practice" element={<DesignInPractice />} /> */}
-          <Route path="/research-projects/:slug/about-this-project" element={<AboutThisProject />} />
           <Route path="/research-projects/:slug/types-of-marginalisation" element={<TypesOfMarginalisation />} />
+          <Route path="/research-projects/:slug/types-of-marginalisation/:categorySlug" element={<SubcategoriesOfTypesOfMarginalisation />} />
+          <Route path="/research-projects/:slug/types-of-marginalisation/:categorySlug/:subcategorySlug" element={<MarginalisationArticle />} />
+
+
           <Route path="/learning-and-knowledge" element={<LearningAndKnowledge />} />
           <Route
             path="/learning-and-knowledge/seminars-and-workshops"
