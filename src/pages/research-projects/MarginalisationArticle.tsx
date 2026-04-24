@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { SideNav } from "../../components/global/SideNav";
 import typesOfMarginalisationData from "../../data/research-projects/types-of-marginalisation.json";
 import { H1 } from "../../components/header-and-footer/H1";
+import "./ResearchProjectPage.css";
 
 
 export function MarginalisationArticle() {

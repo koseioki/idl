@@ -118,8 +118,8 @@ h5,
 h6 {
     font-weight: bold;
     line-height: 1.25;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    /* margin-top: 2rem; */
+    /* margin-bottom: 1rem; */
     max-width: var(--content-width);
 }
 
@@ -132,7 +132,7 @@ h2{
 
 h1,
 h2 {
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
 }
 
 h1:focus {
@@ -141,11 +141,11 @@ h1:focus {
 
 p {
     max-width: var(--content-width);
-    margin-block-start: 1.75rem;
+    /* margin-block-start: 1.75rem; */
 }
 
 .lead-text {
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
     font-size: 1.625rem;
     /* line-height: 1.75; */
 }
@@ -196,10 +196,6 @@ li {
 
 @media (prefers-color-scheme: dark) {
 
-    /* .image-frame {
-        border: 0.5rem solid var(--dark-grey);
-        filter: brightness(0.8);
-    } */
     img {
         filter: brightness(0.8);
     }

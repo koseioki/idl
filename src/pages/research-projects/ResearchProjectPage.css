@@ -5,8 +5,8 @@
     width: 100%;
     gap: 2rem;
     margin: auto;
-    max-width: var(--page-width);
-    margin-top: 2rem;
+    align-items: stretch;
+    max-width: 95%;
     /* border: 1px blue solid; */
 }
 
@@ -18,11 +18,17 @@
 }
 .research-project-page main,
 .research-project-page nav {
-    border: 1px red solid;
+    /* border: 1px red solid; */
+
 }
 
 .research-project-page main {
-    flex: 3;
+
+    flex: 3 1 0;
+    min-width: 0;
+    margin: 0;
+    max-width: none;
+    align-self: stretch;
     /* padding-right: 2rem; */
 }
 

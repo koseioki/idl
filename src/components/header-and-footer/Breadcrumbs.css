@@ -1,6 +1,7 @@
 nav.breadcrumb-nav {
   max-width: var(--page-width);
-  margin: 3rem auto 0 auto;
+  /* margin: 3rem auto 0 auto; */
+  margin: auto;
   background-color: var(--white);
   padding: 0 1rem;
 

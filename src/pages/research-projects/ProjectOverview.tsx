@@ -4,6 +4,7 @@ import { H1 } from "../../components/header-and-footer/H1";
 import { useParams } from "react-router-dom";
 import projectData from "../../data/research-projects/research-projects.json";
 import { SideNav } from "../../components/global/SideNav";
+import "./ResearchProjectPage.css";
 export function ProjectOverview() {
   const { slug } = useParams();
   const project = projectData.find(
