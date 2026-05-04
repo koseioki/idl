@@ -1,0 +1,159 @@
+[
+  {
+    "id": "0",
+    "name": "Race, Ethnicity and Religion",
+    "slug": "race-ethnicity-religion",
+    "subcategories": [
+      {
+        "id": "0001",
+        "name": "Race/Ethnicity",
+        "slug": "race-ethnicity",
+        "content": "link to mdx"
+      },
+      {
+        "id": "0002",
+        "name": "Religion",
+        "slug": "religion",
+        "content": "link to mdx"
+      }
+    ]
+  },
+  {
+    "id": "1",
+    "name": "Geographical Location and Migration Status",
+    "slug": "geographical-location-migration-status",
+    "subcategories": [
+      {
+        "id": "1001",
+        "name": "Geographical Location",
+        "slug": "geographical-location",
+        "content": "link to mdx"
+      },
+      {
+        "id": "1002",
+        "name": "Migration Status",
+        "slug": "migration-status",
+        "content": "link to mdx"
+      },
+      {
+        "id": "1003",
+        "name": "Language",
+        "slug": "language",
+        "content": "link to mdx"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Age, Disability and Health",
+    "slug": "age-disability-health",
+    "subcategories": [
+      {
+        "id": "2001",
+        "name": "Visual Disabilities",
+        "slug": "visual-disabilities",
+        "content": "link to mdx"
+      },
+      {
+        "id": "2002",
+        "name": "Auditory Disabilities",
+        "slug": "auditory-disabilities",
+        "content": "link to mdx"
+      },
+      {
+        "id": "2003",
+        "name": "Deaf-Blindness",
+        "slug": "deaf-blindness",
+        "content": "link to mdx"
+      },
+      {
+        "id": "2004",
+        "name": "Speech and Language Disabilities",
+        "slug": "speech-language-disabilities",
+        "content": "link to mdx"
+      },
+      {
+        "id": "2005",
+        "name": "Mobility, Flexibility, and Body Structure Disabilities",
+        "slug": "mobility-flexibility-body-structure-disabilities",
+        "content": "link to mdx"
+      },
+      {
+        "id": "2006",
+        "name": "Neurodivergence",
+        "slug": "neurodivergence",
+        "content": "link to mdx"
+      },
+      {
+        "id": "2007",
+        "name": "Cognitive Disabilities",
+        "slug": "cognitive-disabilities",
+        "content": "link to mdx"
+      },
+      {
+        "id": "2008",
+        "name": "Psychological Disabilities",
+        "slug": "psychological-disabilities",
+        "content": "link to mdx"
+      },
+      {
+        "id": "2009",
+        "name": "Age and Generation",
+        "slug": "age-generation",
+        "content": "link to mdx"
+      }
+
+    ]
+  },
+
+  {
+    "id": "3",
+    "name": "Socio-Economic Status",
+    "slug": "socio-economic-status",
+    "subcategories": [
+        {
+            "id": "3001",
+            "name": "Income and Wealth",
+            "slug": "income-wealth",
+            "content": "link to mdx"
+        },
+        {
+            "id": "3002",
+            "name": "Education",
+            "slug": "education",
+            "content": "link to mdx"
+        },
+        {
+            "id": "3003",
+            "name": "Occupation and Employment Status",
+            "slug": "occupation-employment-status",
+            "content": "link to mdx"
+        },
+        {
+            "id": "3004",
+            "name": "Social Class",
+            "slug": "social-class",
+            "content": "link to mdx"
+        }
+    ]
+  },
+    {
+        "id": "4",
+        "name": "Gender and Sex",
+        "slug": "gender-sex",
+        "subcategories": [
+            {
+                "id": "4001",
+                "name": "Gender Identity",
+                "slug": "gender-identity",
+                "content": "link to mdx"
+            },
+            {
+                "id": "4002",
+                "name": "Sexual Orientation",
+                "slug": "sexual-orientation",
+                "content": "link to mdx"
+            }
+        ]
+    }
+]
