@@ -1,4 +1,5 @@
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
+import { ReadMore } from "../components/global/ReadMore";
 import "./Home.css";
 import { Card } from "../components/global/Card";
 import { Drawing } from "../components/global/Drawing";
@@ -18,9 +19,9 @@ export function Home() {
         more inclusive place for everyone.
       </p>
       <p>
-        <NavLink to="/what-is-intersectional-design">
+        <ReadMore to="/what-is-intersectional-design">
           Read more about "What is Intersectional Design?"
-        </NavLink>
+        </ReadMore>
       </p>
       {/* <img src={TwoPeopleCraftingICT} alt="Two people crafting ICT" /> */}
       <Drawing

@@ -1,6 +1,6 @@
 // import { Note } from "../../components/global/Note";
+import { ReadMore } from "../../components/global/ReadMore";
 import { H1 } from "../../components/header-and-footer/H1";
-import { NavLink } from "react-router-dom";
 export function WhatIsIntersectionalDesign() {
   // const lastUpdated = "2026-04-15";
 
@@ -36,21 +36,23 @@ export function WhatIsIntersectionalDesign() {
           Intersectionality is a way of understanding social relations by
           examining intersecting forms of discrimination.
         </p>
-        <p>
-          <NavLink to="what-is-intersectionality">Read more about "What is Intersectionality?"</NavLink>
-        </p>
+          <ReadMore to="what-is-intersectionality">
+            Read more about "What is Intersectionality?"
+          </ReadMore>
 
         <h2>Why is Intersectional Design important?</h2>
-        <NavLink to="why-is-intersectional-design-important">
-          Read more about "Why is Intersectional Design important?"
-        </NavLink>
+          <ReadMore to="why-is-intersectional-design-important">
+            Read more about "Why is Intersectional Design important?"
+          </ReadMore>
         <h2>How do we start?</h2>
         <p>
           At Intersectional Design Lab, we recommend starting by understanding
           the specific marginalisation and challenges people face, one by one.
           This builds empathy and helps you truly "put yourself in their shoes."
         </p>
-        <NavLink to="how-do-we-start">Read more about "How do we start?"</NavLink>
+        <ReadMore to="how-do-we-start">
+            Read more about "How do we start?"
+          </ReadMore>
 
       </main>
   );
