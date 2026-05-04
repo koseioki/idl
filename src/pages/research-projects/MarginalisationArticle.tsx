@@ -23,7 +23,7 @@ export function MarginalisationArticle() {
                 <SideNav />
                 <main id="main-content">
             <H1>{subcategory?.name || "Marginalisation and Design"}</H1>
-            <p>This is the marginalisation and design article.</p>
+            <p>This page is still being developed.</p>
             </main>
         </div>
     );

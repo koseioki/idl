@@ -30,9 +30,8 @@ export function SubcategoriesOfTypesOfMarginalisation() {
             heading={subcategory.name}
             headingLevel={2}
             linkTo={`${subcategory.slug}`}
-            disabled={false}
-          >
-            <p>hallo</p>
+            disabled={true}
+          >{""}
           </Card>
         ))}
       </CardList>

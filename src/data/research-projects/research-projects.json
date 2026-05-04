@@ -11,12 +11,5 @@
             "Examine each axis of marginalisation and how it affects their overall day-to-day life.",
             "Investigate how affected individuals interact with ICT and the challenges they face."
         ]
-    },
-    {
-        "id": "1",
-        "title": "Design in Practice",
-        "slug": "design-in-practice",
-        "disabled": true,
-        "shortDescription": "We discuss how design can become more inclusive, with practical examples."
     }
 ]

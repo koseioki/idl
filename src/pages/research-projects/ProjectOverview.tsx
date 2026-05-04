@@ -18,10 +18,10 @@ export function ProjectOverview() {
         <H1>{project?.title}</H1>
 
         
-          <h2>Background of this research</h2>
+          <h2>Background</h2>
           <p>{project?.projectBackground}</p>
 
-          <h2>Goals of this research</h2>
+          <h2>Goals</h2>
           <ul>
             {project?.projectGoals?.map((goal, index) => (
               <li key={index}>{goal}</li>

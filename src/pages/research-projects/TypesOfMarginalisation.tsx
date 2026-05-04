@@ -11,7 +11,7 @@ export function TypesOfMarginalisation() {
         <SideNav />
         <main id="main-content">
           <H1>Types of Marginalisation</H1>
-          <p>This is the types of marginalisation page.</p>
+          <p>Here you can find information about different types of marginalisation in design.</p>
 
           <CardList>
             {typesOfMarginalisationData.map((category) => (
@@ -22,7 +22,8 @@ export function TypesOfMarginalisation() {
                 linkTo={`${category.slug}`}
                 disabled={false}
               >
-                <p>{category.description}</p>
+                {""}
+                {/* <p>{category?.description}</p> */}
               </Card>
             ))}
           </CardList>

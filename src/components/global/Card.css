@@ -5,7 +5,7 @@ ul.card-list {
     display: grid;
     align-items: stretch;
     justify-items: stretch;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 1rem;
     max-width: 100%;
 }
@@ -15,6 +15,7 @@ ul.card-list h2,
 ul.card-list h3,
 ul.card-list h4 {
     margin-top: 0;
+    max-width: none;
 }
 
 ul.card-list li {
@@ -62,4 +63,8 @@ ul.card-list li article:has(a:focus-visible) {
     /* box-shadow: var(--focus-indicator); */
     outline: var(--focus-indicator);
     outline-offset: var(--focus-indicator-offset);
+}
+
+ul.card-list svg{
+    margin: 0;
 }

@@ -3,7 +3,6 @@
     "id": "0",
     "name": "Race, Ethnicity and Religion",
     "slug": "race-ethnicity-religion",
-    "description": "This category explores how race, ethnicity and religion can lead to marginalisation in design.",
     "subcategories": [
       {
         "id": "0001",
@@ -23,7 +22,6 @@
     "id": "1",
     "name": "Geographical Location and Migration Status",
     "slug": "geographical-location-migration-status",
-    "description": "This category explores how geographical location, migration status, and language can lead to marginalisation in design.",
     "subcategories": [
       {
         "id": "1001",
@@ -49,7 +47,6 @@
     "id": "2",
     "name": "Age, Disability and Health",
     "slug": "age-disability-health",
-    "description": "This category explores how age, disability and health can lead to marginalisation in design.",
     "subcategories": [
       {
         "id": "2001",
@@ -113,7 +110,6 @@
     "id": "3",
     "name": "Socio-Economic Status",
     "slug": "socio-economic-status",
-    "description": "This category explores how socio-economic status can lead to marginalisation in design.",
     "subcategories": [
         {
             "id": "3001",
@@ -145,7 +141,6 @@
         "id": "4",
         "name": "Gender and Sex",
         "slug": "gender-sex",
-        "description": "This category explores how gender and sex can lead to marginalisation in design.",
         "subcategories": [
             {
                 "id": "4001",
