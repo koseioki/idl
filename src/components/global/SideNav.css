@@ -7,7 +7,7 @@
 .side-nav>div {
     /* border-radius: 2rem; */
     background-color: var(--white);
-    border: 0.0625rem solid var(--light-grey);
+    border: 0.0625rem solid var(--dark-dark-white);
     padding: 1rem 0.5rem;
 }
 
@@ -41,7 +41,7 @@
 }
 
 .side-nav a:hover {
-    background-color: var(--light-grey);
+    background-color: var(--dark-white);
 }
 
 .side-nav a.active {
