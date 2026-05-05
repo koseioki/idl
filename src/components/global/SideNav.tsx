@@ -6,6 +6,7 @@ export function SideNav() {
 
   return (
     <nav className="side-nav" aria-label="Secondary">
+      <div>
       <ul>
         <li>
           <NavLink to={`/research-projects/${slug}`}>Overview</NavLink>
@@ -37,6 +38,7 @@ export function SideNav() {
           </ul>
         </li>
       </ul>
+      </div>
     </nav>
   );
 }
