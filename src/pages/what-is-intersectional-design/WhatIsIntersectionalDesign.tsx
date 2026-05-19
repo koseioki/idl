@@ -10,8 +10,13 @@ export function WhatIsIntersectionalDesign() {
         <H1>What is Intersectional Design?</H1>
 
         <p className="lead-text">
-          <b>Intersectional Design</b> is a concept that combines intersectionality and design—in other words, it’s about designing while considering “intersecting” forms of discrimination.
-        </p>
+          <b>Intersectional Design</b> is a concept that combines intersectionality and design.
+          </p>
+          
+          <p>
+            in other words, it’s about designing while considering “intersecting” forms of discrimination.
+          </p>
+     
         <p>
          Here, you can learn more about what intersectionality is, why intersectional design matters, and how we can start practising it. </p>
    

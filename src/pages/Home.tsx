@@ -12,12 +12,11 @@ export function Home() {
 
   return (
     <main id="main-content">
-      <h1>How can we make the digital world more inclusive?</h1>
+      <h1>How can we make the digital space more inclusive?</h1>
       <p className="lead-text">
         At Intersectional Design Lab, we research, experiment with, and share
         design practices for Information and Communication Technologies (ICT)
-        from an <i>intersectional perspective</i> to make the digital space a
-        more inclusive place for everyone.
+        through an <i>intersectional lens</i>.
       </p>
       <p>
         <ReadMore to="/what-is-intersectional-design">

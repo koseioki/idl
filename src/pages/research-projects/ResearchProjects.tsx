@@ -9,7 +9,10 @@ export function ResearchProjects() {
         <H1>Research Projects</H1>
         <p>
           Here is an overview of the research projects by the Intersectional
-          Design Lab. The research is continuously conducted and updated.
+          Design Lab.
+          </p>
+          <p>
+          The research is continuously conducted and updated.
         </p>
 
         <CardList>
