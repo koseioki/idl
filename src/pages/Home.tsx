@@ -8,7 +8,7 @@ import projectData from "../data/research-projects/research-projects.json";
 
 export function Home() {
   // Change document title
-  document.title = "Home - Intersectional Design Lab";
+  document.title = "Intersectional Design Lab";
 
   return (
     <main id="main-content">

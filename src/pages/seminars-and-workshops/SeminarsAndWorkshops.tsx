@@ -11,7 +11,9 @@ export function SeminarsAndWorkshops() {
           Seminars and Workshops
         </H1>
         <h2>Upcoming Events</h2>
-        <p>There are no upcoming events yet.</p>
+        <ul>
+          <li>Designing Intersectionally - 23 June 2026, at <a href="https://www.adesso.de/">adesso (in Gernman)</a></li>
+        </ul>
         <h2>Past Events</h2>
         <ul>
           {seminarsAndWorkshopsData.map((event) => (
