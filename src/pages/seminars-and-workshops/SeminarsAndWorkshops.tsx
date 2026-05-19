@@ -12,7 +12,7 @@ export function SeminarsAndWorkshops() {
         </H1>
         <h2>Upcoming Events</h2>
         <ul>
-          <li>Designing Intersectionally - 23 June 2026, at <a href="https://www.adesso.de/">adesso (in Gernman)</a></li>
+          <li>Designing Intersectionally - 23 June 2026, at <a href="https://www.adesso.de/">adesso (in German)</a></li>
         </ul>
         <h2>Past Events</h2>
         <ul>
