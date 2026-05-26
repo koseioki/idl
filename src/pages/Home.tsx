@@ -47,9 +47,9 @@ export function Home() {
 
       <CardList>
         <Card
-          heading="Seminars and Workshops"
+          heading="Events"
           headingLevel={3}
-          linkTo="/learning-and-knowledge/seminars-and-workshops"
+          linkTo="/events-and-resources/events"
           disabled={false}
         >
           <p>
@@ -61,7 +61,7 @@ export function Home() {
         <Card
           heading="Resource Library"
           headingLevel={3}
-          linkTo="/learning-and-knowledge/resource-library"
+          linkTo="/events-and-resources/resource-library"
           disabled={false}
         >
           <p>
