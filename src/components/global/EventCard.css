@@ -38,6 +38,7 @@
     object-fit: cover;
     border-radius: 1rem;
     grid-column: 3/4;
+    margin: 0
 }
 
 
