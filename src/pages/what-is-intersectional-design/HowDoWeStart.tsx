@@ -50,7 +50,7 @@ export function HowDoWeStart() {
         <li>
           Read books and articles, watch videos, and search online to learn
           more; you can also explore the{" "}
-          <NavLink to="/learning-and-resources/learning-and-knowledge/resource-library">
+          <NavLink to="/events-and-resources/resource-library">
             resources we curate
           </NavLink>
           .
