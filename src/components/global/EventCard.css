@@ -1,3 +1,9 @@
+ul:has(.event-card) {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
 .event-card article {
     display: flex;
     flex-direction: row;
@@ -32,7 +38,7 @@
 
 .event-card img {
     width: 100%;
-    max-width: 15rem;
+    max-width: 10rem;
     height: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;

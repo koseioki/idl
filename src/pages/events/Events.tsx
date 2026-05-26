@@ -4,6 +4,14 @@ import { EventCard } from "../../components/global/EventCard";
 export function Events() {
 
 
+  // sort past events and upcoming events by date
+  const pastEvents = EventsData.filter((event) => new Date(event.date) < new Date()).sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
+  const upcomingEvents = EventsData.filter((event) => new Date(event.date) >= new Date()).sort(
+    (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()
+  );
+
   return (
    
       <main id="main-content">
@@ -11,12 +19,22 @@ export function Events() {
           Events
         </H1>
         <h2>Upcoming Events</h2>
-        <ul>
-          <li>Designing Intersectionally - 23 June 2026, at <a href="https://www.adesso.de/">adesso (in German)</a></li>
+        <ul className="card-list">
+          {upcomingEvents.map((event) => (
+            <EventCard
+              key={event.id}
+              title={event.title}
+              date={event.date}
+              place={event.place}
+              slug={event.slug}
+              description={event.description}
+            />
+          ))}
         </ul>
+
         <h2>Past Events</h2>
         <ul className="card-list">
-          {EventsData.map((event) => (
+          {pastEvents.map((event) => (
             <EventCard
               key={event.id}
               title={event.title}
