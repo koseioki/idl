@@ -17,14 +17,12 @@ export function EventDetail() {
       })
     : "";
 
-  // render the content if it exists, from event.contentPath
   const [Content, setContent] = useState<React.ComponentType | null>(null);
   useEffect(() => {
-    if (event?.contentPath) {
-      import(`../../data/events/${event.slug}.mdx`).then((module) => {
+      import(`../../data/events/${event?.slug}.mdx`).then((module) => {
         setContent(() => module.default);
       });
-    }
+
   }, [event]);
 
   return (
