@@ -6,12 +6,27 @@ export function HowDoWeStart() {
     return (
         <main id="main-content">
             <H1>How do we start?</H1>
-         <p>
-          At Intersectional Design Lab, we recommend starting by understanding
-          the specific marginalisation and challenges people face, one by one.
-          This builds empathy and helps you truly "put yourself in their shoes."
-        </p>
-        <h2>What we can do today</h2>
+            <p className="lead-text">
+                You can start by examining your solution and asking small, practical questions.
+            </p>
+
+            <p>
+                You don't need to be an expert to take the first step toward creating inclusive digital experiences.
+            </p>
+        
+        <h2>Reflect on your design</h2>
+        <p>Some questions you might ask yourself:</p>
+        <ul>
+            <li>Can an older adult with low digital skills without a Social Security number use this solution?</li>
+            <li>Can a person who is blind and transgender, and in the process of transitioning, complete this form?</li>
+            <li>Can a person who is dyslexic and hard of hearing benefit from this audio-visual content?</li>
+            <li>Can someone with a low income and slow internet connection use this app?</li>
+        </ul>
+
+
+<h2>Learn and explore</h2>
+<p>There are many ways to deepen your understanding of marginalisation:</p>
+
         <ul>
             <li>Listen to people around you who experience marginalisation and challenges.</li>
             <li>Read books and articles, watch videos, and search online to learn more; you can also explore the <NavLink to="/learning-and-resources/learning-and-knowledge/resource-library">resources we curate</NavLink>.</li>
