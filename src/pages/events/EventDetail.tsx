@@ -21,7 +21,7 @@ export function EventDetail() {
   const [Content, setContent] = useState<React.ComponentType | null>(null);
   useEffect(() => {
     if (event?.contentPath) {
-      import(`/src/data/events/${event.contentPath}`).then((module) => {
+      import(`../../data/events/${event.slug}.mdx`).then((module) => {
         setContent(() => module.default);
       });
     }

@@ -6,14 +6,12 @@ export function EventCard({
   date,
   place,
   slug,
-  imagePath,
   description,
 }: {
   title: string;
   date: string;
   place: string;
   slug: string;
-  imagePath: string;
   description: string;
 }) {
   const year = new Date(date).getFullYear();
@@ -49,7 +47,7 @@ export function EventCard({
           </div>
         </div>
 
-        <img src={`/src/data/events/${imagePath}`} alt="" />
+        <img src={`../../data/events/${slug}.jpg`} alt="" />
       </article>
     </li>
   );

@@ -34,7 +34,7 @@ const languageDisplayNames = new Intl.DisplayNames(["en"], {
 });
 
 export function ResourceCard({ resource }: ResourceCardProps) {
-  const path = `/learning-and-knowledge/resource-library/${resource.slug ?? resource.id ?? ""}`;
+  const path = `${resource.slug ?? resource.id ?? ""}`;
   const imageUrl = resolveResourceImageUrl(resource.image);
 
   const navigate = useNavigate();
