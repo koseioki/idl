@@ -1,4 +1,3 @@
-import { Note } from "../../components/global/Note";
 import { H1 } from "../../components/header-and-footer/H1";
 import { InTextCitation } from "../../components/resources/InTextCitation";
 import { References } from "../../components/resources/References";
@@ -6,62 +5,70 @@ export function WhyIsIntersectionalDesignImportant() {
   return (
     <main id="main-content">
       <H1>Why is Intersectional Design important?</H1>
-      <Note title="Summary">
-        <p>
-          Designing with an intersectional perspective is important because:
-        </p>
+      <p className="lead-text">
+        Because traditional approaches to equality can leave some people
+        unsupported, especially those who do not fully fit into a single
+        category.
+      </p>
 
-        <ol>
-          <li>
-            <a href="#it-allows-you-to-identify-who-may-be-disadvantaged-by-the-design">
-              It allows you to identify who may be disadvantaged by the design.
-            </a>
-          </li>
-          <li>
-            <a href="#it-helps-you-acknowledge-the-complexity-of-intersecting-forms-of-marginalization-and-make-well-considered-decisions">
-              It helps you acknowledge the complexity of intersecting forms of
-              marginalisation and make well-considered decisions.
-            </a>
-          </li>
-          <li>
-            <a href="#it-prevents-a-design-that-addresses-one-aspect-of-marginalisation-from-unintentionally-harming-other-marginalised-groups">
-              It prevents a design that addresses one aspect of marginalisation
-              from unintentionally harming other marginalised groups.
-            </a>
-          </li>
-        </ol>
-      </Note>
-
-      <h2 id="it-allows-you-to-identify-who-may-be-disadvantaged-by-the-design">#1 It allows you to identify who may be disadvantaged by the design.</h2>
+      <h2>Examples of intersecting cases</h2>
+      <h3>A screen reader user with low digital skills</h3>
       <p>
-        By acknowledging different types of marginalization, you can develop empathy and recognise design problems that may create challenges for certain users. You might ask yourself questions like:
+        Developers ensure that people can interact with components with
+        assistive technologies like screen readers.
       </p>
-      <ul>
-        <li>What if the user doesn't have a social security number?</li>
-        <li>What if the user doesn't have a stable internet connection?</li>
-        <li>What if the user is dyslexic?</li>
-        <li>What if the user is transgender and in the process of transitioning?</li>
-      </ul>
       <p>
-        It's crucial to remember that people experience a wide range of circumstances, even if you don't always notice them. Adopting an intersectional perspective helps you realize that there are more forms of marginalisation than you might initially consider.
+        At the same time, content editors and UX designers may simplify content
+        and flows to support people who are less familiar with technology.
       </p>
-
-      <h2 id="it-helps-you-acknowledge-the-complexity-of-intersecting-forms-of-marginalization-and-make-well-considered-decisions">#2 It helps you acknowledge the complexity of intersecting forms of marginalization and make well-considered decisions.</h2>
       <p>
-        More than two types of marginalisation can combine to create complex and unique challenges.
+        However, even if a component is technically operable, it can still
+        require users to understand complex interaction patterns.
       </p>
-      <p>By understanding that this happens, we can make well-considered design decisions. This equips you to address overlapping forms of marginalisation that you may not be able to tackle effectively if you focus on each one in isolation.
-
+      <p>
+        For someone using a screen reader, especially someone who has recently
+        become blind and is still learning how to use technology, this can make
+        it difficult to complete a task.
+      </p>
+      <p>Or the person may give up on using the technology altogether.</p>
+      <p>
+        In this case, accessibility and usability are addressed separately, but
+        not effectively together.
       </p>
 
-      <h2 id="#it-prevents-a-design-that-addresses-one-aspect-of-marginalisation-from-unintentionally-harming-other-marginalised-groups">#3 It prevents a design that addresses one aspect of marginalisation from unintentionally harming other marginalised groups.</h2>
-      <p>It is possible to create designs that address one aspect of marginalisation while causing disadvantages to others. For example: </p>
-      <ul>
-        <li>an artificial intelligence (AI)-powered translator can make communication easier for people who are not fluent in a language.</li>
-      </ul>
-      <p>However, these tools are also known to contribute to environmental harm and labour exploitation in the Global South <InTextCitation id="00048338" />.</p>
-      <p>By developing a more comprehensive understanding of marginalisation, designers can minimise the unintended side effects that arise from solutions targeting only a single form of marginalisation.</p>
+      <h3>Helpful technology that causes harm to others</h3>
+      <p>
+        AI-powered translation tools can make communication easier for people
+        who are not fluent in a language.
+      </p>
+      <p>
+        However, these technologies are also linked to environmental harm and
+        labour exploitation in the Global South <InTextCitation id="00048338" />
+        .
+      </p>
+      <p>
+        As a result, while they improve accessibility for some users, they may
+        negatively impact others—often people who are already marginalised.
+      </p>
 
+      <h2>Not about finding the "right" answer</h2>
+      <p>
+        Intersectional design is not always about finding a single "right"
+        answer, and is <b>never</b> about identifying a "bad guy".
+      </p>
+      <p>
+        These situations are often complex, with no immediate solution that
+        works for everyone.
+      </p>
+      <p>
+        Instead, it helps you recognise and understand overlapping forms of
+        marginalisation, so you can make thoughtful, informed decisions.
+      </p>
+      <p>
+        By acknowledging this complexity, you are better equipped to design in
+        ways that consider multiple perspectives—especially those that might be
+        overlooked when issues are addressed one by one.
+      </p>
 
       <References ids={["00048338"]} />
     </main>
