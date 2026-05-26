@@ -6,12 +6,12 @@ import { WhatIsIntersectionalDesign } from "./pages/what-is-intersectional-desig
 import { Footer } from "./components/header-and-footer/Footer";
 import { Contact } from "./pages/contact/Contact";
 import { ResourceLibrary } from "./pages/resource-library/ResourceLibrary";
-import { SeminarsAndWorkshops } from "./pages/seminars-and-workshops/SeminarsAndWorkshops";
+import { Events } from "./pages/events/Events";
 import { Breadcrumbs } from "./components/header-and-footer/Breadcrumbs";
 import { ResearchProjects } from "./pages/research-projects/ResearchProjects";
-import { LearningAndKnowledge } from "./pages/LearningAndKnowledge";
+import { EventsAndResources } from "./pages/EventsAndResources";
 import { ResourceDetail } from "./pages/resource-library/ResourceDetail";
-import { EventDetail } from "./pages/seminars-and-workshops/EventDetail";
+import { EventDetail } from "./pages/events/EventDetail";
 import { WhatIsIntersectionality } from "./pages/what-is-intersectional-design/WhatIsIntersectionality";
 import { HowDoWeStart } from "./pages/what-is-intersectional-design/HowDoWeStart";
 import { InclusionEquityAndAccessibilityStatement } from "./pages/InclusionEquityAndAccessibilityStatement";
@@ -48,17 +48,17 @@ function App() {
           <Route path="/research-projects/:slug/types-of-marginalisation/:categorySlug/:subcategorySlug" element={<MarginalisationArticle />} />
 
 
-          <Route path="/learning-and-knowledge" element={<LearningAndKnowledge />} />
+          <Route path="/events-and-resources" element={<EventsAndResources />} />
           <Route
-            path="/learning-and-knowledge/seminars-and-workshops"
-            element={<SeminarsAndWorkshops />}
+            path="/events-and-resources/events"
+            element={<Events />}
           />
-          <Route path="/learning-and-knowledge/seminars-and-workshops/:slug" element={<EventDetail />} />
+          <Route path="/events-and-resources/events/:slug" element={<EventDetail />} />
           <Route
-            path="/learning-and-knowledge/resource-library"
+            path="/events-and-resources/resource-library"
             element={<ResourceLibrary />}
           />
-          <Route path="/learning-and-knowledge/resource-library/:slug" element={<ResourceDetail />} />
+          <Route path="/events-and-resources/resource-library/:slug" element={<ResourceDetail />} />
           <Route path="/about" element={<About />} />
 
           <Route path="/contact" element={<Contact />} />

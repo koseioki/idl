@@ -1,0 +1,39 @@
+.event-card img {
+    width: 100%;
+    max-width: 15rem;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.event-card article {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.event-card div.date-and-info {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2rem;
+}
+
+
+/* Calendar */
+.event-card div.date {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+/* day */
+.event-card div.date div:first-child {
+    font-size: 2rem;
+}
+
+.event-card .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+

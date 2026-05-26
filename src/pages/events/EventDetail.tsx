@@ -1,21 +1,28 @@
 import { useParams } from "react-router-dom";
-import SeminarAndWorkshopsData from "../../data/seminars-and-workshops/seminars-and-workshops.json";
+import Events from "../../data/events/events.json";
 import { H1 } from "../../components/header-and-footer/H1";
 import "./EventDetail.css";
 import { resolveResourceImageUrl } from "../../utils/resolveResourceImageUrl";
 
 export function EventDetail() {
   const { slug } = useParams();
-  const event = SeminarAndWorkshopsData.find(
+  const event = Events.find(
     (ev) => ev.slug === slug || ev.id === slug,
   );
   const imageUrl = resolveResourceImageUrl(event?.image);
+  const formattedDate = event?.date
+    ? new Date(event.date).toLocaleDateString([], {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      })
+    : "";
 
   return (
     <main id="main-content">
       <H1>{event?.title}</H1>
       <p>
-        {new Date(event?.date).toLocaleDateString([], { year: 'numeric', month: 'long', day: 'numeric' })}, at {event?.place}
+        {formattedDate}{formattedDate ? ", at " : ""}{event?.place}
       </p>
 
       <div
