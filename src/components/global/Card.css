@@ -36,6 +36,12 @@ ul.card-list li article:not(.disabled-card):hover {
     background-color: var(--dark-dark-white);
 }
 
+ul.card-list h2,
+ul.card-list h3
+{
+    font-size: 1.5rem;
+}
+
 ul.card-list li article a {
     display: flex;
     align-items: center;
