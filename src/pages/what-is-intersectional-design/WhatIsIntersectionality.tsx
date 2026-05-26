@@ -1,50 +1,48 @@
 import { H1 } from "../../components/header-and-footer/H1";
 import { InTextCitation } from "../../components/resources/InTextCitation";
 import { References } from "../../components/resources/References";
-import { DictionaryEntry } from "../../components/global/DictionaryEntry";
 
 export function WhatIsIntersectionality() {
-
   return (
     <main id="main-content">
       <H1>What is Intersectionality?</H1>
+      <p className="lead-text">
+        Intersectionality is the idea that a person can experience multiple
+        forms of marginalisation at the same time.
+      </p>
+      <p>
+        These forms of marginalisation can be present due to factors such as:
+      </p>
+      <ul>
+        <li>Race</li>
+        <li>Age</li>
+        <li>Gender</li>
+        <li>Sexual orientation</li>
+        <li>Disability</li>
+        <li>Socio-Economic status</li>
+        <li>Location</li>
+        <li>Migration status</li>
+      </ul>
+      <p>
+        When someone exists at the "intersection" of several of these factors,
+        the effects are not simply added together.
+      </p>
+      <p>
+        Instead, they interact and create unique experiences of disadvantage or
+        oppression.
+      </p>
 
-      <h2>Definition</h2>
-      <DictionaryEntry
-        word="intersectionality"
-        pronunciation="ˌɪntəˌsɛkʃəˈnalɪti"
-        partOfSpeech="noun"
-        definition="the interconnected nature of social categorizations such as race, class, and gender as they apply to a given individual or group, regarded as creating overlapping and interdependent systems of discrimination or disadvantage."
-        dictionarySource="Oxford Dictionary of English"
-      />
-
-      <h2>In other words...</h2>
-      <p>
-        Intersectionality is a way of understanding social relations by
-        examining intersecting forms of discrimination.
-      </p>
-      <p>
-        This means acknowledging that social systems are complicated and that
-        many forms of oppression—like racism, sexism, and ageism—might be
-        present and active at the same time in a person's life.
-      </p>
-      <p>
-        Everyday approaches to building equality tend to focus on one type of
-        discrimination—for instance, sexism—and then work to address only that
-        specific concern.
-      </p>
-      <p>
-        [...] Intersectionality is about understanding and addressing all
-        potential roadblocks to an individual or group's well-being{" "}
-        <InTextCitation id="23459734" />.
-      </p>
+      <h2>Problem with today's approach</h2>
+      <p>Many approaches to equality today focus on only one form of marginalisation at a time. This can leave some people unsupported, as they may not fully fit into any single category <InTextCitation id="23459734" />.</p>
+      <p>As a result, this can put them in a situation, "sitting between two chairs," where neither approach fully addresses their needs or helps them achieve independence and dignity.</p>
+      
+      <h2>Video</h2>
       <iframe
         className="youtube-video"
         src="https://www.youtube-nocookie.com/embed/O1islM0ytkE?si=XNP-7wdXZfmkJfNx"
         title="YouTube video player"
         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
       />
-
       <References ids={["23459734"]} />
     </main>
   );

@@ -34,7 +34,7 @@ export function WhyIsIntersectionalDesignImportant() {
 
       <h2 id="it-allows-you-to-identify-who-may-be-disadvantaged-by-the-design">#1 It allows you to identify who may be disadvantaged by the design.</h2>
       <p>
-        By acknowledging different types of marginalization, you can develop empathy and recognize design problems that may create challenges for certain users. You might ask yourself questions like:
+        By acknowledging different types of marginalization, you can develop empathy and recognise design problems that may create challenges for certain users. You might ask yourself questions like:
       </p>
       <ul>
         <li>What if the user doesn't have a social security number?</li>
@@ -43,7 +43,7 @@ export function WhyIsIntersectionalDesignImportant() {
         <li>What if the user is transgender and in the process of transitioning?</li>
       </ul>
       <p>
-        It's crucial to remember that people experience a wide range of circumstances, even if you don't always notice them. Adopting an intersectional perspective helps you realize that there are more forms of marginalization than you might initially consider.
+        It's crucial to remember that people experience a wide range of circumstances, even if you don't always notice them. Adopting an intersectional perspective helps you realize that there are more forms of marginalisation than you might initially consider.
       </p>
 
       <h2 id="it-helps-you-acknowledge-the-complexity-of-intersecting-forms-of-marginalization-and-make-well-considered-decisions">#2 It helps you acknowledge the complexity of intersecting forms of marginalization and make well-considered decisions.</h2>

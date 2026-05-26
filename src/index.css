@@ -121,6 +121,7 @@ h6 {
     /* margin-top: 2rem; */
     /* margin-bottom: 1rem; */
     max-width: var(--content-width);
+    padding-top:  0.5rem;
 }
 
 h1{
@@ -187,6 +188,7 @@ a:focus-visible {
 
 ul{
     max-width: var(--content-width);
+    margin-bottom: 1.5rem;
 }
 
 li {
@@ -242,7 +244,8 @@ cite{
 }
 
 .youtube-video {
-    margin: 2rem 0;
+    /* margin: 2rem 0; */
+    margin-bottom: 1.5rem;
     border-radius: 2rem;
     width: 100%;
     max-width: var(--content-width);
