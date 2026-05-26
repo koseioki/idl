@@ -1,3 +1,5 @@
+// not needed
+
 const localResourceImages = import.meta.glob("../assets/img/resources/*.{png,jpg,jpeg,webp,avif,svg,gif}", {
   eager: true,
   import: "default",

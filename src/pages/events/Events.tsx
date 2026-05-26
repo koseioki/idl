@@ -23,7 +23,7 @@ export function Events() {
               date={event.date}
               place={event.place}
               slug={event.slug}
-              image={event.image}
+              imagePath={event.imagePath}
               description={event.description}
             />
           ))}

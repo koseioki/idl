@@ -1,29 +1,21 @@
-.event-card img {
-    width: 100%;
-    max-width: 15rem;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    border-radius: 1rem;
-}
-
 .event-card article {
     display: flex;
     flex-direction: row;
     gap: 2rem;
 }
 
-.event-card div.date-and-info {
+/* Reverce date and info */
+.event-card div:has(.info) {
     display: flex;
     flex-direction: row-reverse;
     gap: 2rem;
 }
 
-
-/* Calendar */
 .event-card div.date {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    width: 100%;
+    max-width: 7.5rem;
 }
 
 /* day */
@@ -35,5 +27,32 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 1rem;
 }
 
+.event-card img {
+    width: 100%;
+    max-width: 15rem;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 1rem;
+    grid-column: 3/4;
+}
+
+
+@media (max-width: 768px) {
+    .event-card article {
+        flex-direction: column;
+    }
+
+    .event-card div:has(.info) {
+        flex-direction: column-reverse;
+    }
+
+    .event-card img {
+        max-width: 100%;
+        /* height: auto; */
+        aspect-ratio: 2 / 1;
+    }
+}

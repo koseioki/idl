@@ -6,14 +6,14 @@ export function EventCard({
   date,
   place,
   slug,
-  image,
+  imagePath,
   description,
 }: {
   title: string;
   date: string;
   place: string;
   slug: string;
-  image: string;
+  imagePath: string;
   description: string;
 }) {
   const year = new Date(date).getFullYear();
@@ -29,7 +29,7 @@ export function EventCard({
   return (
     <li className="event-card">
       <article onClick={handleClick}>
-        <div className="date-and-info">
+        <div>
           <div className="info">
             <div>
               <h3>
@@ -49,7 +49,7 @@ export function EventCard({
           </div>
         </div>
 
-        <img src={image} alt={title} />
+        <img src={`/src/data/events/${imagePath}`} alt="" />
       </article>
     </li>
   );
