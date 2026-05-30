@@ -1,0 +1,7 @@
+
+.story {
+    border: 0.0625rem solid var(--yellow-light);
+    padding: 1.5rem 2rem;
+    max-width: var(--content-width);
+    margin-bottom: 1.5rem;
+}

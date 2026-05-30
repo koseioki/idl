@@ -15,6 +15,7 @@ ul.card-list h2,
 ul.card-list h3,
 ul.card-list h4 {
     margin-top: 0;
+    padding-top: 0;
     max-width: none;
 }
 
@@ -26,14 +27,19 @@ ul.card-list li {
 ul.card-list li article {
     width: 100%;
     margin: 0;
-    padding: 2rem;
+    /* -1.5rem at the bottom pga. paragraph margin */
+    padding: 2rem 2rem 0.5rem 2rem;
     border-radius: 2rem;
     background-color: var(--dark-white);
+    /* border-bottom: 0.5rem solid var(--dark-grey); */
 }
 
 ul.card-list li article:not(.disabled-card):hover {
     cursor: pointer;
     background-color: var(--dark-dark-white);
+    /* border-bottom: 0.25rem solid var(--dark-grey); */
+    /* transform: translateY(0.25rem); */
+    /* margin-bottom: 0.25rem; */
 }
 
 ul.card-list h2,
@@ -66,11 +72,6 @@ ul.card-list li article a:focus-visible {
 }
 
 ul.card-list li article:has(a:focus-visible) {
-    /* box-shadow: var(--focus-indicator); */
     outline: var(--focus-indicator);
     outline-offset: var(--focus-indicator-offset);
-}
-
-ul.card-list svg{
-    margin: 0;
 }

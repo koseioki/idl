@@ -49,10 +49,14 @@ export function EventCard({
               <h3>
                 <NavLink to={`${slug}`}>{title}</NavLink>
               </h3>
-              <div>{description}</div>
+              <div>
+                <p>{description}</p>
+              </div>
             </div>
             <div>
-              <div>Place: {place}</div>
+              <div>
+                <p>Place: {place}</p>
+              </div>
             </div>
           </div>
 
@@ -62,11 +66,7 @@ export function EventCard({
             <div>{year}</div>
           </div>
         </div>
-
-        <img
-          src={imgUrl}
-          alt=""
-        />
+          <img src={imgUrl} alt="" />
       </article>
     </li>
   );

@@ -1,3 +1,4 @@
+import { Story } from "../../components/global/Story";
 import { H1 } from "../../components/header-and-footer/H1";
 import { InTextCitation } from "../../components/resources/InTextCitation";
 import { References } from "../../components/resources/References";
@@ -12,45 +13,49 @@ export function WhyIsIntersectionalDesignImportant() {
       </p>
 
       <h2>Examples of intersecting cases</h2>
-      <h3>A screen reader user with low digital skills</h3>
-      <p>
-        Developers ensure that people can interact with components in a digital product with
-        assistive technologies like screen readers.
-      </p>
-      <p>
-        At the same time, content editors and user experience (UX) designers work to simplify content
-        and flows to support people who are less familiar with digital products.
-      </p>
-      <p>
-        However, even if a component is technically operable by screen readers, it can still
-        require users to understand complex interaction patterns.
-      </p>
-      <p>
-        For someone using a screen reader, especially someone who has recently
-        become blind and is still learning how to use technology, this can make
-        it difficult to complete a task.
-      </p>
-      <p>Or the person may give up on using the product altogether.</p>
-      <p>
-        In this case, accessibility and usability are addressed separately, but
-        not effectively together.
-      </p>
-
-      <h3>Helpful technology that causes harm to others</h3>
-      <p>
-        AI-powered translation tools can make communication easier for people
-        who are not fluent in a language.
-      </p>
-      <p>
-        However, these technologies are also linked to environmental harm and
-        labour exploitation in the Global South <InTextCitation id="00048338" />
-        .
-      </p>
-      <p>
-        As a result, while they improve accessibility for some users, they may
-        negatively impact others—often people who are already marginalised.
-      </p>
-
+      <Story>
+        <h3>A screen reader user with low digital skills</h3>
+        <p>
+          Developers ensure that people can interact with components in a
+          digital product with assistive technologies like screen readers.
+        </p>
+        <p>
+          At the same time, content editors and user experience (UX) designers
+          work to simplify content and flows to support people who are less
+          familiar with digital products.
+        </p>
+        <p>
+          However, even if a component is technically operable by screen
+          readers, it can still require users to understand complex interaction
+          patterns.
+        </p>
+        <p>
+          For someone using a screen reader, especially someone who has recently
+          become blind and is still learning how to use technology, this can
+          make it difficult to complete a task.
+        </p>
+        <p>Or the person may give up on using the product altogether.</p>
+        <p>
+          In this case, accessibility and usability are addressed separately,
+          but not effectively together.
+        </p>
+      </Story>
+      <Story>
+        <h3>Helpful technology that causes harm to others</h3>
+        <p>
+          AI-powered translation tools can make communication easier for people
+          who are not fluent in a language.
+        </p>
+        <p>
+          However, these technologies are also linked to environmental harm and
+          labour exploitation in the Global South{" "}
+          <InTextCitation id="00048338" />.
+        </p>
+        <p>
+          As a result, while they improve accessibility for some users, they may
+          negatively impact others—often people who are already marginalised.
+        </p>
+      </Story>
       <h2>Not about finding the "right" answer</h2>
       <p>
         Intersectional design is not always about finding a single "right"
