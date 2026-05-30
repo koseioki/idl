@@ -5,7 +5,9 @@ ul.resource-list {
     justify-content: center;
     padding: 0;
     list-style: none;
-    max-width: var(--content-width);
+    /* max-width: var(--content-width); */
+    max-width: 100%;
+    margin-top: 0;
 }
 
 ul.resource-list li {
@@ -16,8 +18,8 @@ ul.resource-list li article {
     display: flex;
     flex-direction: row;
     gap: 2rem;
-    border-bottom: 1px solid var(--light-grey);
-    padding: 1.5rem 1rem;
+    border-bottom: 0.0625rem solid var(--text-black);
+    padding: 1.5rem 2rem;
 }
 
 /* Expand the div that contains the title to format */
@@ -30,6 +32,7 @@ ul.resource-list li article p {
     margin: 0;
     margin-top: 0.5rem;
     font-size: 0.9rem;
+    /* padding: 0; */
 }
 
 ul.resource-list li:last-child article {
@@ -94,6 +97,7 @@ ul.resource-format-list {
     list-style: none;
     margin-top: 0.25rem;
     padding: 0;
+    margin-bottom: 0.5rem;
 }
 
 /* only on the card */

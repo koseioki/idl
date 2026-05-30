@@ -1,0 +1,38 @@
+.action {
+    max-width: var(--content-width);
+    margin: 3rem 0;
+}
+
+.action-heading {
+    background-color: var(--dark-green);
+    padding: 1.5rem 2rem;
+    color: var(--white);
+    position: relative;
+}
+
+.action-heading h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+}
+
+.action-heading-arrow {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    display: block;
+    position: absolute;
+    bottom: -0.6rem;
+    left: 2.375rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    overflow: hidden;
+    transform: rotate(45deg);
+    background-color: var(--dark-green);
+}
+
+.action-content {
+    padding: 2rem;
+    /* border: 0.0625rem solid var(--dark-grey); */
+    border-top: none;
+    background-color: var(--light-grey);
+}

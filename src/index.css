@@ -212,9 +212,9 @@ a:focus-visible {
     border: solid 0.0625rem var(--dark-purple);
     border-bottom-width: 0.5rem;
     text-decoration: none;
-    padding: 1rem 2rem;
+    padding: 1.5rem 2rem;
     border-radius: 1rem;
-    font-size: 1rem;
+    font-size: 1em;
     font-weight: bold;
     cursor: pointer;
 }
@@ -264,8 +264,8 @@ blockquote {
     max-width: var(--content-width);
     font-size: 1.25rem;
     font-style: italic;
-    padding-left: 2rem;
-    margin: 2rem 0;
+    padding: 1rem 0 1rem 3rem;
+    margin: 3rem 0;
     display: block;
     position: relative;
 }
