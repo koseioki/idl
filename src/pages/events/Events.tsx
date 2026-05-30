@@ -43,6 +43,7 @@ export function Events() {
               place={event.place}
               slug={event.slug}
               description={event.description}
+              imgUrl={event.imageUrl}
             />
           ))}
         </ul>
