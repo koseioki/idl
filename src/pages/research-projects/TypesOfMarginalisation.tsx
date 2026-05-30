@@ -1,7 +1,7 @@
 import { SideNav } from "../../components/global/SideNav";
 import "./ResearchProjectPage.css";
 import { H1 } from "../../components/header-and-footer/H1";
-import typesOfMarginalisationData from "../../data/research-projects/types-of-marginalisation.json";
+import typesOfMarginalisationData from "../../data/research-projects/marginalisation-and-digital-society/types-of-marginalisation.json";
 import { CardList } from "../../components/global/CardList";
 import { Card } from "../../components/global/Card";
 export function TypesOfMarginalisation() {

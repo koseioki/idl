@@ -1,7 +1,7 @@
 import { H1 } from "../../components/header-and-footer/H1";
 import { SideNav } from "../../components/global/SideNav";
 import "./ResearchProjectPage.css";
-import typesOfMarginalisationData from "../../data/research-projects/types-of-marginalisation.json";
+import typesOfMarginalisationData from "../../data/research-projects/marginalisation-and-digital-society/types-of-marginalisation.json";
 import { CardList } from "../../components/global/CardList";
 import { Card } from "../../components/global/Card";
 import { useParams } from "react-router-dom";
@@ -12,8 +12,8 @@ export function SubcategoriesOfTypesOfMarginalisation() {
   const category = typesOfMarginalisationData.find(
     (cat) => cat.slug === categorySlug || cat.id === categorySlug,
   );
-  console.log("categorySlug:", categorySlug);
-  console.log("category:", category);
+  // console.log("categorySlug:", categorySlug);
+  // console.log("category:", category);
 
   return (
     <div className="research-project-page">
@@ -30,7 +30,7 @@ export function SubcategoriesOfTypesOfMarginalisation() {
             heading={subcategory.name}
             headingLevel={2}
             linkTo={`${subcategory.slug}`}
-            disabled={true}
+            disabled={false}
           >{""}
           </Card>
         ))}
