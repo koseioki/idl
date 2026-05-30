@@ -15,7 +15,7 @@ export function WhatIsIntersectionalDesign() {
       </p>
 
       <p>
-        in other words, it's about designing while considering "intersecting"
+        in other words, it's about designing a digital society while considering "intersecting"
         forms of discrimination.
       </p>
 

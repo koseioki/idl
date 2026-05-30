@@ -1,6 +1,6 @@
 import "./EventCard.css";
 import { NavLink } from "react-router-dom";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export function EventCard({
@@ -9,12 +9,14 @@ export function EventCard({
   place,
   slug,
   description,
+  imgUrl,
 }: {
   title: string;
   date: string;
   place: string;
   slug: string;
   description: string;
+  imgUrl?: string;
 }) {
   const year = new Date(date).getFullYear();
   const month = new Date(date).toLocaleString("default", { month: "long" });
@@ -27,16 +29,16 @@ export function EventCard({
   };
 
   // set image
-  const [Image, setImage] = useState<string | null>(null);
-  useEffect(() => {
-    import(`../../data/events/${slug}.jpg`)
-      .then((module) => {
-        setImage(module.default);
-      })
-      .catch(() => {
-        setImage(null); // or set to a default image if you have one
-      });
-  }, [slug]);
+  // const [Image, setImage] = useState<string | null>(null);
+  // useEffect(() => {
+  //   import(`../../data/events/${slug}.jpg`)
+  //     .then((module) => {
+  //       setImage(module.default);
+  //     })
+  //     .catch(() => {
+  //       setImage(null); // or set to a default image if you have one
+  //     });
+  // }, [slug]);
 
   return (
     <li className="event-card">
@@ -62,7 +64,7 @@ export function EventCard({
         </div>
 
         <img
-          src={Image || "/src/assets/img/logo.png"}
+          src={imgUrl}
           alt=""
         />
       </article>
