@@ -78,6 +78,7 @@ header {
     color: var(--text-black);
     background-color: var(--light-purple);
     border: 0.0625rem solid var(--white);
+    /* border-bottom: 0.5rem solid var(--dark-purple); */
     font-weight: bold;
 
 }

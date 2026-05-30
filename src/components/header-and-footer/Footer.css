@@ -31,7 +31,7 @@ footer a:focus-visible {
 
 @media (prefers-color-scheme: dark) {
     footer {
-        background-color: var(--dark-white);
+        background-color: var(--white-shade);
         color: var(--text-black);
     }
 

@@ -16,7 +16,7 @@ ul.resource-list li article {
     display: flex;
     flex-direction: row;
     gap: 2rem;
-    border-bottom: 1px solid var(--dark-dark-white);
+    border-bottom: 1px solid var(--light-grey);
     padding: 1.5rem 1rem;
 }
 
@@ -26,14 +26,14 @@ ul.resource-list li article div:last-child {
 }
 
 /* Kill the margins around the subtext */
-ul.resource-list li article p{
+ul.resource-list li article p {
     margin: 0;
     margin-top: 0.5rem;
     font-size: 0.9rem;
 }
 
 ul.resource-list li:last-child article {
-    border-bottom: none;    
+    border-bottom: none;
 }
 
 ul.resource-list li article a {
@@ -48,16 +48,17 @@ ul.resource-list li article a {
 ul.resource-list li article h2 {
     margin: 0;
     font-size: 1.25rem;
- 
+
 }
+
 /* Subtitle */
-ul.resource-list li article a span{
+ul.resource-list li article a span {
     font-size: 0.9rem;
 }
 
 ul.resource-list li article:hover {
-    background-color: var(--dark-white);
-        cursor: pointer;
+    background-color: var(--white-shade);
+    cursor: pointer;
 
 }
 
@@ -73,28 +74,19 @@ ul.resource-list li article:has(a:focus-visible) a {
 
 
 
-
-
 .resource-list li div:has(img) {
-    /* width: 100%;
-    max-width: 6rem;
-    aspect-ratio: 1/1; */
+ 
 }
 
 .resource-list li div:has(img) img {
     width: 100%;
-    /* height: 100%; */
     max-width: 7rem;
     aspect-ratio: 1/1;
-    /* max-height: 10rem; */
-    /* max-height: 10rem; */
-    /* object-fit: contain; */
     object-fit: cover;
-    /* object-position: left; */
 
 }
 
-ul.resource-format-list{
+ul.resource-format-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -106,7 +98,7 @@ ul.resource-format-list{
 
 /* only on the card */
 .resource-list ul.resource-format-list li {
-    color: var(--dark-grey-shade);
+    color: var(--light-text);
     font-size: 0.9rem;
 }
 
@@ -114,6 +106,7 @@ ul.resource-format-list li span::after {
     content: '|';
     padding-left: 0.25rem;
 }
+
 ul.resource-format-list li:last-child span::after {
     display: none;
 }

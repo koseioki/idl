@@ -34,7 +34,7 @@
 .references details {
     margin-top: 3rem;
     max-width: var(--content-width);
-    border: 0.0625rem solid var(--light-grey);
+    border: 0.0625rem solid var(--text-black);
     padding: 0;
 }
 
@@ -44,7 +44,7 @@
 
 .references summary:hover {
     cursor: pointer;
-    background-color: var(--dark-white);
+    background-color: var(--white-shade);
 }
 
 

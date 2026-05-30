@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 :root {
     /* background */
     --white: #FCFCFC;
-    
-    --dark-white: #E9E9E9;
-    --dark-dark-white: #D9D9D9;
+    --white-shade: #E9E9E9;
+
+    --light-grey: #E9E9E9;
+    --light-grey-shade: #d9d9d9;
+    --dark-grey: #757575;
+    --dark-grey-shade: #5A5A5A;
+
     --text-black: #15245F;
+    --light-text: #5A5A5A;
     --black: #333333;
 
     --light-purple: #E6BEF7;
@@ -29,15 +35,9 @@
 
     --light-blue: #DAF6FF;
 
-    --light-grey: #D5D5D5;
-    --light-grey-shade: #C5C5C5;
-    --dark-grey: #757575;
-    --dark-grey-shade: #5A5A5A;
 
     --focus-indicator: solid 0.25rem var(--dark-yellow);
     --focus-indicator-offset: 0.25rem;
-    /* --focus-indicator: 0 0 0 0.25rem var(--white), 0 0 0 0.5rem var(--dark-yellow); */
-    /* --focus-indicator-inset: inset 0 0 0 0.25rem var(--dark-yellow), inset 0 0 0 0.5rem var(--white); */
 
     --page-width: 65rem;
     --content-width: 40rem;
@@ -47,13 +47,47 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
+        /* white + light grey are different from the colours used in light mode */
         --white: #080E29;
+        --white-shade: #141D45;
+
+        --light-grey: #141D45;
+        --light-grey-shade: #212C60;
+
+        /* reverse */
+        --dark-grey: #E9E9E9;
+        --dark-grey-shade: #d9d9d9;
+
+        --text-black: #FCFCFC;
+        /* light-text is different from the colours used in light mode */
+        --light-text: #a5a5a5;
+        --black: #D9D9D9;
+
+        --light-purple: #9E4BC2;
+        --light-purple-shade: #7A319A;
+        --dark-purple: #E6BEF7;
+        --dark-purple-shade: #D2A3E6;
+
+        --dark-red: #FFBDC3;
+        --light-red: #9B353E;
+
+        --light-yellow: #564112;
+        --light-yellow-shade: #43320A;
+        --dark-yellow: #FFE8B4;
+        --dark-yellow-shade: #F3DBA4;
+
+        --light-green: #147557;
+        --dark-green: #7BEDCA;
+        --dark-green-shade: #5FD6B1;
+
+        --light-blue: #0F6C87;
+
+        /* --white: #080E29;
         --dark-white: #141D45;
         --dark-dark-white: #212C60;
         --text-black: #FCFCFC;
         --black: #D9D9D9;
 
-        /* Dark and Light are switched */
 
         --light-purple: #9E4BC2;
         --light-purple-shade: #7A319A;
@@ -77,7 +111,7 @@
         --light-grey: #757575;
         --light-grey-shade: #5A5A5A;
         --dark-grey: #D5D5D5;
-        --dark-grey-shade: #C5C5C5;
+        --dark-grey-shade: #C5C5C5; */
     }
 }
 
@@ -93,7 +127,7 @@
 }
 
 body {
-    font-family: 'Inter',sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 1.1875rem;
     /* letter-spacing: 2%; */
     /* font-width: 200%; */
@@ -102,7 +136,7 @@ body {
     background-color: var(--white);
     margin: 0 auto;
     box-sizing: border-box;
-    background-image: linear-gradient(var(--dark-dark-white) 0.0625rem, transparent 0);
+    background-image: linear-gradient(var(--light-grey) 0.0625rem, transparent 0);
     background-size: 2rem 2rem;
 }
 
@@ -123,19 +157,20 @@ h6 {
     font-weight: bold;
     line-height: 1.25;
     max-width: var(--content-width);
-    padding-top:  0.5rem;
+    padding-top: 0.5rem;
     margin-top: 0;
     margin-bottom: 1.5rem;
 }
 
-h1{
+h1 {
     font-size: 2.5rem;
 }
-h2{
+
+h2 {
     font-size: 2rem;
 }
 
-h1{
+h1 {
     margin-top: 0;
 }
 
@@ -170,27 +205,33 @@ a:focus-visible {
     outline-offset: var(--focus-indicator-offset);
 }
 
-.button{
+.button {
     background-color: var(--light-purple);
     color: var(--text-black);
-    border: none;
+    /* border: none; */
+    border: solid 0.0625rem var(--dark-purple);
+    border-bottom-width: 0.5rem;
     text-decoration: none;
     padding: 1rem 2rem;
-    border-radius: 2rem;
+    border-radius: 1rem;
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
-    /* margin: 2rem 0; */
 }
+
 .button:hover {
     background-color: var(--light-purple-shade);
+    border-bottom-width: 0.125rem;
+    transform: translateY(0.375rem);
+    margin-bottom: 0.375rem;
 }
+
 .button:focus-visible {
     outline: var(--focus-indicator);
     outline-offset: var(--focus-indicator-offset);
 }
 
-ul{
+ul {
     max-width: var(--content-width);
     margin-bottom: 1.5rem;
 }
@@ -240,7 +281,7 @@ blockquote::before {
     background-color: var(--dark-red);
 }
 
-cite{
+cite {
     max-width: var(--content-width);
     display: block;
     text-align: right;
