@@ -345,6 +345,69 @@
       "publisher": "Johns Hopkins University Press",
       "source": "https://www.researchgate.net/publication/388814014_Artificial_Intelligence_Colonialism_Environmental_Damage_Labor_Exploitation_and_Human_Rights_Crises_in_the_Global_South",
       "image": "/src/assets/img/resources/artificial-intelligence-colonialism.png"
+    },
+    {
+      "id": "10000001",
+      "title": "Local Geographies of Digital Inequality",
+      "slug": "local-geographies-of-digital-inequality",
+      "author": "Grant Blank, Mark Graham, and Claudio Calvino",
+      "author-short": "Blank, Graham, and Calvino",
+      "year": 2018,
+      "format": 4,
+      "category": [99, 102],
+      "source": "https://journals.sagepub.com/doi/10.1177/0894439317693332",
+      "image": "/src/assets/img/resources/local-geographies-of-digital-inequality.png"
+    },
+    {
+      "id": "10000002",
+      "title": "Dirt Tracks off the Superhighway",
+      "subtitle":"How COVID Widened the Digital Gap for Remote First Nations communities in Australia",
+      "slug": "dirt-tracks-off-the-superhighway",
+      "author": "Daniel Featherstone",
+      "author-short": "Featherstone",
+      "year": 2024,
+      "format": 4,
+      "category": [99, 102],
+      "source": "https://link.springer.com/chapter/10.1007/978-3-031-28930-9_2",
+      "image": "/src/assets/img/resources/dirt-tracks-off-the-superhighway.png"
+    },
+    {
+      "id": "10000003",
+      "title": "Digital Inclusion in Rural Areas",
+      "subtitle": "A Qualitative Exploration of Challenges Faced by People From Isolated Communities",
+      "slug": "digital-inclusion-in-rural-areas",
+      "author": "Teresa Correa, Isabel Pavez",
+      "author-short": "Correa and Pavez",
+      "year": 2024,
+      "format": 4,
+      "category": [99, 102],
+      "source": "https://academic.oup.com/jcmc/article/21/3/247/4065369",
+      "image": "https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/jcmc/Issue/21/3/5/m_cover.gif?Expires=1783364842&Signature=nnpoyX5IYyPHD-iC~PpU~txueI79NANWDPqBm9QtXNCgss0rrL1qRX2ZHBC690x~xmuYeNDcwT7S7nXy5bc7iPpcMq4HzcIrFih5sTmVH4g9uIdhd-oeuInispDhM2NmUNZmgX0pynyZ7En7dCVV0qoKAd7q6Useyu~xok~nz-8Pkxc44jdPs07vJTJq7ce-1agg71nALCdMe~JvnQqVftbu2tP6xDYJBmTrgZRmR0O9CVHFDtOFa4mluJyaYZJlxK1T6tkXEwrqr5mGWShhJEY197Hn~qZu9ZXOvZPn-HotTKvVVZygCRlGUUQBtO3E6AM~M8kvLK2Kr8M3NXeS9A__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA"
+    },
+    {
+      "id": "10000004",
+      "title": "Connected, Creative and Cultural Communities",
+      "subtitle": "Developing an Integrated Approach to Policy and Evaluation for  Remote Australian Indigenous Media and Communications",
+      "slug": "connected-creative-and-cultural-communities",
+      "author": "Daniel Featherstone",
+      "author-short": "Featherstone",
+      "year": 2015,
+      "format": 4,
+      "category": [99, 102],
+      "source": "https://researchportal.murdoch.edu.au/esploro/outputs/doctoral/Connected-Creative-and-Cultural-Communities-Develo**/991005542483607891",
+      "image": "/src/assets/img/resources/connected-creative-and-cultural-communities.png"
+    },
+    {
+      "id": "10000005",
+      "title": "Ronnie is the only person in his town with internet. The digital divide is to blame",
+      "slug": "ronnie-is-the-only-person-in-his-town-with-internet",
+      "author": "ABC Australia",
+      "author-short": "ABC Australia",
+      "year": 2022,
+      "format": [3, 5],
+      "category": [99, 102],
+      "source": "https://www.youtube.com/watch?v=uYQ503GU0YE",
+      "image": "https://i.ytimg.com/vi/uYQ503GU0YE/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCNgBUXNh5LPrIUmzoqvB1E7Nwemg",
+      "note": "This video does not include captions or audio description, but automated captions are available."
     }
-
 ]

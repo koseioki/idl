@@ -68,8 +68,10 @@ const FILTER_TO_FORMAT: Record<FilterKey, number> = {
   genderSex: 105,
 };
 
+// Sorting resources
+// !! it's actually ascending here
 function sortByYearDescending(resources: Resource[]): Resource[] {
-  return [...resources].sort((a, b) => (a.year ?? 0) - (b.year ?? 0));
+  return [...resources].sort((a, b) => (b.year ?? 0) - (a.year ?? 0));
 }
 
 export function ResourceLibrary() {
