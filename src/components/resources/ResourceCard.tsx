@@ -19,15 +19,12 @@ type ResourceCardProps = {
   resource: Resource;
 };
 
-
-
 import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import { ResourceFormat } from "./ResourceFormat";
 import { Icon } from "../global/Icon";
 import { resolveResourceImageUrl } from "../../utils/resolveResourceImageUrl";
 import { ResourceCategory } from "./ResourceCategory";
-
 
 const languageDisplayNames = new Intl.DisplayNames(["en"], {
   type: "language",
@@ -42,28 +39,37 @@ export function ResourceCard({ resource }: ResourceCardProps) {
     navigate(path);
   };
 
-
-
   return (
     <article onClick={handleClick} id={resource.slug}>
-
       <div>{imageUrl ? <img src={imageUrl} alt="" /> : null}</div>
 
-      <div>
-        <NavLink to={path}>
+      <div className="card-content">
+        <div className="title-wrapper">
           <div>
-            <h2>{resource.title ?? "Untitled resource"} {resource?.language ? `(in ${languageDisplayNames.of(resource.language) ?? resource.language})` : null}</h2>
-          {resource.subtitle ? <span>{resource.subtitle}</span> : null}
+            <h2>
+              <NavLink to={path}>
+                {resource.title ?? "Untitled resource"}{" "}
+                {resource?.language
+                  ? `(in ${languageDisplayNames.of(resource.language) ?? resource.language})`
+                  : null}
+                            <Icon />
+
+              </NavLink>
+            </h2>
+
+            {resource.subtitle ? <p>{resource.subtitle}</p> : null}
           </div>
-          <Icon />
-        </NavLink>
-        <p>
+        </div>
+
+        <p className="author-year">
           {resource.author ? resource.author : null}{" "}
           {resource.year ? `(${resource.year})` : "(no date)"}
         </p>
-        {/* <p>{resource.publisher ? resource.publisher : null}</p> */}
-        <ResourceFormat format={resource.format ?? 0} />
-        <ResourceCategory category={resource.category ?? 0} />
+        <div>
+          {/* <p>{resource.publisher ? resource.publisher : null}</p> */}
+          <ResourceFormat format={resource.format ?? 0} />
+          <ResourceCategory category={resource.category ?? 0} />
+        </div>
       </div>
     </article>
   );
