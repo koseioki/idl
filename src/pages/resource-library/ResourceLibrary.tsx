@@ -1,6 +1,8 @@
 import { type FormEvent, useState } from "react";
 import { H1 } from "../../components/header-and-footer/H1";
 import { ResourceCard } from "../../components/resources/ResourceCard";
+import { SearchBar } from "../../components/resources/SearchBar";
+import { ResourceFilter } from "../../components/resources/ResourceFilter";
 import resourcesData from "../../data/resources/resources.json";
 import "./ResourceLibrary.css";
 import resourceFormatData from "../../data/resources/resource-format.json";
@@ -10,6 +12,9 @@ import resourceCategoryData from "../../data/resources/resource-category.json";
 type Resource = {
   id?: string;
   title?: string;
+  subtitle?: string;
+  author?: string;
+  publisher?: string;
   year?: number;
   format?: number | number[];
   category?: number | number[];
@@ -50,9 +55,8 @@ export function ResourceLibrary() {
     Record<string, boolean>
   >(() => Object.fromEntries(formatOptions.map((o) => [String(o.id), false])));
 
-  // Resources currently shown in the UI (all by default).
-  const [filteredResources, setFilteredResources] =
-    useState<Resource[]>(allResources);
+  const [searchInput, setSearchInput] = useState("");
+  const [appliedSearchTerm, setAppliedSearchTerm] = useState("");
 
   const selectedFormatIds = Object.entries(selectedFormatFilters)
     .filter(([, v]) => v)
@@ -86,10 +90,44 @@ export function ResourceLibrary() {
     return matchesFormat && matchesCategory;
   }
 
+  function doesResourceMatchSearch(resource: Resource, query: string): boolean {
+    if (!query) {
+      return true;
+    }
+
+    const searchableText = [
+      resource.title,
+      resource.subtitle,
+      resource.author,
+      resource.publisher,
+    ]
+      .filter(Boolean)
+      .join(" ")
+      .toLowerCase();
+
+    return searchableText.includes(query.toLowerCase());
+  }
+
+  function getFilteredResources(searchQuery: string): Resource[] {
+    return sortByYearDescending(
+      allResources.filter(
+        (resource) =>
+          doesResourceMatchSelectedFilters(resource) &&
+          doesResourceMatchSearch(resource, searchQuery),
+      ),
+    );
+  }
+
   const matchingResourcesCount =
     selectedFormatIds.length === 0 && selectedCategoryIds.length === 0
-      ? allResources.length
-      : allResources.filter(doesResourceMatchSelectedFilters).length;
+      ? allResources.filter((resource) =>
+          doesResourceMatchSearch(resource, appliedSearchTerm),
+        ).length
+      : allResources.filter(
+          (resource) =>
+            doesResourceMatchSelectedFilters(resource) &&
+            doesResourceMatchSearch(resource, appliedSearchTerm),
+        ).length;
 
   // Updates a single checkbox value while preserving the others.
   function handleCheckboxChange(filterId: string, isChecked: boolean) {
@@ -100,24 +138,20 @@ export function ResourceLibrary() {
     setSelectedFormatFilters((current) => ({ ...current, [String(id)]: isChecked }));
   }
 
-  // Applies filters on form submit and prevents a full page reload.
-  function handleApplyFilters(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-
-    // If nothing is selected, show every resource.
-    if (selectedFormatIds.length === 0 && selectedCategoryIds.length === 0) {
-      setFilteredResources(allResources);
-      return;
-    }
-
-    // Keep resources that match selected format and category filters.
-    const nextResources = allResources.filter(doesResourceMatchSelectedFilters);
-
-    setFilteredResources(sortByYearDescending(nextResources));
-    // set the focus on the "** resources found" text
+  function handleSearchSubmit(query: string) {
+    setAppliedSearchTerm(query);
     const resultsText = document.getElementById("results-text");
     resultsText?.focus();
   }
+
+  // Applies filters on form submit and prevents a full page reload.
+  function handleApplyFilters(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const resultsText = document.getElementById("results-text");
+    resultsText?.focus();
+  }
+
+  const filteredResources = getFilteredResources(appliedSearchTerm);
 
   return (
     <main id="main-content">
@@ -127,58 +161,25 @@ export function ResourceLibrary() {
         courses, and more. All resources are reviewed by Intersectional Design
         Lab.
       </p>
-      {/* <p>
-        Last updated:{" "}
-        {new Date("2026-03-04").toLocaleDateString([], {
-          year: "numeric",
-          month: "long",
-          day: "numeric",
-        })}
-      </p> */}
 
       <div className="search-and-filter">
-        <details>
-          <summary><span aria-hidden="true"></span>Filter resources</summary>
-          <form onSubmit={handleApplyFilters}>
-            <fieldset>
-              <legend>Filter by format:</legend>
-              {formatOptions.map((opt) => (
-                <div className="format-option" key={`fmt-${opt.id}`}>
-                  <input
-                    type="checkbox"
-                    id={`format-${opt.id}`}
-                    name={`format-${opt.id}`}
-                    checked={!!selectedFormatFilters[String(opt.id)]}
-                    onChange={(e) => handleFormatCheckboxChange(opt.id, e.target.checked)}
-                  />
-                  <label htmlFor={`format-${opt.id}`}>{opt.label}</label>
-                </div>
-              ))}
-            </fieldset>
+        <SearchBar
+          value={searchInput}
+          onChange={setSearchInput}
+          onSearch={handleSearchSubmit}
+        />
 
-            <fieldset>
-              <legend>Filter by category:</legend>
-              {categoryOptions.map((opt) => (
-                <div className="category-option" key={`cat-${opt.id}`}>
-                  <input
-                    type="checkbox"
-                    id={`category-${opt.id}`}
-                    name={`category-${opt.id}`}
-                    checked={!!selectedFilters[String(opt.id)]}
-                    onChange={(e) => handleCheckboxChange(String(opt.id), e.target.checked)}
-                  />
-                  <label htmlFor={`category-${opt.id}`}>{opt.label}</label>
-                </div>
-              ))}
-            </fieldset>
-
-            <button className="button" type="submit">
-              {/* Apply filters */}
-              See {matchingResourcesCount} result
-              {matchingResourcesCount === 1 ? "" : "s"}
-            </button>
-          </form>
-        </details>
+        {/* Filter */}
+        <ResourceFilter
+          formatOptions={formatOptions}
+          categoryOptions={categoryOptions}
+          selectedFormatFilters={selectedFormatFilters}
+          selectedFilters={selectedFilters}
+          onFormatChange={handleFormatCheckboxChange}
+          onCategoryChange={handleCheckboxChange}
+          matchingResourcesCount={matchingResourcesCount}
+          onApply={handleApplyFilters}
+        />
       </div>
 
       <p tabIndex={-1} id="results-text">
