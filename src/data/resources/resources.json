@@ -409,5 +409,18 @@
       "source": "https://www.youtube.com/watch?v=uYQ503GU0YE",
       "image": "https://i.ytimg.com/vi/uYQ503GU0YE/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCNgBUXNh5LPrIUmzoqvB1E7Nwemg",
       "note": "This video does not include captions or audio description, but automated captions are available."
+    },
+    {
+      "id": "10000006",
+      "title": "The Digital Divide",
+      "slug": "the-digital-divide",
+      "author": "Jan van Dijk",
+      "author-short": "van Dijk",
+      "publisher": "Polity",
+      "year": 2020,
+      "format": 1,
+      "category": [99, 102],
+      "source": "https://www.wiley.com/en-us/shop/cultural-studies-general/the-digital-divide-p-9781509534456",
+      "image": "https://www.wiley.com/storefront-pdp-assets/_next/image?url=https%3A%2F%2Fmedia.wiley.com%2Fproduct_data%2FcoverImage300%2F4X%2F15095344%2F150953444X.jpg&w=640&q=75"
     }
 ]
