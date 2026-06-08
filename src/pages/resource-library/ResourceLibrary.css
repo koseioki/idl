@@ -1,15 +1,15 @@
 .search-and-filter details {
     border: 0.0625rem solid var(--text-black);
     background-color: var(--white);
-    max-width: var(--content-width);
-    /* border-radius: 2rem; */
+    /* max-width: var(--content-width); */
+    border-radius: 2rem;
     margin: 2rem 0;
 }
 
 .search-and-filter summary {
     font-weight: bold;
-    padding: 1rem 1.5rem;
-    /* border-radius: 2rem; */
+    padding: 1.5rem 2rem;
+    border-radius: 2rem;
     list-style-type: none;
     display: flex;
     align-items: center;

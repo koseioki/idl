@@ -47,6 +47,7 @@ header {
 
 .logo img:hover {
     cursor: pointer;
+
 }
 
 .header-nav {
@@ -80,7 +81,10 @@ header {
     border: 0.0625rem solid var(--white);
     /* border-bottom: 0.5rem solid var(--dark-purple); */
     font-weight: bold;
+}
 
+.header-nav a:hover {
+    text-decoration: underline;
 }
 
 .header-nav li:first-child a {
@@ -103,7 +107,7 @@ header {
 .header-nav a:focus-visible {
     /* outline: none;
     box-shadow: var(--focus-indicator-inset); */
-        outline: var(--focus-indicator);
+    outline: var(--focus-indicator);
     outline-offset: calc(-1*var(--focus-indicator-offset));
 }
 

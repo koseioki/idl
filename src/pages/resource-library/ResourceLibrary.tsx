@@ -3,6 +3,9 @@ import { H1 } from "../../components/header-and-footer/H1";
 import { ResourceCard } from "../../components/resources/ResourceCard";
 import resourcesData from "../../data/resources/resources.json";
 import "./ResourceLibrary.css";
+import resourceFormatData from "../../data/resources/resource-format.json";
+import resourceCategoryData from "../../data/resources/resource-category.json";
+
 
 type Resource = {
   id?: string;
@@ -12,64 +15,12 @@ type Resource = {
   category?: number | number[];
 };
 
-type FilterKey = "book" | "ebook" | "video" | "article" | "internetSource" | "ictInclusion" | "intersectionality" | "raceEthnicityReligion" | "geographicalLocationMigrationStatus" | "ageDisabilityHealth" | "socioeconomicStatus" | "genderSex";
+// category options are loaded from resource-category.json (id -> label)
 
-type FormatFilterKey =
-  | "book"
-  | "ebook"
-  | "video"
-  | "article"
-  | "internetSource";
-
-type CategoryFilterKey =
-  | "ictInclusion"
-  | "intersectionality"
-  | "raceEthnicityReligion"
-  | "geographicalLocationMigrationStatus"
-  | "ageDisabilityHealth"
-  | "socioeconomicStatus"
-  | "genderSex";
-
-// Format filters map to values stored in resource.format.
-const FORMAT_FILTER_KEYS: FormatFilterKey[] = [
-  "book",
-  "ebook",
-  "video",
-  "article",
-  "internetSource",
-];
-
-// Category filters map to values stored in resource.category.
-const CATEGORY_FILTER_KEYS: CategoryFilterKey[] = [
-  "ictInclusion",
-  "intersectionality",
-  "raceEthnicityReligion",
-  "geographicalLocationMigrationStatus",
-  "ageDisabilityHealth",
-  "socioeconomicStatus",
-  "genderSex",
-];
-
-// Maps each checkbox key to the numeric value used in resources.json.
-// Keys in FORMAT_FILTER_KEYS correspond to resource.format values.
-// Keys in CATEGORY_FILTER_KEYS correspond to resource.category values.
-const FILTER_TO_FORMAT: Record<FilterKey, number> = {
-  book: 1,
-  ebook: 2,
-  video: 3,
-  article: 4,
-  internetSource: 5,
-  ictInclusion: 99,
-  intersectionality: 100,
-  raceEthnicityReligion: 101,
-  geographicalLocationMigrationStatus: 102,
-  ageDisabilityHealth: 103,
-  socioeconomicStatus: 104,
-  genderSex: 105,
-};
-
+// Sorting resources
+// !! it's actually ascending here
 function sortByYearDescending(resources: Resource[]): Resource[] {
-  return [...resources].sort((a, b) => (a.year ?? 0) - (b.year ?? 0));
+  return [...resources].sort((a, b) => (b.year ?? 0) - (a.year ?? 0));
 }
 
 export function ResourceLibrary() {
@@ -79,34 +30,37 @@ export function ResourceLibrary() {
   );
 
   // Tracks which checkboxes are currently selected.
-  const [selectedFilters, setSelectedFilters] = useState<
-    Record<FilterKey, boolean>
-  >({
-    book: false,
-    ebook: false,
-    video: false,
-    article: false,
-    internetSource: false,
-    ictInclusion: false,
-    intersectionality: false,
-    raceEthnicityReligion: false,
-    geographicalLocationMigrationStatus: false,
-    ageDisabilityHealth: false,
-    socioeconomicStatus: false,
-    genderSex: false,
-  });
+  // Build format options from imported JSON (id -> label).
+  const formatOptions = Object.entries(resourceFormatData).map(
+    ([id, label]) => ({ id: Number(id), label }),
+  );
+
+  // Build category options from imported JSON (id -> label).
+  const categoryOptions = Object.entries(resourceCategoryData).map(
+    ([id, label]) => ({ id: Number(id), label }),
+  );
+
+  // Tracks which category checkboxes are currently selected (keys are string ids).
+  const [selectedFilters, setSelectedFilters] = useState<Record<string, boolean>>(
+    () => Object.fromEntries(categoryOptions.map((o) => [String(o.id), false])),
+  );
+
+  // Tracks which format IDs are selected (keys are stringified ids).
+  const [selectedFormatFilters, setSelectedFormatFilters] = useState<
+    Record<string, boolean>
+  >(() => Object.fromEntries(formatOptions.map((o) => [String(o.id), false])));
 
   // Resources currently shown in the UI (all by default).
   const [filteredResources, setFilteredResources] =
     useState<Resource[]>(allResources);
 
-  const selectedFormatIds = FORMAT_FILTER_KEYS.filter(
-    (filterKey) => selectedFilters[filterKey],
-  ).map((filterKey) => FILTER_TO_FORMAT[filterKey]);
+  const selectedFormatIds = Object.entries(selectedFormatFilters)
+    .filter(([, v]) => v)
+    .map(([id]) => Number(id));
 
-  const selectedCategoryIds = CATEGORY_FILTER_KEYS.filter(
-    (filterKey) => selectedFilters[filterKey],
-  ).map((filterKey) => FILTER_TO_FORMAT[filterKey]);
+  const selectedCategoryIds = Object.entries(selectedFilters)
+    .filter(([, v]) => v)
+    .map(([id]) => Number(id));
 
   // A resource is included when it matches at least one selected format
   // (if any format is selected) and at least one selected category
@@ -138,8 +92,12 @@ export function ResourceLibrary() {
       : allResources.filter(doesResourceMatchSelectedFilters).length;
 
   // Updates a single checkbox value while preserving the others.
-  function handleCheckboxChange(filter: FilterKey, isChecked: boolean) {
-    setSelectedFilters((current) => ({ ...current, [filter]: isChecked }));
+  function handleCheckboxChange(filterId: string, isChecked: boolean) {
+    setSelectedFilters((current) => ({ ...current, [filterId]: isChecked }));
+  }
+
+  function handleFormatCheckboxChange(id: number, isChecked: boolean) {
+    setSelectedFormatFilters((current) => ({ ...current, [String(id)]: isChecked }));
   }
 
   // Applies filters on form submit and prevents a full page reload.
@@ -184,136 +142,34 @@ export function ResourceLibrary() {
           <form onSubmit={handleApplyFilters}>
             <fieldset>
               <legend>Filter by format:</legend>
-              <input
-                type="checkbox"
-                id="book"
-                name="book"
-                checked={selectedFilters.book}
-                onChange={(event) =>
-                  handleCheckboxChange("book", event.target.checked)
-                }
-              />
-              <label htmlFor="book">Book</label>
-              <input
-                type="checkbox"
-                id="ebook"
-                name="ebook"
-                checked={selectedFilters.ebook}
-                onChange={(event) =>
-                  handleCheckboxChange("ebook", event.target.checked)
-                }
-              />
-              <label htmlFor="ebook">eBook</label>
-              <input
-                type="checkbox"
-                id="video"
-                name="video"
-                checked={selectedFilters.video}
-                onChange={(event) =>
-                  handleCheckboxChange("video", event.target.checked)
-                }
-              />
-              <label htmlFor="video">Video</label>
-              <input
-                type="checkbox"
-                id="article"
-                name="article"
-                checked={selectedFilters.article}
-                onChange={(event) =>
-                  handleCheckboxChange("article", event.target.checked)
-                }
-              />
-              <label htmlFor="article">Article</label>
-              <input
-                type="checkbox"
-                id="internetSource"
-                name="internetSource"
-                checked={selectedFilters.internetSource}
-                onChange={(event) =>
-                  handleCheckboxChange("internetSource", event.target.checked)
-                }
-              />
-              <label htmlFor="internetSource">Internet Source</label>
+              {formatOptions.map((opt) => (
+                <div className="format-option" key={`fmt-${opt.id}`}>
+                  <input
+                    type="checkbox"
+                    id={`format-${opt.id}`}
+                    name={`format-${opt.id}`}
+                    checked={!!selectedFormatFilters[String(opt.id)]}
+                    onChange={(e) => handleFormatCheckboxChange(opt.id, e.target.checked)}
+                  />
+                  <label htmlFor={`format-${opt.id}`}>{opt.label}</label>
+                </div>
+              ))}
             </fieldset>
 
             <fieldset>
               <legend>Filter by category:</legend>
-              <input type="checkbox" id="ict-inclusion" name="ict-inclusion" checked={selectedFilters.ictInclusion} onChange={(event) => handleCheckboxChange("ictInclusion", event.target.checked)} />
-              <label htmlFor="ict-inclusion">ICT Inclusion</label>
-
-
-              <input
-                type="checkbox"
-                id="intersectionality"
-                name="intersectionality"
-                checked={selectedFilters.intersectionality}
-                onChange={(event) =>
-                  handleCheckboxChange("intersectionality", event.target.checked)
-                }
-              />
-              <label htmlFor="intersectionality">Intersectionality</label>
-              <input
-                type="checkbox"
-                id="race-ethnicity-religion"
-                name="race-ethnicity-religion"
-                checked={selectedFilters.raceEthnicityReligion}
-                onChange={(event) =>
-                  handleCheckboxChange(
-                    "raceEthnicityReligion",
-                    event.target.checked,
-                  )
-                }
-              />
-              <label htmlFor="race-ethnicity-religion">
-                Race, Ethnicity, and Religion
-              </label>
-              <input
-                type="checkbox"
-                id="geographical-location-migration-status"
-                name="geographical-location-migration-status"
-                checked={selectedFilters.geographicalLocationMigrationStatus}
-                onChange={(event) =>
-                  handleCheckboxChange(
-                    "geographicalLocationMigrationStatus",
-                    event.target.checked,
-                  )
-                }
-              />
-              <label htmlFor="geographical-location-migration-status">
-                Geographical Location and Migration Status
-              </label>
-              <input
-                type="checkbox"
-                id="age-disability-health"
-                name="age-disability-health"
-                checked={selectedFilters.ageDisabilityHealth}
-                onChange={(event) =>
-                  handleCheckboxChange("ageDisabilityHealth", event.target.checked)
-                }
-              />
-              <label htmlFor="age-disability-health">
-                Age, Disability, and Health
-              </label>
-              <input
-                type="checkbox"
-                id="socioeconomic-status"
-                name="socioeconomic-status"
-                checked={selectedFilters.socioeconomicStatus}
-                onChange={(event) =>
-                  handleCheckboxChange("socioeconomicStatus", event.target.checked)
-                }
-              />
-              <label htmlFor="socioeconomic-status">Socioeconomic Status</label>
-              <input
-                type="checkbox"
-                id="gender-sex"
-                name="gender-sex"
-                checked={selectedFilters.genderSex}
-                onChange={(event) =>
-                  handleCheckboxChange("genderSex", event.target.checked)
-                }
-              />
-              <label htmlFor="gender-sex">Gender and Sex</label>
+              {categoryOptions.map((opt) => (
+                <div className="category-option" key={`cat-${opt.id}`}>
+                  <input
+                    type="checkbox"
+                    id={`category-${opt.id}`}
+                    name={`category-${opt.id}`}
+                    checked={!!selectedFilters[String(opt.id)]}
+                    onChange={(e) => handleCheckboxChange(String(opt.id), e.target.checked)}
+                  />
+                  <label htmlFor={`category-${opt.id}`}>{opt.label}</label>
+                </div>
+              ))}
             </fieldset>
 
             <button className="button" type="submit">

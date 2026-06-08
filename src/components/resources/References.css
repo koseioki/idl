@@ -1,4 +1,7 @@
-.references summary {}
+.references summary {
+    border-radius: 2rem;
+
+}
 
 .references summary h2 {
     margin: 0;
@@ -6,40 +9,43 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 1rem 1.5rem;
-
+    padding: 1.5rem 2rem;
 }
 
 .references details>summary {
     list-style-type: none;
 }
 
-.references details>summary::-webkit-details-marker {
+/* .references details>summary::-webkit-details-marker {
     display: none;
-}
+} */
 
 .references details>summary span::before {
     content: '+';
     font-size: 1.75rem;
     margin-right: 0.5rem;
-  
 }
 
 .references details[open]>summary span::before {
     content: '−';
-   
 }
 
 
 .references details {
     margin-top: 3rem;
-    max-width: var(--content-width);
+    /* max-width: var(--content-width); */
     border: 0.0625rem solid var(--text-black);
     padding: 0;
+    border-radius: 2rem;
 }
 
 .references details ul {
     margin-bottom: 0;
+}
+
+.references details[open] summary {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .references summary:hover {
@@ -48,7 +54,12 @@
 }
 
 
-
 .references summary:focus-visible {
     outline: var(--focus-indicator);
+}
+
+/* border-radius of the last resource card */
+.references details ul li:last-child article {
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
 }

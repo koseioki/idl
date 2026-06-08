@@ -29,15 +29,17 @@ export function ResourceDetail() {
         </H1>
 
         {resource?.subtitle ? (
-          <span className="resource-subtitle">{resource.subtitle}</span>
+          <p className="resource-subtitle">{resource.subtitle}</p>
         ) : null}
 
-        {resource?.note ? <Note title="Note:">{resource.note}</Note> : null}
+        {resource?.note ? <Note title="Note:"><p>{resource.note}</p></Note> : null}
 
-        <div>
+        <div className="resource-image-wrapper">
           {imageUrl ? (
-            <a href={resource.source}>
+            <a href={resource?.source}>
+              
               <img src={imageUrl} alt="Open resource" />
+           
             </a>
           ) : null}
         </div>

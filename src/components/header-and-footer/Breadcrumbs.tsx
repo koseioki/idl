@@ -44,7 +44,7 @@ export function Breadcrumbs() {
           return (
             <li key={routeTo}>
               <span className="breadcrumb-separator" aria-hidden="true">
-                /
+                &gt;
               </span>
               {isLast ? (
                 <span className="breadcrumb-current" aria-current="page">

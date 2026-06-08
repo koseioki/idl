@@ -1,10 +1,8 @@
 nav.breadcrumb-nav {
   max-width: var(--page-width);
-  /* margin: 3rem auto 0 auto; */
-  margin: auto;
-  background-color: var(--white);
+  margin: 0 auto 2rem auto;
   padding: 0 1rem;
-  margin-bottom: 2rem;
+
 }
 
 nav.breadcrumb-nav ol {

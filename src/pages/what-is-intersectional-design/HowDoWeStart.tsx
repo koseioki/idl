@@ -2,6 +2,7 @@ import { NavLink } from "react-router";
 import { H1 } from "../../components/header-and-footer/H1";
 import { InTextCitation } from "../../components/resources/InTextCitation";
 import { References } from "../../components/resources/References";
+import { Action } from "../../components/global/Action";
 export function HowDoWeStart() {
   return (
     <main id="main-content">
@@ -16,7 +17,8 @@ export function HowDoWeStart() {
         inclusive digital experiences.
       </p>
 
-      <h2>Reflect on your design</h2>
+<Action heading="Reflect on your design">
+
       <p>Some questions you might ask yourself:</p>
       <ul>
         <li>
@@ -36,6 +38,8 @@ export function HowDoWeStart() {
           app?
         </li>
       </ul>
+
+      </Action>
 
       <h2>Learn and explore</h2>
       <p>

@@ -43,7 +43,7 @@ export function Home() {
 
         
       </CardList>
-      <h2>Learning and Knowledge</h2>
+      <h2>Events and Resources</h2>
 
       <CardList>
         <Card
