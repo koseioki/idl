@@ -5,7 +5,7 @@ export function Footer() {
     <footer>
       <div className="footer-content">
         <h2 className="sr-only">Site footer</h2>
-        <h3>Intersectional Design Lab (Beta)</h3>
+        <h3>Intersectional Design Lab</h3>
         <ul>
           <li><a href="mailto:hello@intersectionaldesignlab.org">
             hello@intersectionaldesignlab.org
