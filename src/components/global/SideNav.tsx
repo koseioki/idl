@@ -3,11 +3,11 @@ import "./SideNav.css";
 import typesOfMarginalisation from "../../data/research-projects/marginalisation-and-digital-society/types-of-marginalisation.json";
 
 export function SideNav() {
-  const { slug, categorySlug } = useParams();
-  const currentCategory = typesOfMarginalisation.find(
-    (category) => category.slug === categorySlug,
-  );
-
+  // const { slug, categorySlug } = useParams();
+  const { slug } = useParams();
+  // const currentCategory = typesOfMarginalisation.find(
+  //   (category) => category.slug === categorySlug,
+  // );
 
   return (
     <nav className="side-nav" aria-label="Secondary">
