@@ -27,15 +27,16 @@ useEffect(() => {
 
   return (
     <div className="research-project-page">
-      <SideNav />
       <main id="main-content">
         <H1>{subcategory?.name}</H1>
         {Content && (
           <div>
             <Content />
           </div>
-        ) || <p>This page is still under development.</p>}
+        ) || <p>Loading...</p>}
       </main>
+            <SideNav />
+
     </div>
   );
 }

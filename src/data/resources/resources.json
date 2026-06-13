@@ -422,5 +422,30 @@
       "category": [99, 102],
       "source": "https://www.politybooks.com/bookdetail?book_slug=the-digital-divide--9781509534449",
       "image": "https://www.wiley.com/storefront-pdp-assets/_next/image?url=https%3A%2F%2Fmedia.wiley.com%2Fproduct_data%2FcoverImage300%2F4X%2F15095344%2F150953444X.jpg&w=640&q=75"
+    },
+    {
+      "id": "10000007",
+      "title": "Remote rural home based businesses and digital inequalities",
+      "subtitle": "Understanding needs and expectations in a digitally underserved community",
+      "slug": "remote-rural-home-based-businesses-and-digital-inequalities",
+      "author": "Lorna Philip, Fiona Williams",
+      "authorShort": "Philip and Williams",
+      "year": 2019,
+      "format": 4,
+      "category": [99, 102],
+      "source": "https://www.sciencedirect.com/science/article/pii/S0743016717312615",
+      "image": "https://ars.els-cdn.com/content/image/1-s2.0-S0743016719X00054-cov200h.gif"
+    },
+    {
+      "id": "10000008",
+      "title": "Rural development in the digital age",
+      "subtitle": "A systematic review of the literature on digital inclusion in rural areas",
+      "author": "Salemink, Koen; Strijker, Derk; Bosworth, Gary",
+      "authorShort": "Salemink, Strijker, and Bosworth",
+      "year": 2017,
+      "format": 4,
+      "category": [99, 102],
+      "source": "https://www.sciencedirect.com/science/article/abs/pii/S0743016715300176?via%3Dihub",
+      "image": "https://ars.els-cdn.com/content/image/1-s2.0-S0743016719X00054-cov200h.gif"
     }
 ]

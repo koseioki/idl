@@ -13,7 +13,6 @@ export function ProjectOverview() {
 
   return (
     <div className="research-project-page">
-      <SideNav />
       <main id="main-content">
         <H1>{project?.title}</H1>
 
@@ -30,6 +29,8 @@ export function ProjectOverview() {
 
       
       </main>
+            <SideNav />
+
     </div>
   );
 }

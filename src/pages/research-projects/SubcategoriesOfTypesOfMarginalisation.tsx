@@ -15,7 +15,6 @@ export function SubcategoriesOfTypesOfMarginalisation() {
 
   return (
     <div className="research-project-page">
-      <SideNav />
       <main id="main-content">
       <H1>{category?.name}</H1>
 
@@ -34,6 +33,8 @@ export function SubcategoriesOfTypesOfMarginalisation() {
         ))}
       </CardList>
       </main>
+            <SideNav />
+
     </div>
   );
 }

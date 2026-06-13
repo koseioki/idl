@@ -8,7 +8,6 @@ export function TypesOfMarginalisation() {
   return (
     <>
       <div className="research-project-page">
-        <SideNav />
         <main id="main-content">
           <H1>Types of Marginalisation</H1>
           <p>Here you can find information about different types of marginalisation in design.</p>
@@ -28,6 +27,8 @@ export function TypesOfMarginalisation() {
             ))}
           </CardList>
         </main>
+                <SideNav />
+
       </div>
     </>
   );

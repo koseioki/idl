@@ -1,3 +1,4 @@
+import { Video } from "../../components/global/Video";
 import { H1 } from "../../components/header-and-footer/H1";
 import { InTextCitation } from "../../components/resources/InTextCitation";
 import { References } from "../../components/resources/References";
@@ -36,13 +37,11 @@ export function WhatIsIntersectionality() {
       <p>Many approaches to equality today focus on only one form of marginalisation at a time. This can leave some people unsupported, as they may not fully fit into any single category <InTextCitation id="23459734" />.</p>
       <p>As a result, this can put them in a situation, "sitting between two chairs," where neither approach fully addresses their needs or helps them achieve independence and dignity.</p>
       
-      <h2>Video: What is Intersectionality?</h2>
-      <iframe
-        className="youtube-video"
+      <Video
         src="https://www.youtube-nocookie.com/embed/O1islM0ytkE?si=XNP-7wdXZfmkJfNx"
-        title="YouTube video player"
-        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+        title="What is Intersectionality?"
       />
+      
       <References ids={["23459734"]} />
     </main>
   );

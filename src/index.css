@@ -288,18 +288,3 @@ cite {
     margin-top: 0.5rem;
 }
 
-.youtube-video {
-    /* margin: 2rem 0; */
-    margin-bottom: 1.5rem;
-    /* border-radius: 2rem; */
-    width: 100%;
-    max-width: var(--content-width);
-    aspect-ratio: 16/9;
-    border: none;
-}
-
-.html5-video-player button:focus-visible,
-.html5-video-player a:focus-visible {
-    outline: var(--focus-indicator);
-    outline-offset: var(--focus-indicator-offset);
-}
