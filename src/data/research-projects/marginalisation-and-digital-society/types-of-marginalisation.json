@@ -8,13 +8,15 @@
         "id": "0001",
         "name": "Race/Ethnicity",
         "slug": "race-ethnicity",
-        "content": "link to mdx"
+        "content": "link to mdx",
+        "disabled": true
       },
       {
         "id": "0002",
         "name": "Religion",
         "slug": "religion",
-        "content": "link to mdx"
+        "content": "link to mdx",
+        "disabled": true
       }
     ]
   },
@@ -27,19 +29,22 @@
         "id": "1001",
         "name": "Geographical Location",
         "slug": "geographical-location",
-        "content": "link to mdx"
+        "content": "link to mdx",
+        "disabled": false
       },
       {
         "id": "1002",
         "name": "Migration Status",
         "slug": "migration-status",
-        "content": "link to mdx"
+        "content": "link to mdx",
+        "disabled": true
       },
       {
         "id": "1003",
         "name": "Language",
         "slug": "language",
-        "content": "link to mdx"
+        "content": "link to mdx",
+        "disabled": true
       }
     ]
   },
@@ -52,55 +57,64 @@
         "id": "2001",
         "name": "Visual Disabilities",
         "slug": "visual-disabilities",
-        "content": "link to mdx"
+        "content": "link to mdx",
+        "disabled": true
       },
       {
         "id": "2002",
         "name": "Auditory Disabilities",
         "slug": "auditory-disabilities",
-        "content": "link to mdx"
+        "content": "link to mdx",
+        "disabled": true
       },
       {
         "id": "2003",
         "name": "Deaf-Blindness",
         "slug": "deaf-blindness",
-        "content": "link to mdx"
+        "content": "link to mdx",
+        "disabled": true
       },
       {
         "id": "2004",
         "name": "Speech and Language Disabilities",
         "slug": "speech-language-disabilities",
-        "content": "link to mdx"
+        "content": "link to mdx",
+        "disabled": true
       },
       {
         "id": "2005",
         "name": "Mobility, Flexibility, and Body Structure Disabilities",
         "slug": "mobility-flexibility-body-structure-disabilities",
-        "content": "link to mdx"
+        "content": "link to mdx",
+        "disabled": true
       },
       {
         "id": "2006",
         "name": "Neurodivergence",
         "slug": "neurodivergence",
-        "content": "link to mdx"
+        "content": "link to mdx",
+        "disabled": true
       },
       {
         "id": "2007",
         "name": "Cognitive Disabilities",
         "slug": "cognitive-disabilities",
-        "content": "link to mdx"
+        "content": "link to mdx",
+        "disabled": true
       },
       {
         "id": "2008",
         "name": "Psychological Disabilities",
         "slug": "psychological-disabilities",
-        "content": "link to mdx"
+        "content": "link to mdx",
+        "disabled": true
       },
       {
         "id": "2009",
         "name": "Age and Generation",
         "slug": "age-generation",
-        "content": "link to mdx"
+        "content": "link to mdx",
+        "disabled": true
       }
 
     ]
@@ -115,25 +129,30 @@
             "id": "3001",
             "name": "Income and Wealth",
             "slug": "income-wealth",
-            "content": "link to mdx"
+            "content": "link to mdx",
+            "disabled": true
         },
         {
             "id": "3002",
             "name": "Education",
             "slug": "education",
-            "content": "link to mdx"
+            "content": "link to mdx",
+            "disabled": true
+            
         },
         {
             "id": "3003",
             "name": "Occupation and Employment Status",
             "slug": "occupation-employment-status",
-            "content": "link to mdx"
+            "content": "link to mdx",
+            "disabled": true
         },
         {
             "id": "3004",
             "name": "Social Class",
             "slug": "social-class",
-            "content": "link to mdx"
+            "content": "link to mdx",
+            "disabled": true
         }
     ]
   },
@@ -146,13 +165,15 @@
                 "id": "4001",
                 "name": "Gender Identity",
                 "slug": "gender-identity",
-                "content": "link to mdx"
+                "content": "link to mdx",
+                "disabled": true
             },
             {
                 "id": "4002",
                 "name": "Sexual Orientation",
                 "slug": "sexual-orientation",
-                "content": "link to mdx"
+                "content": "link to mdx",
+                "disabled": true
             }
         ]
     }

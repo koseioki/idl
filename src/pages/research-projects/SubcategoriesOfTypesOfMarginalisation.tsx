@@ -12,8 +12,6 @@ export function SubcategoriesOfTypesOfMarginalisation() {
   const category = typesOfMarginalisationData.find(
     (cat) => cat.slug === categorySlug || cat.id === categorySlug,
   );
-  // console.log("categorySlug:", categorySlug);
-  // console.log("category:", category);
 
   return (
     <div className="research-project-page">
@@ -30,7 +28,7 @@ export function SubcategoriesOfTypesOfMarginalisation() {
             heading={subcategory.name}
             headingLevel={2}
             linkTo={`${subcategory.slug}`}
-            disabled={false}
+            disabled={subcategory.disabled}
           >{""}
           </Card>
         ))}

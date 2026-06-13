@@ -72,10 +72,10 @@ export function ResourceDetail() {
                 : "English"}
             </dd>
 
-            {resource?.["original-title"] ? <dt>Original title:</dt> : null}
-            {resource?.["original-title"] ? (
+            {resource?.originalTitle ? <dt>Original title:</dt> : null}
+            {resource?.originalTitle ? (
               <dd lang={resource.language}>
-                <em>{resource["original-title"]}</em>
+                <em>{resource.originalTitle}</em>
               </dd>
             ) : null}
 

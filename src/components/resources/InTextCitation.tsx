@@ -8,7 +8,7 @@ export function InTextCitation({ id }) {
 
     return (
         <a href={`#${resource.slug}`}>
-            ({resource["author-short"]}, {resource.year})
+            ({resource.authorShort}, {resource.year})
         </a>
     );
 }

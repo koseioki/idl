@@ -34,7 +34,7 @@ export function SideNav() {
                       >
                         {category.name}
                       </NavLink>
-                      {currentCategory?.slug === category.slug ? (
+                      {/* {currentCategory?.slug === category.slug ? (
                         <ul>
                           {category.subcategories.map((subcategory) => (
                             <li key={subcategory.slug}>
@@ -46,7 +46,7 @@ export function SideNav() {
                             </li>
                           ))}
                         </ul>
-                      ) : null}
+                      ) : null} */}
                     </li>
                   ))}
                 </ul>
