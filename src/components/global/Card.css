@@ -36,16 +36,16 @@ ul.card-list li article {
 
 ul.card-list li article:not(.disabled-card){
     /* add 3d button to active cards */
-    border: 0.0625rem solid var(--dark-grey);
-    border-bottom: 0.5rem solid var(--dark-grey);
+    /* border: 0.0625rem solid var(--dark-grey); */
+    /* border-bottom: 0.5rem solid var(--dark-grey); */
 }
 
 ul.card-list li article:not(.disabled-card):hover {
     cursor: pointer;
     background-color: var(--light-grey-shade);
-    border-bottom: 0.125rem solid var(--dark-grey-shade);
-    transform: translateY(0.375rem);
-    margin-bottom: 0.375rem;
+    /* border-bottom: 0.125rem solid var(--dark-grey-shade); */
+    /* transform: translateY(0.375rem); */
+    /* margin-bottom: 0.375rem; */
 }
 
 ul.card-list h2,
