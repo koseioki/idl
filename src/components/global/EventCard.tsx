@@ -24,7 +24,12 @@ export function EventCard({
   //   const formattedDate = `${day} ${month} ${year}`;
 
   const navigate = useNavigate();
-  const handleClick = () => {
+  const handleClick = (event) => {
+    const target = event.target as HTMLElement | null;
+
+    // Ignore clicks that happen on the link or anything inside it (icon, span, etc.)
+    if (target?.closest("a")) return;
+
     navigate(`${slug}`);
   };
 

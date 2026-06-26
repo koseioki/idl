@@ -35,7 +35,12 @@ export function ResourceCard({ resource }: ResourceCardProps) {
   const imageUrl = resolveResourceImageUrl(resource.image);
 
   const navigate = useNavigate();
-  const handleClick = () => {
+  const handleClick = (event) => {
+    const target = event.target as HTMLElement | null;
+
+    // Ignore clicks that happen on the link or anything inside it (icon, span, etc.)
+    if (target?.closest("a")) return;
+
     navigate(path);
   };
 

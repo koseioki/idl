@@ -20,32 +20,41 @@ export function Events() {
         </H1>
         <h2>Upcoming Events</h2>
         <ul className="card-list">
-          {upcomingEvents.map((event) => (
-            <EventCard
-              key={event.id}
-              title={event.title}
-              date={event.date}
-              place={event.place}
-              slug={event.slug}
-              description={event.description}
-              imgUrl={event.imageUrl}
-            />
-          ))}
+          {/* Show upcoming events if they exist */}
+          {upcomingEvents.length > 0 ? (
+            upcomingEvents.map((event) => (
+              <EventCard
+                key={event.id}
+                title={event.title}
+                date={event.date}
+                place={event.place}
+                slug={event.slug}
+                description={event.description}
+                imgUrl={event.imageUrl}
+              />
+            ))
+          ) : (
+            <p>There is no upcoming events yet.</p>
+          )}
         </ul>
 
         <h2>Past Events</h2>
         <ul className="card-list">
-          {pastEvents.map((event) => (
-            <EventCard
-              key={event.id}
-              title={event.title}
-              date={event.date}
-              place={event.place}
-              slug={event.slug}
-              description={event.description}
-              imgUrl={event.imageUrl}
-            />
-          ))}
+          {pastEvents.length > 0 ? (
+            pastEvents.map((event) => (
+              <EventCard
+                key={event.id}
+                title={event.title}
+                date={event.date}
+                place={event.place}
+                slug={event.slug}
+                description={event.description}
+                imgUrl={event.imageUrl}
+              />
+            ))
+          ) : (
+            <p>There are no past events.</p>
+          )}
         </ul>
       </main>
   );
