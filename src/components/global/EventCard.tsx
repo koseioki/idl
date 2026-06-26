@@ -1,6 +1,5 @@
 import "./EventCard.css";
 import { NavLink } from "react-router-dom";
-// import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export function EventCard({
@@ -33,17 +32,6 @@ export function EventCard({
     navigate(`${slug}`);
   };
 
-  // set image
-  // const [Image, setImage] = useState<string | null>(null);
-  // useEffect(() => {
-  //   import(`../../data/events/${slug}.jpg`)
-  //     .then((module) => {
-  //       setImage(module.default);
-  //     })
-  //     .catch(() => {
-  //       setImage(null); // or set to a default image if you have one
-  //     });
-  // }, [slug]);
 
   return (
     <li className="event-card">

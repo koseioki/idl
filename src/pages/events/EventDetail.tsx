@@ -2,13 +2,11 @@ import { useParams } from "react-router-dom";
 import Events from "../../data/events/events.json";
 import { H1 } from "../../components/header-and-footer/H1";
 import "./EventDetail.css";
-// import { resolveResourceImageUrl } from "../../utils/resolveResourceImageUrl";
 import { useEffect, useState } from "react";
 
 export function EventDetail() {
   const { slug } = useParams();
   const event = Events.find((ev) => ev.slug === slug || ev.id === slug);
-  // const imageUrl = resolveResourceImageUrl(event?.image);
   const formattedDate = event?.date
     ? new Date(event.date).toLocaleDateString([], {
         year: "numeric",
