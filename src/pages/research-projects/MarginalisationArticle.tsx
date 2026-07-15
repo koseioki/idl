@@ -33,7 +33,9 @@ useEffect(() => {
           <div>
             <Content />
           </div>
-        ) || <p>Loading...</p>}
+        )
+        //  || <p>Loading...</p>
+         }
       </main>
             <SideNav />
 
