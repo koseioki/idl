@@ -12,7 +12,7 @@ export function Footer() {
           </a>
         </li>
         <li>
-          <a href="tel:+4591964325">+45 91 96 43 25</a>
+          <a href="tel:+46 72-770 23 33">+46 72-770 23 33</a>
         </li>
         <li>
           <a href="https://www.linkedin.com/company/intersectional-design-lab/">
