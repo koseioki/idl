@@ -100,7 +100,7 @@
         "name": "Cognitive Disabilities",
         "slug": "cognitive-disabilities",
         "content": "link to mdx",
-        "disabled": true
+        "disabled": false
       },
       {
         "id": "2008",

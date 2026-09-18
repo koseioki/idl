@@ -448,5 +448,92 @@
     "category": [99, 102],
     "source": "https://www.sciencedirect.com/science/article/abs/pii/S0743016715300176?via%3Dihub",
     "image": "/src/assets/img/resources/remote-rural-home-based-businesses-and-digital-inequalities.jpg"
+  },
+  {
+    "id": "10000009",
+    "title": "Accessibility to electronic communication for people with cognitive disabilities",
+    "subtitle": "a systematic search and review of empirical evidence",
+    "slug": "accessibility-to-electronic-communication-for-people-with-cognitive-disabilities",
+    "author": "Johan Borg, Ann Lantz, Jan Gulliksen",
+    "authorShort": "Borg, et al.",
+    "year": 2015,
+    "format": 4,
+    "category": [99, 103],
+    "source": "https://link.springer.com/article/10.1007/s10209-014-0351-6",
+    "image": "/src/assets/img/resources/accessibility-to-electronic-communication-for-people-with-cognitive-disabilities.webp"
+  },
+  {
+    "id": "10000010",
+    "title": "IAAP CPACC Body of Knowledge October 2023",
+    "slug": "iaap-cpacc-body-of-knowledge-october-2023",
+    "author": "International Association of Accessibility Professionals (IAAP)",
+    "authorShort": "IAAP",
+    "year": 2023,
+    "format": 7,
+    "category": [99, 103],
+    "source": "https://www.accessibilityassociation.org/sfsites/c/resource/CPACCBoK",
+    "image": "/src/assets/img/resources/iaap-cpacc-body-of-knowledge-october-2023.png"
+  },
+  {
+    "id": "10000011",
+    "title": "Web Accessibility for Individuals with Cognitive Deficits",
+    "subtitle": "A Comparative Study between an Existing Commercial Web and Its Cognitively Accessible Equivalent",
+    "slug": "web-accessibility-for-individuals-with-cognitive-deficits",
+    "author": "Javier Sevilla, Gerardo Herrera, Bibiana Martínez, and Francisco Alcantud",
+    "authorShort": "Sevilla et al.",
+    "year": 2007,
+    "format": 4,
+    "category": [99, 103],
+    "source": "https://www.researchgate.net/publication/220286204_Web_accessibility_for_individuals_with_cognitive_deficits_A_comparative_study_between_an_existing_commercial_Web_and_its_cognitively_accessible_equivalent",
+    "image": "/src/assets/img/resources/web-accessibility-for-individuals-with-cognitive-deficits.png"
+  },
+  {
+    "id": "10000012",
+    "title": "An Empirical Investigation of Ways in Which Some of the Problems Encountered by Some Dyslexics May be Alleviated using Computer Techniques",
+    "slug": "an-empirical-investigation-of-ways-in-which-some-of-the-problems-encountered-by-some-dyslexics-may-be-alleviated-using-computer-techniques",
+    "author": "Peter Gregor and Alan F. Newell",
+    "authorShort": "Gregor and Newell",
+    "year": 2000,
+    "format": 4,
+    "category": [99, 103],
+    "source": "https://www.researchgate.net/publication/221652399_An_empirical_investigation_of_ways_in_which_some_of_the_problems_encountered_by_some_dyslexics_may_be_alleviated_using_computer_techniques",
+    "image": "/src/assets/img/resources/an-empirical-investigation-of-ways-in-which-some-of-the-problems-encountered-by-some-dyslexics-may-be-alleviated-using-computer-techniques.png"
+  },
+  {
+    "id": "10000013",
+    "title": "Web Content Accessibility Guidelines (WCAG) 2.2",
+    "slug": "web-content-accessibility-guidelines-wcag-2-2",
+    "author": "W3C Web Accessibility Initiative (WAI)",
+    "authorShort": "W3C WAI",
+    "year": 2023,
+    "format": 7,
+    "category": [99, 103],
+    "source": "https://www.w3.org/TR/WCAG22/",
+    "image": "/src/assets/img/resources/web-content-accessibility-guidelines-wcag-2-2.png"
+  },
+  {
+    "id": "10000014",
+    "title": "Web Accessibility for People with Cognitive Disabilities",
+    "slug": "web-accessibility-for-people-with-cognitive-disabilities",
+    "author": "Jeon Small, Pamela Schallau, Karen Brown, Richard Appleyard",
+    "authorShort": "Small et al.",
+    "year": 2005,
+    "format": 4,
+    "category": [99, 103],
+    "source": "https://www.researchgate.net/publication/221517868_Web_accessibility_for_people_with_cognitive_disabilities",
+    "image": "/src/assets/img/resources/web-accessibility-for-people-with-cognitive-disabilities.png"
+  },
+  {
+    "id": "10000015",
+    "title": "Ian, data entry clerk with autism",
+    "slug": "ian-data-entry-clerk-with-autism",
+    "author": "W3C Web Accessibility Initiative (WAI)",
+    "authorShort": "W3C WAI",
+    "year": 2025,
+    "format": 3,
+    "category": [99, 103],
+    "source": "https://www.youtube.com/watch?v=bhV7KMfoyT4",
+    "image": "/src/assets/img/resources/ian-data-entry-clerk-with-autism.jpg"
+
   }
 ]
