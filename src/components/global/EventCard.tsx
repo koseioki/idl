@@ -21,6 +21,7 @@ import { resolveResourceImageUrl } from "../../utils/resolveResourceImageUrl";
 export function EventCard({ eventData }: EventCardProps) {
   const path = `/events-and-resources/events/${eventData.slug ?? eventData.id ?? ""}`;
   const imageUrl = resolveResourceImageUrl(eventData.image);
+  const description = eventData.description ?? "";
   const year = new Date(eventData.date ?? "").getFullYear();
   const month = new Date(eventData.date ?? "").toLocaleString("default", { month: "long" });
   const day = new Date(eventData.date ?? "").getDate();
@@ -47,7 +48,14 @@ export function EventCard({ eventData }: EventCardProps) {
                 <NavLink to={path}>{eventData.title}</NavLink>
               </h3>
               <div>
-                <p>{eventData.description}</p>
+                {/* max 100 characters */}
+                <p>
+                  {description.length > 200
+                    ? description.substring(0, 200) + "..."
+                    : description}
+                </p>
+                {/* <p>{eventData.description}</p> */}
+
               </div>
             </div>
             <div>

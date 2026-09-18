@@ -16,5 +16,14 @@
         "place": "adesso SE, Dortmund, Germany (online, private event)",
         "description": "Intersectionality in the digital society — what does it mean, why is it important, and how do we begin to incorporate it?",
         "image": "/src/assets/img/events/adesso.webp"
+    },
+    {
+        "id": "34552535",
+        "title": "Intersectionality in the Digital Society",
+        "slug": "intersectionality-in-the-digital-society-nordic-accessibility",
+        "date": "2026-9-29",
+        "place": "Nordic Accessibility Community Group (online)",
+        "description": "Digital accessibility work often focuses on Single-axis Analysis—considering people as “only” disabled while assuming they otherwise lead “normal” lives, with digital competencies, a supportive family, sufficient income, etc. We will explore the concept of intersectionality: what it means, why it matters, and how we can begin incorporating it into our work. 😊",
+        "image": "/src/assets/img/events/intersectionality-in-the-digital-society-nordic-accessibility.png"
     }
 ]

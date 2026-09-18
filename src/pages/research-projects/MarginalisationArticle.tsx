@@ -34,8 +34,18 @@ useEffect(() => {
             <Content />
           </div>
         )
-        //  || <p>Loading...</p>
          }
+
+        {subcategory?.lastUpdated ? (
+          <p>
+            Page last reviewed: {new Date(subcategory.lastUpdated).toLocaleDateString([], {
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            })}
+          </p>
+        ) : null}
+
       </main>
             <SideNav />
 
