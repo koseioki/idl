@@ -3,6 +3,7 @@ import Events from "../../data/events/events.json";
 import { H1 } from "../../components/header-and-footer/H1";
 import "./EventDetail.css";
 import { useEffect, useState } from "react";
+import { resolveResourceImageUrl } from "../../utils/resolveResourceImageUrl";
 
 export function EventDetail() {
   const { slug } = useParams();
@@ -29,6 +30,8 @@ export function EventDetail() {
     });
   }, [eventData]);
 
+  const imageUrl = resolveResourceImageUrl(eventData?.image);
+
   return (
     <main id="main-content" className="event-detail">
       <H1>{eventData?.title}</H1>
@@ -44,7 +47,7 @@ export function EventDetail() {
       </dl>
 
       <div>
-        <img src={eventData?.image} alt={eventData?.title} />
+        <img src={imageUrl} alt={eventData?.title} />
       </div>
 
       {Content && (
