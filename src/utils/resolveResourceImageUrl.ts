@@ -1,4 +1,5 @@
-// not needed
+// used for resolving local images in the src/assets folder, which are not processed by Vite's import.meta.globEager
+// e.g. resource images and event images
 
 const localResourceImages = import.meta.glob("../assets/img/resources/*.{png,jpg,jpeg,webp,avif,svg,gif}", {
   eager: true,
