@@ -40,9 +40,11 @@ const drawingAriaLabels = {
   HomeNGO: 'A house with the Intersectional Design Lab’s logo and a tag that reads “NGO”',
   Share: 'A person with short curly hair and earrings is presenting a slide',
   Experiment: 'Two people, one with glasses, short hair, and a beard, and the other with longer hair, are having a discussion',
-  Contact: 'Contact illustration',
+  Contact: 'Two people are sending messages, one via a telephone and the other via email with his smartphone',
   Research: 'A person with long hair is looking at a piece of paper through a magnifying glass, with a concentrated expression and thought bubbles showing tangled ideas',
-  Library: 'A person wearing glasses and a scarf around their head is holding books in front of a bookshelf'
+  Library: 'A person wearing glasses and a scarf around their head is holding books in front of a bookshelf',
+  LowSignal: 'A person with a beanie is holding a phone with a low signal icon above it, looking frustrated',
+  Businessman: 'A confident man in a suit is crossing his arms, with a graph in the background showing an upward trend',
 };
 
 type DrawingName = keyof typeof svgMap;
