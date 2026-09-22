@@ -30,7 +30,8 @@
         "name": "Geographical Location",
         "slug": "geographical-location",
         "content": "link to mdx",
-        "disabled": false
+        "disabled": false,
+        "lastUpdated": "2026-09-22"
       },
       {
         "id": "1002",

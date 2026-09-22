@@ -6,6 +6,8 @@ type EventData = {
   slug?: string;
   description?: string;
   image?: string;
+  startTime?: string;
+  endTime?: string;
 };
 
 type EventCardProps = {
@@ -54,7 +56,6 @@ export function EventCard({ eventData }: EventCardProps) {
                     ? description.substring(0, 200) + "..."
                     : description}
                 </p>
-                {/* <p>{eventData.description}</p> */}
 
               </div>
             </div>
@@ -66,9 +67,14 @@ export function EventCard({ eventData }: EventCardProps) {
           </div>
 
           <div className="date">
-            <div>{day}</div>
-            <div>{month}</div>
+            <div>{day}. {month}</div>
             <div>{year}</div>
+            {eventData.startTime && eventData.endTime && (
+              <div>
+                <p>{eventData.startTime} - {eventData.endTime}</p>
+              </div>
+            )}
+
           </div>
         </div>
         <div>{imageUrl ? <img src={imageUrl} alt="" /> : null}</div>

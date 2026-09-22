@@ -7,6 +7,7 @@ ul:has(.event-card) {
 .event-card article {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     gap: 2rem;
 }
 
@@ -21,12 +22,13 @@ ul:has(.event-card) {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 7.5rem;
+    max-width: 9rem;
 }
 
 /* day */
 .event-card div.date div:first-child {
-    font-size: 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .event-card .info {
@@ -38,8 +40,7 @@ ul:has(.event-card) {
 
 .event-card img {
     width: 100%;
-    max-width: 15rem;
-    /* height: 100%; */
+    max-width: 10rem;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 1rem;
@@ -62,7 +63,7 @@ ul:has(.event-card) {
 
     .event-card img {
         max-width: 100%;
-        /* height: auto; */
         aspect-ratio: 2 / 1;
     }
+
 }

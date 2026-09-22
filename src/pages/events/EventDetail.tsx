@@ -7,6 +7,13 @@ import { useEffect, useState } from "react";
 export function EventDetail() {
   const { slug } = useParams();
   const eventData = Events.find((ev) => ev.slug === slug || ev.id === slug);
+
+  // define a type that extends EventData with optional startTime and endTime properties
+  const eventWithTime = eventData as
+    | (typeof eventData & { startTime?: string; endTime?: string })
+    | undefined;
+
+
   const formattedDate = eventData?.date
     ? new Date(eventData.date).toLocaleDateString([], {
         year: "numeric",
@@ -29,10 +36,16 @@ export function EventDetail() {
 
       <dl>
         <dt>Date:</dt>
-        <dd>{formattedDate}</dd>
+        <dd>{formattedDate} </dd>
+
+        <dd>{eventWithTime?.startTime} - {eventWithTime?.endTime}</dd>
         <dt>Place:</dt>
         <dd>{eventData?.place}</dd>
       </dl>
+
+      <div>
+        <img src={eventData?.image} alt={eventData?.title} />
+      </div>
 
       {Content && (
         <div style={{ marginTop: "2rem" }}>
