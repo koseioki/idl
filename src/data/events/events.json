@@ -31,5 +31,16 @@
         "place": "W3C Nordic Accessibility Community Group (online)",
         "description": "We will explore the concept of intersectionality: what it means, why it matters, and how we can begin incorporating it into our work.",
         "image": "/src/assets/img/events/w3c.jpg"
+    },
+    {
+        "id": "34552536",
+        "title": "Intersectionality in the Digital Society (in Danish)",
+        "slug": "intersectionality-in-the-digital-society-nordic-accessibility-accessibleeu",
+        "date": "2026-11-10",
+        "startTime": "09:00",
+        "endTime": "15:30",
+        "place": "IDA Conference, Kalvebod Brygge 31, 1560 Copenhagen, Denmark",
+        "description": "We will explore the concept of intersectionality: what it means, why it matters, and how we can begin incorporating it into our work.",
+        "image": "/src/assets/img/events/intersectionality-in-the-digital-society-nordic-accessibility-accessibleeu.png"
     }
 ]
